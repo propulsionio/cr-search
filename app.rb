@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 require 'sinatra'
 require 'json'
-require 'rsolr'
-require 'mongo'
 require 'haml'
 require 'will_paginate'
 require 'cgi'
@@ -18,7 +16,6 @@ require_relative 'lib/paginate'
 require_relative 'lib/result'
 require_relative 'lib/bootstrap'
 require_relative 'lib/doi'
-require_relative 'lib/data'
 
 MIN_MATCH_SCORE = 2
 MIN_MATCH_TERMS = 3
@@ -37,17 +34,6 @@ configure do
   # Configure solr
   set :solr, RSolr.connect(:url => settings.solr_url)
 
-  # Configure mongo
-  set :mongo, Mongo::Connection.new(settings.mongo_host)
-  set :dois, settings.mongo[settings.mongo_db]['dois']
-  set :shorts, settings.mongo[settings.mongo_db]['shorts']
-  set :issns, settings.mongo[settings.mongo_db]['issns']
-  set :citations, settings.mongo[settings.mongo_db]['citations']
-  set :patents, settings.mongo[settings.mongo_db]['patents']
-  set :claims, settings.mongo[settings.mongo_db]['claims']
-  set :orcids, settings.mongo[settings.mongo_db]['orcids']
-  set :links, settings.mongo[settings.mongo_db]['links']
-  set :funders, settings.mongo[settings.mongo_db]['funders']
 
   # Set up for http requests to data.crossref.org and dx.doi.org
   dx_doi_org = Faraday.new(:url => 'http://dx.doi.org') do |c|

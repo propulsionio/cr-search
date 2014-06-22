@@ -42,48 +42,10 @@
     $('#search-input').focus();
   });
 
-- if page[:branding][:search_typeahead] == :funder_name
-  :javascript
-    $(document).ready(function() {
-      var fundersRemote = new Bloodhound({
-        name: 'funders',
-        datumTokenizer: function(d) { return d.tokens; },
-        queryTokenizer: Bloodhound.tokenizers.whitespace,
-        remote: {
-          url: 'http://api.crossref.org/funders?query=%QUERY',
-          filter: function(dataResponse) { return dataResponse.message.items; }
-        },
-        limit: 16,
-        dupDetector: function(r, l) { return false; }
-      });
-      
-      fundersRemote.initialize();
-
-      var suggestionLayout = Hogan.compile('<p>{{name}} <small>{{location}}</small></p>');
-
-      $('#search-input').typeahead(null, {
-        name: 'funders',
-        source: fundersRemote.ttAdapter(),
-        templates: {
-          suggestion: function(d) { return suggestionLayout.render(d) }
-        },
-        limit: 16
-      });
-      
-      $('#search-input').bind('typeahead:autocompleted typeahead:selected', function(e, datum) {
-        $('#fundref-input').val(datum['id']);
-        $('#fundref-form').submit();
-      });
-    });
-
-  .proxy-form{:style => 'display: none;'}
-    %form#fundref-form{:method => 'GET', :action => page[:branding][:search_action]}
-      %input#fundref-input{:name => 'q'}
-
 .row-centered.break-below
-  = partial :search_header, :page => page.merge({:mini_header => true})
-  
-.spacer  
+  = partial :search_header, page: page.merge(mini_header: true)
+
+.spacer
 .row-centered
   %h1
     %center

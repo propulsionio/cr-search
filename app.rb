@@ -9,7 +9,6 @@ require 'cgi'
 require 'faraday'
 require 'faraday_middleware'
 require 'haml'
-require 'gabba'
 require 'open-uri'
 require 'uri'
 require 'csv'
@@ -764,8 +763,6 @@ get '/citation' do
     req.url "/#{params[:doi]}"
     req.headers['Accept'] = citation_format
   end
-
-  settings.ga.event('Citations', '/citation', citation_format, nil, true)
 
   content_type citation_format
   res.body if res.success?

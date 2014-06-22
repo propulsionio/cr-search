@@ -9,7 +9,6 @@ GEM
       multipart-post (~> 1.1)
     faraday_middleware (0.9.0)
       faraday (>= 0.7.4, < 0.9)
-    gabba (1.0.1)
     haml (3.1.7)
     json (1.7.4)
     mongo (1.6.4)
@@ -35,7 +34,6 @@ DEPENDENCIES
   bson_ext
   faraday
   faraday_middleware
-  gabba
   haml
   json
   mongo

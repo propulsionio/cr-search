@@ -28,8 +28,6 @@ end
 configure do
   end
 
-  # Work around rack protection referrer bug
-  set :protection, :except => :json_csrf
 
   # Configure solr
   set :solr, RSolr.connect(:url => settings.solr_url)

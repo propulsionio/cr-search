@@ -10,7 +10,6 @@
     %script{:type => 'text/javascript', :src => '/spin.min.js'}
     %script{:type => 'text/javascript', :src => '/format.min.js'}
     %script{:type => 'text/javascript', :src => '/typeahead.min.js'}
-    %script{:type => 'text/javascript', :src => '/jquery.oauthpopup.js'}
     %script{:type => 'text/javascript', :src => '/bootstrap.notify.js'}
     %script{:type => 'text/javascript', :src => '/hogan.js'}
     :javascript
@@ -38,17 +37,3 @@
     .notifications.top-left
     .container-fluid
       = yield
-    - if expired_session?  
-      :javascript
-        $(document).ready(function() {
-          $('.top-left').notify({
-            message: {text: "You have been signed out of ORCID (sign-ins last for 1 hour)."},
-            type: 'warn',
-            fadeOut: {enabled: true, delay: 4000}
-          }).show();
-
-          $.ajax({
-            url: '/auth/signout',
-          });
-        });
-

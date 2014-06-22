@@ -65,51 +65,6 @@ configure do
   # Google analytics event tracking
   set :ga, Gabba::Gabba.new('UA-34536574-2', 'http://search.labs.crossref.org')
 
-  # Branding options
-  set :crmds_branding, {
-    :logo_path => '/cms-logo.png',
-    :logo_link => '/',
-    :search_placeholder => '',
-    :search_action => '/',
-    :search_typeahead => false,
-    :examples_layout => :crmds_help_list,
-    :header_links_profile => :crmds,
-    :facet_fields => settings.crmds_facet_fields,
-    :downloads => [],
-    :show_doaj_label => true,
-    :show_profile_link => true
-  }
-
-  set :fundref_branding, {
-    :logo_path => '/frs-logo.png',
-    :logo_link => '/fundref',
-    :search_placeholder => 'Funder name',
-    :search_action => '/fundref',
-    :search_typeahead => :funder_name,
-    :examples_layout => :fundref_help_list,
-    :header_links_profile => :fundref,
-    :facet_fields => settings.fundref_facet_fields,
-    :downloads => [:fundref_csv],
-    :show_doaj_label => true,
-    :show_profile_link => true
-  }
-
-  set :chorus_branding, {
-    :logo_path => '/chorus-logo.png',
-    :logo_link => '/chorus',
-    :search_placeholder => 'Funder name',
-    :search_action => '/chorus',
-    :search_typeahead => :funder_name,
-    :examples_layout => :fundref_help_list,
-    :header_links_profile => :chorus,
-    :footer_links_profile => :chorus,
-    :facet_fields => settings.chorus_facet_fields,
-    :downloads => [:fundref_csv],
-    :show_doaj_label => false,
-    :show_profile_link => false,
-    :filter_prefixes => ['10.1103', '10.1021', '10.1063', '10.1016', 
-                         '10.1093', '10.1109', '10.1002', '10.1126']
-  } 
 
   set :test_prefixes, ["10.5555", "10.55555"]
 end

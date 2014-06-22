@@ -11,9 +11,6 @@ require 'faraday'
 require 'faraday_middleware'
 require 'haml'
 require 'gabba'
-require 'rack-session-mongo'
-require 'oauth2'
-require 'resque'
 require 'open-uri'
 require 'uri'
 require 'csv'
@@ -23,12 +20,7 @@ require_relative 'lib/paginate'
 require_relative 'lib/result'
 require_relative 'lib/bootstrap'
 require_relative 'lib/doi'
-require_relative 'lib/orcid'
-require_relative 'lib/session'
 require_relative 'lib/data'
-require_relative 'lib/orcid_update'
-require_relative 'lib/orcid_claim'
-require_relative 'lib/orcid_auth'
 
 MIN_MATCH_SCORE = 2
 MIN_MATCH_TERMS = 3
@@ -92,25 +84,6 @@ configure do
   # Google analytics event tracking
   set :ga, Gabba::Gabba.new('UA-34536574-2', 'http://search.labs.crossref.org')
 
-  # Orcid endpoint
-  set :orcid_service, Faraday.new(:url => settings.orcid_site)
-
-  # Orcid oauth2 object we can use to make API calls
-  set :orcid_oauth, OAuth2::Client.new(settings.orcid_client_id,
-                                       settings.orcid_client_secret,
-                                       {:site => settings.orcid_site})
-
-  # Set up session and auth middlewares for ORCiD sign in
-  use Rack::Session::Mongo, settings.mongo[settings.mongo_db]
-  use OmniAuth::Builder do
-    provider :orcid, settings.orcid_client_id, settings.orcid_client_secret, :client_options => {
-      :site => settings.orcid_site,
-      :authorize_url => settings.orcid_authorize_url,
-      :token_url => settings.orcid_token_url,
-      :scope => '/orcid-profile/read-limited /orcid-works/create'
-    }
-  end
-
   # Branding options
   set :crmds_branding, {
     :logo_path => '/cms-logo.png',
@@ -162,7 +135,6 @@ end
 
 helpers do
   include Doi
-  include Orcid
   include Session
 
   def partial template, locals
@@ -660,10 +632,6 @@ helpers do
   end
 end
 
-before do
-  set_after_signin_redirect(request.fullpath)
-end
-
 helpers do
   def handle_fundref branding
     prefixes = branding[:filter_prefixes]
@@ -788,125 +756,6 @@ helpers do
   end
 end
 
-get '/orcids/prefixes' do
-  # TODO Set rows to 'all'
-  params = {
-    :fl => 'doi',
-    :q => 'orcid:[* TO *]',
-    :rows => 10000000,
-  }
-  result = settings.solr.paginate(query_page, query_rows, settings.solr_select, :params => params)
-  dois = result['response']['docs'].map {|r| r['doi']}
-  prefixes = dois.group_by {|doi| to_prefix(doi)}
-
-  content_type 'text/csv'
-  CSV.generate do |csv|
-    csv << ['Prefix', 'Total DOI records with one or more ORCIDs']
-    prefixes.each_pair do |prefix, items|
-      csv << [prefix, items.count]
-    end
-  end
-end
-
-get '/orcid/activity' do
-  if signed_in?
-    haml :activity, :locals => {
-      :page => {
-        :query => '',
-        :branding => settings.crmds_branding
-      }
-    }
-  else
-    redirect '/'
-  end
-end
-
-get '/orcid/claim' do
-  status = 'oauth_timeout'
-
-  if signed_in? && params['doi']
-    doi = params['doi']
-    plain_doi = to_doi(doi)
-    orcid_record = settings.orcids.find_one({:orcid => sign_in_id})
-    already_added = !orcid_record.nil? && orcid_record['locked_dois'].include?(plain_doi)
-
-    if already_added
-      status = 'ok'
-    else
-      # TODO escape DOI characters
-      params = {
-        :q => "doi:\"#{doi}\"",
-        :fl => '*'
-      }
-      result = settings.solr.paginate 0, 1, settings.solr_select, :params => params
-      doi_record = result['response']['docs'].first
-
-      if !doi_record
-        status = 'no_such_doi'
-      else
-        if OrcidClaim.perform(session_info, doi_record)
-          if orcid_record
-            orcid_record['updated'] = true
-            orcid_record['locked_dois'] << plain_doi
-            orcid_record['locked_dois'].uniq!
-            settings.orcids.save(orcid_record)
-          else
-            doc = {:orcid => sign_in_id, :dois => [], :locked_dois => [plain_doi]}
-            settings.orcids.insert(doc)
-          end
-
-          # The work could have been added as limited or public. If so we need
-          # to tell the UI.
-          OrcidUpdate.perform(session_info)
-          updated_orcid_record = settings.orcids.find_one({:orcid => sign_in_id})
-
-          if updated_orcid_record['dois'].include?(plain_doi)
-            status = 'ok_visible'
-          else
-            status = 'ok'
-          end
-        else
-          status = 'oauth_timeout'
-        end
-      end
-    end
-  end
-
-  content_type 'application/json'
-  {:status => status}.to_json
-end
-
-get '/orcid/unclaim' do
-  if signed_in? && params['doi']
-    doi = params['doi']
-    plain_doi = to_doi(doi)
-    orcid_record = settings.orcids.find_one({:orcid => sign_in_id})
-
-    if orcid_record
-      orcid_record['locked_dois'].delete(plain_doi)
-      settings.orcids.save(orcid_record)
-    end
-  end
-
-  content_type 'application/json'
-  {:status => 'ok'}.to_json
-end
-
-get '/orcid/sync' do
-  status = 'oauth_timeout'
-
-  if signed_in?
-    if OrcidUpdate.perform(session_info)
-      status = 'ok'
-    else
-      status = 'oauth_timeout'
-    end
-  end
-
-  content_type 'application/json'
-  {:status => status}.to_json
-end
-
 end
 
 get '/citation' do
@@ -922,25 +771,3 @@ get '/citation' do
   content_type citation_format
   res.body if res.success?
 end
-
-get '/auth/orcid/callback' do
-  session[:orcid] = request.env['omniauth.auth']
-  Resque.enqueue(OrcidUpdate, session_info)
-  update_profile
-  haml :auth_callback
-end
-
-get '/auth/orcid/import' do
-  make_and_set_token(params[:code], settings.orcid_import_callback)
-  OrcidUpdate.perform(session_info)
-  update_profile
-  redirect to("/?q=#{session[:orcid][:info][:name]}")
-end
-
-# Used to sign out a user but can also be used to mark that a user has seen the
-# 'You have been signed out' message. Clears the user's session cookie.
-get '/auth/signout' do
-  session.clear
-  redirect(params[:redirect_uri])
-end
-

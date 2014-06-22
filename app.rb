@@ -29,9 +29,6 @@ after do
 end
 
 configure do
-  config = JSON.parse(File.open('conf/app.json').read)
-  config.each_pair do |key, value|
-    set key.to_sym, value
   end
 
   # Work around rack protection referrer bug

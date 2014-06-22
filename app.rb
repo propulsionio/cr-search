@@ -10,7 +10,6 @@ require 'haml'
 require 'open-uri'
 require 'uri'
 require 'csv'
-require 'parallel'
 
 require_relative 'lib/paginate'
 require_relative 'lib/result'

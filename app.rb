@@ -6,14 +6,14 @@ Dir["lib/*.rb"].each { |file| require_relative file }
 helpers do
   include RenderingConcerns, APIData, QueryParams
 
-    funder_info = { nesting: funder['hierarchy'],
-                    nesting_names: funder['hierarchy-names'],
-                    id: funder['id'] }
-    { funder: funder_info,
   def results(funder, works)
     SearchResult.results_from_items(works['items'], funder['hierarchy-names'])
   end
+
   def page(funder, works)
+    { nesting: funder['hierarchy'],
+      nesting_names: funder['hierarchy-names'],
+      funder_id: funder['id'],
       bare_query: funder['name'],
       query: funder['name'],
       page: query_page,

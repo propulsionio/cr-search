@@ -55,7 +55,7 @@
             %a{:href => "#{search_link({:sort => 'published'})}"} publication year
           - if !page[:items].empty?
             %span{:style => 'margin-left: 10em;'}
-              %a{:href => "/?q=#{page[:funder][:id]}&format=csv"}
+              %a{:href => "/?q=#{page[:funder_id]}&format=csv"}
                 %i.icon-download-alt
                 Download as CSV
 

@@ -11,8 +11,7 @@ class SearchResult
   attr_reader :type, :url, :score
   attr_reader :funders
   attr_reader :authors
-  attr_reader :doi, :supplementary_id
-  alias_method :supplementary_id, :doi
+  attr_reader :doi
 
   ENGLISH_MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
                     'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']

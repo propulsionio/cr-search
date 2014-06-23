@@ -44,8 +44,5 @@
     - unless item.authors.empty?
       %p.expand= "Authors: #{item.authors.join(', ')}"
 
-    - if item.supplementary_id
-      %p.expand= "Other IDs: #{item.supplementary_id}"
-
     = partial :item_links, :item => item
 

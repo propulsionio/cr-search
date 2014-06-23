@@ -74,7 +74,7 @@
     %ul.nav.nav-list
       - values.each do |value_name, value_count|
         - unless value_count.zero?
-          - if false
+          - if params.has_key?(name) && params[name].include?(value_name)
             %li.active
               %a{:href => "#{facet_link_not(name, value_name)}"}
                 %i.icon-check

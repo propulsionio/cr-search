@@ -11,7 +11,7 @@ module APIData
     get_message(url)
   end
 
-  def funder_works_hash(id, params)
+  def funder_works_hash(id)
     offset = (query_page - 1) * query_rows
     url = "#{API_URL}/funders/#{id}/works?facet=t&rows=#{query_rows}"
     url << "&offset=#{offset}" if offset != 0

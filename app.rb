@@ -29,7 +29,7 @@ end
 get '/' do
   if params.has_key?('q')
     funder = funder_hash(params['q'])
-    works = funder_works_hash(params['q'], params)
+    works = funder_works_hash(params['q'])
 
     if params['format'] == 'csv'
       content_type 'text/csv'

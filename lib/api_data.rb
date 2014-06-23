@@ -19,11 +19,7 @@ module APIData
     get_message(url)
   end
 
-  def funder_doi_from_funder funder
-    [funder['uri']] + funder['descendants'].map do |id|
-      "http://dx.doi.org/10.13039/#{id}"
     end
-  end
 
   private
     def get_message(url)

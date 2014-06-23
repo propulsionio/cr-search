@@ -15,7 +15,6 @@ helpers do
       nesting_names: funder['hierarchy-names'],
       funder_id: funder['id'],
       bare_query: funder['name'],
-      query: funder['name'],
       page: query_page,
       items: results(funder, works),
       paginate: Paginate.new(query_page, query_rows, works['total-results']),

@@ -4,7 +4,7 @@ require 'haml'
 Dir["lib/*.rb"].each { |file| require_relative file }
 
 helpers do
-  include RenderingConcerns, APIData, QueryParams
+  include RenderingConcerns, APIData, QueryParams, Facets
 
   def results(funder, works)
     SearchResult.results_from_items(works['items'], funder['hierarchy-names'])
@@ -21,8 +21,8 @@ helpers do
       bare_query: funder['name'],
       page: query_page,
       items: results(funder, works),
-      facets: ['category', 'type', 'year', 'publication', 'publisher', 'source'] }
       paginate:      pagination(works),
+      facets:        generate_facets(works) }
   end
 end
 

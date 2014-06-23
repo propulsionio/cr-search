@@ -3,14 +3,17 @@ require 'uri'
 require 'net/http'
 
 module APIData
+  API_VERSION = 1
+  API_URL = "http://api.crossref.org/v#{API_VERSION}"
+
   def funder_hash(id)
-    url = "http://api.crossref.org/funders/#{id}"
+    url = "#{API_URL}/funders/#{id}"
     get_message(url)
   end
 
   def funder_works_hash(id, params)
     offset = (query_page - 1) * query_rows
-    url = "http://api.crossref.org/funders/#{id}/works?facet=t&rows=#{query_rows}"
+    url = "#{API_URL}/funders/#{id}/works?facet=t&rows=#{query_rows}"
     url << "&offset=#{offset}" if offset != 0
     url << "&sort=#{params[:sort]}" if params[:sort]
     get_message(url)

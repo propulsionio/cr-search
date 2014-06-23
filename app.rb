@@ -10,6 +10,10 @@ helpers do
     SearchResult.results_from_items(works['items'], funder['hierarchy-names'])
   end
 
+  def pagination(works)
+    Paginate.new(query_page, query_rows, works['total-results'])
+  end
+
   def page(funder, works)
     { nesting: funder['hierarchy'],
       nesting_names: funder['hierarchy-names'],
@@ -17,8 +21,8 @@ helpers do
       bare_query: funder['name'],
       page: query_page,
       items: results(funder, works),
-      paginate: Paginate.new(query_page, query_rows, works['total-results']),
       facets: ['category', 'type', 'year', 'publication', 'publisher', 'source'] }
+      paginate:      pagination(works),
   end
 end
 

@@ -15,12 +15,12 @@ helpers do
   end
 
   def page(funder, works)
-    { nesting: funder['hierarchy'],
+    { nesting:       funder['hierarchy'],
       nesting_names: funder['hierarchy-names'],
-      funder_id: funder['id'],
-      bare_query: funder['name'],
-      page: query_page,
-      items: results(funder, works),
+      funder_id:     funder['id'],
+      bare_query:    funder['name'],
+      page:          query_page,
+      items:         results(funder, works),
       paginate:      pagination(works),
       facets:        generate_facets(works) }
   end

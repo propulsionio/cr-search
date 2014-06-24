@@ -1,6 +1,6 @@
 module Facets
   FACETS_MAPPING =  { 'category'    => 'category-name',
-                      'type'        => 'type',
+                      'type'        => 'type-name',
                       'year'        => 'published',
                       'publication' => 'container-title',
                       'publisher'   => 'publisher-name' }

@@ -27,7 +27,6 @@ module APIData
         ''
       else
         filters = []
-        facets.delete 'type' # from client: need to resolve some issues with type names and type IDs. Stay tuned.
         filters << "from-pub-date:#{params[:year]},until-pub-date:#{params[:year]}" if facets.delete 'year'
         filters << facets.map { |facet| "#{Facets::FACETS_MAPPING[facet]}:#{CGI.escape(params[facet])}" }
         "&filter=#{filters.join(',')}"

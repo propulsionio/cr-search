@@ -31,19 +31,6 @@ module RenderingConcerns
     end
   end
 
-  def abstract_facet_query
-    fq = {}
-    FACET_FIELDS.each do |field|
-      if params.has_key? field
-        params[field].split(';').each do |val|
-          fq[field] ||= []
-          fq[field] << val
-        end
-      end
-    end
-    fq
-  end
-
   def facet_link field_name, field_value
     fq = abstract_facet_query
     fq[field_name] ||= []
@@ -82,4 +69,18 @@ module RenderingConcerns
 
     "#{request.path_info}?#{parts.compact.flatten.join('&')}"
   end
+
+  private
+    def abstract_facet_query
+      fq = {}
+      FACET_FIELDS.each do |field|
+        if params.has_key? field
+          params[field].split(';').each do |val|
+            fq[field] ||= []
+            fq[field] << val
+          end
+        end
+      end
+      fq
+    end
 end

@@ -5,6 +5,7 @@ require 'net/http'
 module APIData
   API_VERSION = 1
   API_URL = "http://api.crossref.org/v#{API_VERSION}"
+  CHORUS_MEMBERS = [16, 316, 317, 78, 286, 263, 311, 221]
 
   def funder_hash(id)
     url = "#{API_URL}/funders/#{id}"
@@ -23,14 +24,10 @@ module APIData
   private
     def filters
       facets = Facets::FACETS_MAPPING.keys.select { |key| params.has_key? key }
-      if facets.empty?
-        ''
-      else
-        filters = []
-        filters << "from-pub-date:#{params[:year]},until-pub-date:#{params[:year]}" if facets.delete 'year'
-        filters << facets.map { |facet| "#{Facets::FACETS_MAPPING[facet]}:#{CGI.escape(params[facet])}" }
-        "&filter=#{filters.join(',')}"
-      end
+      filters = CHORUS_MEMBERS.map { |member| "member:#{member}" }
+      filters << "from-pub-date:#{params[:year]},until-pub-date:#{params[:year]}" if facets.delete 'year'
+      filters << facets.map { |facet| "#{Facets::FACETS_MAPPING[facet]}:#{CGI.escape(params[facet])}" }
+      "&filter=#{filters.join(',')}"
     end
 
     def get_message(url)

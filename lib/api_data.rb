@@ -26,7 +26,7 @@ module APIData
       facets = Facets::FACETS_MAPPING.keys.select { |key| params.has_key? key }
       filters = CHORUS_MEMBERS.map { |member| "member:#{member}" }
       filters << "from-pub-date:#{params[:year]},until-pub-date:#{params[:year]}" if facets.delete 'year'
-      filters << facets.map { |facet| "#{Facets::FACETS_MAPPING[facet]}:#{CGI.escape(params[facet])}" }
+      filters << facets.map { |facet| "#{Facets::FACETS_MAPPING[facet]}:#{CGI.escape(params[facet])}" } if facets.any?
       "&filter=#{filters.join(',')}"
     end
 

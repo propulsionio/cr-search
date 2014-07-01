@@ -36,7 +36,7 @@
             on page
             %b= item.first_page
 
-    - if item.funders
+    - if item.funders.any?
       %p.extra
         %span Research funded by
         %span= item.funders.join('  |  ')

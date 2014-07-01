@@ -7,7 +7,7 @@ helpers do
   include RenderingConcerns, APIData, QueryParams, Facets
 
   def results(funder, works)
-    SearchResult.results_from_items(works['items'], funder['hierarchy-names'])
+    works['items'].map { |item| SearchResult.new item }
   end
 
   def pagination(works)

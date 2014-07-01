@@ -16,7 +16,7 @@ class SearchResult
   ENGLISH_MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
                     'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
-  def initialize item, funders_names
+  def initialize item
     @url = item['URL']
     @type = item['type'].sub('-', ' ').capitalize
     @score = item['score']
@@ -33,12 +33,10 @@ class SearchResult
                  []
                end
     @first_page, @last_page = item['page'].split("-") if item['page']
-    @funders = funders_names.values_at(*funders_ids(item))
+    # TODO: remove this temporary workaround for a missing funder block when fixed
+    #   (item['funder'] || []) -> item['funder']
+    @funders = (item['funder'] || []).map { |funder| funder['name'] }
     @doi = item['DOI']
-  end
-
-  def self.results_from_items(items, funders_names)
-    items.map { |item| SearchResult.new item, funders_names }
   end
 
   def self.generate_csv(results)
@@ -54,13 +52,5 @@ class SearchResult
   private
     def author_full_name(author)
       "#{author['family']} #{author['given']}"
-    end
-
-    def funders_ids(item)
-      item['funder'].map { |funder| remove_prefix(funder['DOI']) }
-    end
-
-    def remove_prefix(id_with_prefix)
-      id_with_prefix.split('/')[1]
     end
 end

@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 require 'sinatra'
 require 'haml'
+require 'useragent'
+
 Dir["lib/*.rb"].each { |file| require_relative file }
 
 helpers do
@@ -26,18 +28,31 @@ helpers do
   end
 end
 
+Browser = Struct.new(:browser, :version)
+SupportedBrowsers = [
+  Browser.new("Chrome", "18.0"),
+]
+
 get '/' do
+  user_agent = UserAgent.parse(request.env["HTTP_USER_AGENT"])
+  detected = SupportedBrowsers.detect { |browser| user_agent >= browser }
+
   if params.has_key?('q')
     funder = funder_hash(params['q'])
     works = funder_works_hash(params['q'])
+
 
     if params['format'] == 'csv'
       content_type 'text/csv'
       SearchResult.generate_csv results(funder, works)
     else
-      haml :results, locals: { page: page(funder, works) }
+      haml :results, locals: { page: page(funder, works),
+                               browser_detected: detected,
+                               supported_browsers: SupportedBrowsers}
     end
   else
-    haml :splash, locals: { page: {} }
+    haml :splash, locals: { page: {},
+                            browser_detected: detected,
+                            supported_browsers: SupportedBrowsers}
   end
 end

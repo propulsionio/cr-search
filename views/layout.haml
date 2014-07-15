@@ -26,5 +26,12 @@
       });
   %body
     .notifications.top-left
+      - if !browser_detected
+        %div
+          This website may not display correctly in your browser. If not, please use one of the following browsers:
+        %ul
+          - SupportedBrowsers.each  do |browser|
+            %li=browser.to_h[:browser]
+
     .container-fluid
       = yield

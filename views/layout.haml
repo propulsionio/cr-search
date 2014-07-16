@@ -13,6 +13,7 @@
     %script{:type => 'text/javascript', :src => '/typeahead.min.js'}
     %script{:type => 'text/javascript', :src => '/bootstrap.notify.js'}
     %script{:type => 'text/javascript', :src => '/hogan.js'}
+    %script{:type => 'text/javascript', :src => '/bowser.min.js'}
     :css
       a, a:visited {
         color: rgb(56, 166, 203);
@@ -20,18 +21,34 @@
       a:hover {
         color: rgb(6, 116, 153);
       }
+
+    :coffee
+      $(document).ready ()->
+        message = "This website may not display correctly in your browser. If not, please use one of the following browsers:"
+        list_tag = "<ul>"
+
+        browser_supported = ()->
+          supported_browsers =  { "Chrome": 90, "Internet Explorer": 9, "Firefox": 5 }
+
+          for browser of supported_browsers
+            list_tag = list_tag+"<li>"+browser+", version > "+supported_browsers[browser]+"</li>"
+          list_tag = list_tag + "</ul>"
+
+          result = false
+          for browser of supported_browsers
+            if bowser["name"] == browser && bowser["version"] >= supported_browsers[browser]
+              result = true
+          result
+
+        unless browser_supported()
+          $("div.notifications:first").append('<div>'+message+list_tag+'</div>')
+
+
     :javascript
       $(document).ready(function() {
         $('.number').formatNumber();
       });
   %body
     .notifications.top-left
-      - if !browser_detected
-        %div
-          This website may not display correctly in your browser. If not, please use one of the following browsers:
-        %ul
-          - SupportedBrowsers.each  do |browser|
-            %li=browser.to_h[:browser]
-
     .container-fluid
       = yield

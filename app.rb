@@ -28,16 +28,7 @@ helpers do
   end
 end
 
-Browser = Struct.new(:browser, :version)
-SupportedBrowsers = [
-  Browser.new("Chrome", "25.0"),
-  Browser.new("Internet Explorer", "9.0"),
-  Browser.new("Firefox", "5.0")
-]
-
 get '/' do
-  user_agent = UserAgent.parse(request.env["HTTP_USER_AGENT"])
-  detected = SupportedBrowsers.detect { |browser| user_agent >= browser }
 
   if params.has_key?('q')
     funder = funder_hash(params['q'])
@@ -48,13 +39,9 @@ get '/' do
       content_type 'text/csv'
       SearchResult.generate_csv results(funder, works)
     else
-      haml :results, locals: { page: page(funder, works),
-                               browser_detected: detected,
-                               supported_browsers: SupportedBrowsers}
+      haml :results, locals: { page: page(funder, works) }
     end
   else
-    haml :splash, locals: { page: {},
-                            browser_detected: detected,
-                            supported_browsers: SupportedBrowsers}
+    haml :splash, locals: { page: {} }
   end
 end

@@ -30,7 +30,9 @@ end
 
 Browser = Struct.new(:browser, :version)
 SupportedBrowsers = [
-  Browser.new("Chrome", "18.0"),
+  Browser.new("Chrome", "25.0"),
+  Browser.new("Internet Explorer", "9.0"),
+  Browser.new("Firefox", "5.0")
 ]
 
 get '/' do

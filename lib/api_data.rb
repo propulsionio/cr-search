@@ -5,7 +5,7 @@ require 'net/http'
 module APIData
   API_VERSION = 1
   API_URL = "http://api.crossref.org/v#{API_VERSION}"
-  CHORUS_MEMBERS = [16, 316, 317, 78, 286, 263, 311, 221]
+  CHORUS_MEMBERS = [16, 78, 221, 263, 286, 301, 311, 316, 317]
 
   def funder_hash(id)
     url = "#{API_URL}/funders/#{id}"

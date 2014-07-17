@@ -37,6 +37,14 @@
       a:hover {
         color: rgb(6, 116, 153);
       }
+      .notification {
+        font-size: 20px;
+        line-height: 25px;
+      }
+
+      .notification li {
+        line-height: 20px;
+      }
 
     :coffee
       $(document).ready ()->
@@ -57,7 +65,7 @@
           result
 
         unless browser_supported()
-          $("div.notifications:first").append('<div>'+message+list_tag+'</div>')
+          $("div.container:first").append('<div class="notification alert alert-warning" role="alert">'+message+list_tag+'</div>')
 
 
     :javascript
@@ -65,6 +73,6 @@
         $('.number').formatNumber();
       });
   %body
-    .notifications.top-left
+    .container
     .container-fluid
       = yield

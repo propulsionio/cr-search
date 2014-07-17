@@ -5,6 +5,23 @@
     %link{:rel => 'stylesheet', :href => '/font-awesome.min.css', :type => 'text/css', :media => 'screen'}
     %link{:rel => 'stylesheet', :href => '/typeahead.css', :type => 'text/css', :media => 'screen'}
     %link{:rel =>'search', :href => '/opensearch.xml', :type => 'application/opensearchdescription+xml', :title => 'CrossRef Metadata Search'}
+
+    %link{:href => "/apple-touch-icon-57x57.png", :rel => "apple-touch-icon", :sizes => "57x57"}
+    %link{:href => "/apple-touch-icon-114x114.png", :rel => "apple-touch-icon", :sizes => "114x114"}
+    %link{:href => "/apple-touch-icon-72x72.png", :rel => "apple-touch-icon", :sizes => "72x72"}
+    %link{:href => "/apple-touch-icon-144x144.png", :rel => "apple-touch-icon", :sizes => "144x144"}
+    %link{:href => "/apple-touch-icon-60x60.png", :rel => "apple-touch-icon", :sizes => "60x60"}
+    %link{:href => "/apple-touch-icon-120x120.png", :rel => "apple-touch-icon", :sizes => "120x120"}
+    %link{:href => "/apple-touch-icon-76x76.png", :rel => "apple-touch-icon", :sizes => "76x76"}
+    %link{:href => "/apple-touch-icon-152x152.png", :rel => "apple-touch-icon", :sizes => "152x152"}
+    %link{:href => "/favicon-196x196.png", :rel => "icon", :sizes => "196x196", :type => "image/png"}
+    %link{:href => "/favicon-160x160.png", :rel => "icon", :sizes => "160x160", :type => "image/png"}
+    %link{:href => "/favicon-96x96.png", :rel => "icon", :sizes => "96x96", :type => "image/png"}
+    %link{:href => "/favicon-16x16.png", :rel => "icon", :sizes => "16x16", :type => "image/png"}
+    %link{:href => "/favicon-32x32.png", :rel => "icon", :sizes => "32x32", :type => "image/png"}
+    %meta{:content => "#2b5797", :name => "msapplication-TileColor"}
+    %meta{:content => "/mstile-144x144.png", :name => "msapplication-TileImage"}/
+
     %script{:type => 'text/javascript', :src => '//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'}
     %script{:type => 'text/javascript', :src => '/bootstrap.js'}
     %script{:type => 'text/javascript', :src => '/spin.min.js'}
@@ -12,6 +29,7 @@
     %script{:type => 'text/javascript', :src => '/typeahead.min.js'}
     %script{:type => 'text/javascript', :src => '/bootstrap.notify.js'}
     %script{:type => 'text/javascript', :src => '/hogan.js'}
+    %script{:type => 'text/javascript', :src => '/bowser.min.js'}
     :css
       a, a:visited {
         color: rgb(56, 166, 203);
@@ -19,6 +37,29 @@
       a:hover {
         color: rgb(6, 116, 153);
       }
+
+    :coffee
+      $(document).ready ()->
+        message = "This website may not display correctly in your browser. If not, please use one of the following browsers:"
+        list_tag = "<ul>"
+
+        browser_supported = ()->
+          supported_browsers =  { "Chrome": 25, "Internet Explorer": 9, "Firefox": 5 }
+
+          for browser of supported_browsers
+            list_tag = list_tag+"<li>"+browser+", version > "+supported_browsers[browser]+"</li>"
+          list_tag = list_tag + "</ul>"
+
+          result = false
+          for browser of supported_browsers
+            if bowser["name"] == browser && bowser["version"] >= supported_browsers[browser]
+              result = true
+          result
+
+        unless browser_supported()
+          $("div.notifications:first").append('<div>'+message+list_tag+'</div>')
+
+
     :javascript
       $(document).ready(function() {
         $('.number').formatNumber();

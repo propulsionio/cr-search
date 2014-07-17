@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 require 'sinatra'
 require 'haml'
-require 'useragent'
-
+require 'coffee_script'
 Dir["lib/*.rb"].each { |file| require_relative file }
 
 helpers do
@@ -29,11 +28,9 @@ helpers do
 end
 
 get '/' do
-
   if params.has_key?('q')
     funder = funder_hash(params['q'])
     works = funder_works_hash(params['q'])
-
 
     if params['format'] == 'csv'
       content_type 'text/csv'

@@ -2,10 +2,14 @@
 require 'sinatra'
 require 'haml'
 require 'coffee_script'
+require 'json'
+require 'net/http'
+
+
 Dir["lib/*.rb"].each { |file| require_relative file }
 
 helpers do
-  include RenderingConcerns, APIData, QueryParams, Facets
+  include RenderingConcerns, APIData, QueryParams, Facets, Funders
 
   def results(funder, works)
     works['items'].map { |item| SearchResult.new item }
@@ -41,4 +45,15 @@ get '/' do
   else
     haml :splash, locals: { page: {} }
   end
+end
+
+
+get '/funders_ids.json', :provides => :json do
+  funders = get_fresh_funders
+  funders.to_json
+end
+
+get '/funders_ids' do
+  funder = get_fresh_funders.first
+  haml :funders_ids, locals: { funder: funder }
 end

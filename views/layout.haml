@@ -78,10 +78,10 @@
         $('.number').formatNumber();
 
         $('#us_only').change(function() {
-          if(this.checked) {
-            document.location.search = 'q=100000133&us-only=t';
+          if($("#us_only").is(':checked')) {
+            $('#us-only').val('t');
           } else {
-            document.location.search = 'q=100000016';
+            $('#us-only').val('');
           }
         });
       });

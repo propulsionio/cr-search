@@ -76,7 +76,7 @@
       remote: {
         url: 'http://api.crossref.org/funders?query=%QUERY',
         filter: function(dataResponse) {
-          if($("#us_only_label input[type='checkbox']").is(':checked')) {
+          if($("#us_only").is(':checked')) {
             return dataResponse.message.items.filter(function (item) {
               return item.location == "United States";
             });
@@ -111,6 +111,7 @@
 .proxy-form{style: 'display: none;'}
   %form#fundref-form{method: 'GET', action: '/'}
     %input#fundref-input{:name => 'q'}
+    %input#us-only{name: "us-only", type: "hidden", value: (params['us-only'] == 't' ? 't' : 'f')}
 
 .row-fluid
   - if page[:mini_header]
@@ -131,5 +132,6 @@
       %form#search-form{:method => 'GET', action: '/'}
         .search-in-header
           %input.input.input-xlarge.search-input#search-input{placeholder: 'Funder name', name: 'q', type: 'text', value: page[:bare_query]}
+          %input#us-only{name: "us-only", type: "hidden", value: (params['us-only'] == 't' ? 't' : 'f')}
           %i.icon-search
 %hr

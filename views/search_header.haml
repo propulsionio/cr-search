@@ -75,7 +75,15 @@
       queryTokenizer: Bloodhound.tokenizers.whitespace,
       remote: {
         url: 'http://api.crossref.org/funders?query=%QUERY',
-        filter: function(dataResponse) { return dataResponse.message.items; }
+        filter: function(dataResponse) {
+          if($("#us_only_label input[type='checkbox']").is(':checked')) {
+            return dataResponse.message.items.filter(function (item) {
+              return item.location == "United States";
+            });
+          } else {
+            return dataResponse.message.items;
+          }
+        }
       },
       limit: 16,
       dupDetector: function(r, l) { return false; }

@@ -32,6 +32,9 @@
   .break-below {
     margin-bottom: 6em;
   }
+  #us_only_label {
+    float: right;
+  }
 
 :javascript
   $(document).ready(function() {
@@ -47,6 +50,9 @@
   %h1
     %center
       %img{src: '/chorus-logo.png'}
+  %label#us_only_label
+    %input{type: "checkbox"}
+    = "&nbsp;&nbsp;US/Federal only"
   %form#search-form{method: 'GET', action: '/'}
     .search
       %input.input.input-xlarge.search-input#search-input{name: 'q', type: 'text', placeholder: 'Funder name'}

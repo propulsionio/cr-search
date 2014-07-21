@@ -31,12 +31,19 @@ module RenderingConcerns
     end
   end
 
+  def link_to_funder(id)
+    link = "/?q=#{id}"
+    link << "&us-only=t" if params['us-only'] == 't'
+    link
+  end
+
   def facet_link field_name, field_value
     fq = abstract_facet_query
     fq[field_name] ||= []
     fq[field_name] << field_value
 
     link = "#{request.path_info}?q=#{CGI.escape(params['q'])}"
+    link << "&us-only=t" if params['us-only'] == 't'
     fq.each_pair do |field, vals|
       link += "&#{field}=#{CGI.escape(vals.join(';'))}"
     end
@@ -56,7 +63,7 @@ module RenderingConcerns
   end
 
   def search_link opts
-    fields = FACET_FIELDS + ['q', 'sort']
+    fields = FACET_FIELDS + ['q', 'sort', 'us-only']
     parts = fields.map do |field|
       if opts.has_key? field.to_sym
         "#{field}=#{CGI.escape(opts[field.to_sym])}"

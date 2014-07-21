@@ -48,22 +48,28 @@
     margin-bottom: 1em;
   }
 
+
+%input{type: "checkbox", id: "us_only", checked: (params['us-only'] == 't')}
+  = "&nbsp;&nbsp;US/Federal only"
+
 .facets
-  .funder-header
-    - top_funder_id = render_top_funder_id(page[:nesting])
-    - if top_funder_id == page[:funder_id]
-      %h6= render_top_funder_name(page[:nesting], page[:nesting_names])
-    - else
-      %h6
-        %a{:href => "/?q=#{top_funder_id}"}
-          = render_top_funder_name(page[:nesting], page[:nesting_names])
-  - render_funders(rest_funder_nesting(page[:nesting]), page[:nesting_names], 0) do |indent, id, name, more|
+  - unless page[:us_only]
+    .funder-header
+      - top_funder_id = render_top_funder_id(page[:nesting])
+      - if top_funder_id == page[:funder_id]
+        %h6= render_top_funder_name(page[:nesting], page[:nesting_names])
+      - else
+        %h6
+          %a{:href => "/?q=#{top_funder_id}"}
+            = render_top_funder_name(page[:nesting], page[:nesting_names])
+  - funders_ids = (page[:us_only] ? page[:nesting] : rest_funder_nesting(page[:nesting]))
+  - render_funders(funders_ids, page[:nesting_names], 0) do |indent, id, name, more|
     .funder{:class => "funder-level#{indent}", :style => "margin-left:#{(indent - 1) * 20}px;"}
       - if more
         .pull-right
           %span.funder-expand +
       - if id != page[:funder_id]
-        %a{:href => "/?q=#{id}"}= name
+        %a{:href => link_to_funder(id)}= name
       - else
         %span.funder-hl= name
 

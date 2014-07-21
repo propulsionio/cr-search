@@ -16,14 +16,49 @@ helpers do
   end
 
   def page(funder, works)
-    { nesting:       funder['hierarchy'],
-      nesting_names: funder['hierarchy-names'],
+    hierarchy, hierarchy_names = funder['hierarchy'], funder['hierarchy-names']
+    page = {}
+    # TODO: extract to method
+    if params['us-only'] == 't'
+      page.merge! us_only: true
+      funders = top_level_us_only_funders
+      top_level_us_only_funders_nesting = top_level_us_only_funders_nesting(funders)
+      if top_level_us_only_funders_nesting.has_key? funder['id']
+        if hierarchy.has_key? funder['id']
+          top_level_us_only_funders_nesting.merge! funder['id'] => hierarchy[funder['id']]
+        elsif hierarchy.first[1].has_key? funder['id']
+          top_level_us_only_funders_nesting.merge! funder['id'] => hierarchy.first[1][funder['id']]
+        end
+      end
+      hierarchy = top_level_us_only_funders_nesting
+      hierarchy_names.merge! top_level_us_only_funders_nesting_names(funders)
+    end
+    { nesting:       hierarchy,
+      nesting_names: hierarchy_names,
       funder_id:     funder['id'],
       bare_query:    funder['name'],
       page:          query_page,
       items:         results(funder, works),
       paginate:      pagination(works),
-      facets:        generate_facets(works) }
+      facets:        generate_facets(works) }.merge(page)
+  end
+
+  def top_level_us_only_funders_nesting(funders)
+    funders.inject({}) do |nesting, funder|
+      nesting[funder[:id].to_s] = if funder[:descendants].empty?
+                                    {}
+                                  else
+                                    {"more"=>true}
+                                  end
+      nesting
+    end
+  end
+
+  def top_level_us_only_funders_nesting_names(funders)
+    funders.inject({}) do |nesting_names, funder|
+      nesting_names[funder[:id].to_s] = funder[:name]
+      nesting_names
+    end
   end
 end
 

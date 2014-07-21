@@ -21,6 +21,11 @@ module APIData
     get_message(url)
   end
 
+  # TODO: fetch data from API
+  def top_level_us_only_funders
+    APIStub.top_level_us_only_funders
+  end
+
   private
     def filters
       facets = Facets::FACETS_MAPPING.keys.select { |key| params.has_key? key }

@@ -76,6 +76,14 @@
     :javascript
       $(document).ready(function() {
         $('.number').formatNumber();
+
+        $('#us_only').change(function() {
+          if(this.checked) {
+            document.location.search = 'q=100000133&us-only=t';
+          } else {
+            document.location.search = 'q=100000016';
+          }
+        });
       });
   %body
     .container

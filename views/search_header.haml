@@ -73,7 +73,8 @@
     funders_us_ids = []
     $.getJSON "/funders_us.json", (data) ->
       console.log "Loaded", data.length, "Us Funders"
-      funders_us_ids = data.pluck("id")
+      funders_us_ids = data.pluck("id").map (el)->
+        parseInt(el)
 
     fundersRemote = new Bloodhound(
       name: "funders"
@@ -86,7 +87,7 @@
         filter: (dataResponse) ->
           if $("#us_only").is(":checked")
             dataResponse.message.items.filter (item) ->
-              funders_us_ids.includes item.id
+              funders_us_ids.includes parseInt(item.id)
           else
             dataResponse.message.items
 

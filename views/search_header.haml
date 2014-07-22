@@ -83,7 +83,7 @@
 
       queryTokenizer: Bloodhound.tokenizers.whitespace
       remote:
-        url: "http://api.crossref.org/funders?query=%QUERY"
+        url: "http://api.crossref.org/funders?rows=1000&query=%QUERY"
         filter: (dataResponse) ->
           if $("#us_only").is(":checked")
             dataResponse.message.items.filter (item) ->

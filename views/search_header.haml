@@ -67,46 +67,47 @@
     line-height: 2em;
   }
 
-:javascript
-  $(document).ready(function() {
-    var fundersRemote = new Bloodhound({
-      name: 'funders',
-      datumTokenizer: function(d) { return d.tokens; },
-      queryTokenizer: Bloodhound.tokenizers.whitespace,
-      remote: {
-        url: 'http://api.crossref.org/funders?query=%QUERY',
-        filter: function(dataResponse) {
-          if($("#us_only").is(':checked')) {
-            return dataResponse.message.items.filter(function (item) {
-              return item.location == "United States";
-            });
-          } else {
-            return dataResponse.message.items;
-          }
-        }
-      },
-      limit: 16,
-      dupDetector: function(r, l) { return false; }
-    });
+:coffeescript
+  $(document).ready ->
 
-    fundersRemote.initialize();
+    funders_us_ids = []
+    $.getJSON "/funders_us.json", (data) ->
+      console.log "Loaded", data.length, "Us Funders"
+      funders_us_ids = data.pluck("id")
 
-    var suggestionLayout = Hogan.compile('<p>{{name}} <small>{{location}}</small></p>');
+    fundersRemote = new Bloodhound(
+      name: "funders"
+      datumTokenizer: (d) ->
+        d.tokens
 
-    $('#search-input').typeahead(null, {
-      name: 'funders',
-      source: fundersRemote.ttAdapter(),
-      templates: {
-        suggestion: function(d) { return suggestionLayout.render(d) }
-      },
+      queryTokenizer: Bloodhound.tokenizers.whitespace
+      remote:
+        url: "http://api.crossref.org/funders?query=%QUERY"
+        filter: (dataResponse) ->
+          if $("#us_only").is(":checked")
+            dataResponse.message.items.filter (item) ->
+              funders_us_ids.includes item.id
+          else
+            dataResponse.message.items
+
       limit: 16
-    });
+      dupDetector: (r, l) ->
+        false
+    )
+    fundersRemote.initialize()
+    suggestionLayout = Hogan.compile("<p>{{name}} <small>{{location}}</small></p>")
+    $("#search-input").typeahead null,
+      name: "funders"
+      source: fundersRemote.ttAdapter()
+      templates:
+        suggestion: (d) ->
+          suggestionLayout.render d
 
-    $('#search-input').bind('typeahead:autocompleted typeahead:selected', function(e, datum) {
-      $('#fundref-input').val(datum['id']);
-      $('#fundref-form').submit();
-    });
-  });
+      limit: 16
+
+    $("#search-input").bind "typeahead:autocompleted typeahead:selected", (e, datum) ->
+      $("#fundref-input").val datum["id"]
+      $("#fundref-form").submit()
 
 .proxy-form{style: 'display: none;'}
   %form#fundref-form{method: 'GET', action: '/'}

@@ -1,8 +1,14 @@
 # -*- coding: utf-8 -*-
 require 'sinatra'
+require "sinatra/config_file"
 require 'haml'
 require 'coffee_script'
+require 'net/http'
+
 Dir["lib/*.rb"].each { |file| require_relative file }
+
+config_file './config.yml'
+funder_ids_api_uri = settings.funders_ids_api
 
 helpers do
   include RenderingConcerns, APIData, QueryParams, Facets
@@ -76,4 +82,9 @@ get '/' do
   else
     haml :splash, locals: { page: {} }
   end
+end
+
+get '/funders_us.json', provides: :json do
+  uri = URI(funder_ids_api_uri)
+  Net::HTTP.get(uri)
 end

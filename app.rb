@@ -4,6 +4,8 @@ require "sinatra/config_file"
 require 'haml'
 require 'coffee_script'
 require 'net/http'
+require 'json'
+require 'pry'
 
 Dir["lib/*.rb"].each { |file| require_relative file }
 
@@ -21,26 +23,18 @@ helpers do
     Paginate.new(query_page, query_rows, works['total-results'])
   end
 
+  def us_only_funders_ids
+    @us_only_funders_ids ||= JSON(fetch_us_only_funders(settings.funders_ids_api)).map { |funder| funder['id'].to_s }
+  end
+
   def page(funder, works)
-    hierarchy, hierarchy_names = funder['hierarchy'], funder['hierarchy-names']
     page = {}
-    # TODO: extract to method
     if params['us-only'] == 't'
-      page.merge! us_only: true
-      funders = top_level_us_only_funders
-      top_level_us_only_funders_nesting = top_level_us_only_funders_nesting(funders)
-      if top_level_us_only_funders_nesting.has_key? funder['id']
-        if hierarchy.has_key? funder['id']
-          top_level_us_only_funders_nesting.merge! funder['id'] => hierarchy[funder['id']]
-        elsif hierarchy.first[1].has_key? funder['id']
-          top_level_us_only_funders_nesting.merge! funder['id'] => hierarchy.first[1][funder['id']]
-        end
-      end
-      hierarchy = top_level_us_only_funders_nesting
-      hierarchy_names.merge! top_level_us_only_funders_nesting_names(funders)
+      page.merge! us_only: true,
+                  us_only_funders_ids: us_only_funders_ids
     end
-    { nesting:       hierarchy,
-      nesting_names: hierarchy_names,
+    { nesting:       funder['hierarchy'],
+      nesting_names: funder['hierarchy-names'],
       funder_id:     funder['id'],
       bare_query:    funder['name'],
       page:          query_page,
@@ -48,30 +42,19 @@ helpers do
       paginate:      pagination(works),
       facets:        generate_facets(works) }.merge(page)
   end
-
-  def top_level_us_only_funders_nesting(funders)
-    funders.inject({}) do |nesting, funder|
-      nesting[funder[:id].to_s] = if funder[:descendants].empty?
-                                    {}
-                                  else
-                                    {"more"=>true}
-                                  end
-      nesting
-    end
-  end
-
-  def top_level_us_only_funders_nesting_names(funders)
-    funders.inject({}) do |nesting_names, funder|
-      nesting_names[funder[:id].to_s] = funder[:name]
-      nesting_names
-    end
-  end
 end
 
 get '/' do
   if params.has_key?('q')
     funder = funder_hash(params['q'])
     works = funder_works_hash(params['q'])
+    if params['us-only'] == 't'
+      works['items'] = works['items'].select do |item|
+        item['funder'].any? do |funder|
+          us_only_funders_ids.include?(funder['DOI'].split('/')[1])
+        end
+      end
+    end
 
     if params['format'] == 'csv'
       content_type 'text/csv'
@@ -85,6 +68,5 @@ get '/' do
 end
 
 get '/funders_us.json', provides: :json do
-  uri = URI(funder_ids_api_uri)
-  Net::HTTP.get(uri)
+  fetch_us_only_funders(funder_ids_api_uri)
 end

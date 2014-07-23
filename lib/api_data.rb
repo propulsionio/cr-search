@@ -21,9 +21,9 @@ module APIData
     get_message(url)
   end
 
-  # TODO: fetch data from API
-  def top_level_us_only_funders
-    APIStub.top_level_us_only_funders
+  def fetch_us_only_funders(funder_ids_api_uri)
+    uri = URI(funder_ids_api_uri)
+    Net::HTTP.get(uri)
   end
 
   private
@@ -36,6 +36,7 @@ module APIData
     end
 
     def get_message(url)
+      puts url
       uri = URI.parse(url)
       response = Net::HTTP.get_response(uri)
       JSON(response.body)['message']

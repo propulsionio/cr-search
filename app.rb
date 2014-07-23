@@ -51,7 +51,7 @@ get '/' do
     if params['us-only'] == 't'
       works['items'] = works['items'].select do |item|
         item['funder'].any? do |funder|
-          us_only_funders_ids.include?(funder['DOI'].split('/')[1])
+          us_only_funders_ids.include?(funder['DOI'].split('/')[1]) if funder['DOI']
         end
       end
     end

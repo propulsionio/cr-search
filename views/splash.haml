@@ -36,6 +36,16 @@
     float: right;
   }
 
+  input[type=checkbox] {
+    vertical-align: middle;
+    position: relative;
+    bottom: 2px;
+  }
+
+  .us_only_label{
+    color: grey;
+  }
+
 :javascript
   $(document).ready(function() {
     $('#help-body').collapse('hide');
@@ -50,9 +60,9 @@
   %h1
     %center
       %img{src: '/chorus-logo.png'}
-  %label.right-aligned
+  %label.right-aligned.us_only_label
     %input{type: "checkbox", id: "us_only"}
-    = "&nbsp;&nbsp;US/Federal only"
+    = "US Federal Only"
   %form#search-form{method: 'GET', action: '/'}
     .search
       %input.input.input-xlarge.search-input#search-input{name: 'q', type: 'text', placeholder: 'Funder name'}

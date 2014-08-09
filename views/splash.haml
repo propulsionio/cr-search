@@ -36,16 +36,6 @@
     float: right;
   }
 
-  input[type=checkbox] {
-    vertical-align: middle;
-    position: relative;
-    bottom: 2px;
-  }
-
-  .us_only_label{
-    color: grey;
-  }
-
 :javascript
   $(document).ready(function() {
     $('#help-body').collapse('hide');
@@ -60,9 +50,9 @@
   %h1
     %center
       %img{src: '/chorus-logo.png'}
-  %label.right-aligned.us_only_label
+  %label.right-aligned
     %input{type: "checkbox", id: "us_only"}
-    = "US Federal Only"
+    = "&nbsp;&nbsp;US/Federal only"
   %form#search-form{method: 'GET', action: '/'}
     .search
       %input.input.input-xlarge.search-input#search-input{name: 'q', type: 'text', placeholder: 'Funder name'}
@@ -81,3 +71,14 @@
         .accordion-inner
           = partial :fundref_help_list
 
+.row-centered
+  .accordion#beta-accordion
+    .accordion-group
+      .accordion-heading
+        %a.accordion-toggle{:href => '#beta-body', 'data-toggle' => 'collapse', 'data-parent' => '#beta-accordion'}
+          .pull-right
+            %i.icon-caret-down
+          %span The CHORUS Search tool is currently in beta.
+      .accordion-body#beta-body
+        .accordion-inner
+          Results returned identify articles that report on agency-funded research from our growing data set, but these articles may or may not be publicly accessible at this time. In the near future we will introduce a method to clearly identify publicly accessible articles in search results. Thank you for supporting CHORUS.

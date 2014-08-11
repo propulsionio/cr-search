@@ -29,6 +29,10 @@
     margin-top: 2em;
     margin-left: 4px;
   }
+  #beta-header{
+    color:none;
+    color-hover:none;
+  }
   .break-below {
     margin-bottom: 6em;
   }
@@ -75,9 +79,7 @@
   .accordion#beta-accordion
     .accordion-group
       .accordion-heading
-        %a.accordion-toggle{:href => '#beta-body', 'data-toggle' => 'collapse', 'data-parent' => '#beta-accordion'}
-          .pull-right
-            %i.icon-caret-down
+        .accordion-inner#beta-body
           %span The CHORUS Search tool is currently in beta.
       .accordion-body#beta-body
         .accordion-inner

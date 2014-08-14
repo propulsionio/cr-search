@@ -1,45 +1,3 @@
-:css
-  .search {
-    margin-top: 2em;
-    position: relative;
-  }
-  .search i {
-    position: absolute;
-    top: 0.25em;
-    left: 0.3em;
-    font-size: 2.8em;
-    color: #aaa;
-  }
-  .search input {
-    padding-left: 1.5em;
-    line-height: 1.2em;
-    height: 1.4em;
-    font-size: 2.5em;
-    width: 20em;
-  }
-  h1 {
-    font-size: 4em;
-    line-height: 1.2em;
-  }
-  .row-centered {
-    margin: 0 auto;
-    width: 700px;
-  }
-  #help-accordion {
-    margin-top: 2em;
-    margin-left: 4px;
-  }
-  #beta-header{
-    color:none;
-    color-hover:none;
-  }
-  .break-below {
-    margin-bottom: 6em;
-  }
-  .right-aligned {
-    float: right;
-  }
-
 :javascript
   $(document).ready(function() {
     $('#help-body').collapse('hide');
@@ -51,17 +9,28 @@
 
 .spacer
 .row-centered
-  %h1
-    %center
-      %img{src: '/chorus-logo.png'}
-  %label.right-aligned
-    %input{type: "checkbox", id: "us_only"}
-    = "&nbsp;&nbsp;US Federal only"
-  %form#search-form{method: 'GET', action: '/'}
+  %center
+    %img{src: "./chorus-logo.png"}/
+  %label.right-aligned.fed
+    %input#us_only{type: "checkbox"}/
+    US Federal only
+  %form#search-form{action: "http://search.chorusaccess.org/", method: "GET"}
     .search
-      %input.input.input-xlarge.search-input#search-input{name: 'q', type: 'text', placeholder: 'Funder name'}
-      %input#us-only{name: "us-only", type: "hidden", value: 'f'}
-      %i.icon-search
+      %span.twitter-typeahead
+        %input.input.input-xlarge.search-input.tt-hint{autocomplete: "off", disabled: "disabled", spellcheck: "false", type: "text"}/
+        %input#search-input.input.input-xlarge.search-input.tt-input{autocomplete: "off", dir: "auto", name: "q", placeholder: "Funder name", spellcheck: "false", type: "text"}/
+        %pre.tt{"aria-hidden" => "true"}
+        %span.tt-dropdown-menu
+          .tt-dataset-funders
+      %input#us-only{name: "us-only", type: "hidden", value: "f"}/
+      %i.fa.fa-search
+
+%center
+  .row-centered.beta
+    %center
+      .betaHead The CHORUS Search tool is currently in beta.
+    .betaContent
+      Results returned identify articles that report on agency-funded research from our growing data set, but these articles may or may not be publicly accessible at this time. In the near future we will introduce a method to clearly identify publicly accessible articles in search results. Thank you for supporting CHORUS.
 
 .row-centered
   .accordion#help-accordion
@@ -74,13 +43,3 @@
       .accordion-body#help-body
         .accordion-inner
           = partial :fundref_help_list
-
-.row-centered
-  .accordion#beta-accordion
-    .accordion-group
-      .accordion-heading
-        .accordion-inner#beta-body
-          %span The CHORUS Search tool is currently in beta.
-      .accordion-body#beta-body
-        .accordion-inner
-          Results returned identify articles that report on agency-funded research from our growing data set, but these articles may or may not be publicly accessible at this time. In the near future we will introduce a method to clearly identify publicly accessible articles in search results. Thank you for supporting CHORUS.

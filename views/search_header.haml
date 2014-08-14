@@ -1,72 +1,3 @@
-:css
-  .home-link, .home-link:visited, .home-link:hover {
-    text-decoration: none;
-    color: black;
-  }
-  .simple-nav {
-    font-size: 1.2em;
-    line-height: 1.1em;
-    margin-top: 1em;
-  }
-  .simple-nav a, .simple-nav a:visited {
-    color: grey;
-    padding-left: .4em;
-  }
-  .search-in-header {
-    position: relative;
-    margin-top: .5em;
-    margin-right: 16em;
-    width: 22em;
-  }
-  .search-in-header i {
-    position: absolute;
-    top: 0.35em;
-    left: 0.5em;
-    font-size: 1.8em;
-    color: #aaa;
-  }
-  .search-in-header input {
-    line-height: 1.2em;
-    height: 1.4em;
-    font-size: 1.6em;
-    width: 22em;
-    padding-left: 2em;
-  }
-  a.home-link img {
-    width: 175px;
-  }
-  .span-header {
-    margin-top: 1.2em;
-    margin-bottom: -1.3em;
-  }
-  .simple-nav-outer {
-    position: relative;
-    width: 45em;
-  }
-  .simple-nav-bump-up {
-    margin-top: -1em;
-  }
-  .simple-nav {
-    position: absolute;
-    height: 2em;
-    top: 50%;
-    margin-top: 1em;
-    right: 0;
-  }
-  .simple-nav .pull-right {
-    margin-top: -0.05em;
-  }
-  .simple-nav .pull-right img {
-    margin-top: -0.2em;
-  }
-  .simple-nav > * {
-    margin-left: .4em;
-  }
-  .simple-nav.smaller {
-    font-size: 1em;
-    line-height: 2em;
-  }
-
 :coffeescript
   $(document).ready ->
 
@@ -110,18 +41,17 @@
       $("#fundref-input").val datum["id"]
       $("#fundref-form").submit()
 
-.proxy-form{style: 'display: none;'}
+.proxy-form{style: "display: none;"}
   %form#fundref-form{method: 'GET', action: '/'}
-    %input#fundref-input{:name => 'q'}
+    %input#fundref-input{name: 'q'}
     %input#us-only{name: "us-only", type: "hidden", value: (params['us-only'] == 't' ? 't' : 'f')}
 
 .row-fluid
   - if page[:mini_header]
     .span-header
-      .pull-right
-        .simple-nav-outer.simple-nav-bump-up
-          .simple-nav
-            %a{href: 'http://chorusaccess.org'} CHORUS
+      %a{href: "http://chorusaccess.org/"}
+        %i.fa.fa-home.fa-3x
+
   - else
     .span-header.span3
       %a.home-link{href: '/'}
@@ -136,4 +66,3 @@
           %input.input.input-xlarge.search-input#search-input{placeholder: 'Funder name', name: 'q', type: 'text', value: page[:bare_query]}
           %input#us-only{name: "us-only", type: "hidden", value: (params['us-only'] == 't' ? 't' : 'f')}
           %i.icon-search
-%hr

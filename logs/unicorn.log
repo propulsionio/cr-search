@@ -1,0 +1,101 @@
+I, [2014-08-15T05:32:49.205892 #30305]  INFO -- : unlinking existing socket=/tmp/unicorn.cr-search.sock
+I, [2014-08-15T05:32:49.206442 #30305]  INFO -- : listening on addr=/tmp/unicorn.cr-search.sock fd=8
+I, [2014-08-15T05:32:49.206726 #30305]  INFO -- : worker=0 spawning...
+I, [2014-08-15T05:32:49.226891 #30305]  INFO -- : worker=1 spawning...
+I, [2014-08-15T05:32:49.233896 #30308]  INFO -- : worker=0 spawned pid=30308
+I, [2014-08-15T05:32:49.234346 #30308]  INFO -- : Refreshing Gem list
+I, [2014-08-15T05:32:49.261315 #30311]  INFO -- : worker=1 spawned pid=30311
+I, [2014-08-15T05:32:49.261837 #30311]  INFO -- : Refreshing Gem list
+I, [2014-08-15T05:32:49.264568 #30305]  INFO -- : master process ready
+loading config file './config.yml'
+loading config file './config.yml'
+I, [2014-08-15T05:32:52.311744 #30308]  INFO -- : worker=0 ready
+I, [2014-08-15T05:32:52.312116 #30311]  INFO -- : worker=1 ready
+66.108.128.58 - - [15/Aug/2014 05:33:22] "GET / HTTP/1.0" 200 14283 0.6331
+66.108.128.58 - - [15/Aug/2014 05:33:22] "GET /funders_us.json HTTP/1.0" 200 19503 0.0875
+193.58.255.22 - - [15/Aug/2014 05:43:17] "GET / HTTP/1.0" 200 14283 0.5957
+193.58.255.22 - - [15/Aug/2014 05:43:18] "GET /funders_us.json HTTP/1.0" 200 19503 0.0627
+193.58.255.22 - - [15/Aug/2014 05:45:57] "GET / HTTP/1.0" 200 14283 0.5861
+193.58.255.22 - - [15/Aug/2014 05:47:36] "GET / HTTP/1.0" 200 14283 0.6146
+193.58.255.22 - - [15/Aug/2014 05:47:37] "GET /funders_us.json HTTP/1.0" 200 19503 0.0400
+127.0.0.1, 107.0.223.4 - - [15/Aug/2014 05:47:40] "GET /oapi/img/adspacer.gif?rm HTTP/1.0" 404 485 0.0036
+http://148.251.10.165:3001/v1/funders/100000002
+http://148.251.10.165:3001/v1/funders/100000002/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+193.58.255.22 - - [15/Aug/2014 05:48:52] "GET /?q=100000002&us-only=f HTTP/1.0" 200 89110 4.2861
+193.58.255.22 - - [15/Aug/2014 05:48:52] "GET /funders_us.json HTTP/1.0" 200 19503 0.0382
+222.186.56.18 - - [15/Aug/2014 06:04:25] "GET /manager/html HTTP/1.0" 404 448 0.0277
+117.21.225.176 - - [15/Aug/2014 09:49:26] "GET /manager/html HTTP/1.0" 404 448 0.0023
+117.21.225.176 - - [15/Aug/2014 10:13:10] "GET /manager/html HTTP/1.0" 404 448 0.0026
+127.0.0.1, 63.247.60.254 - - [15/Aug/2014 10:17:25] "GET /oapi/img/adspacer.gif?rm HTTP/1.0" 404 485 0.0037
+5.178.86.77 - - [15/Aug/2014 10:21:39] "POST /azenv.php?rand=9265648f5661f99b5bf7bdab34a239e4 HTTP/1.0" 404 448 0.0643
+61.19.246.190 - - [15/Aug/2014 10:57:44] "GET /w00tw00t.at.blackhats.romanian.anti-sec:) HTTP/1.0" 404 477 0.0020
+61.19.246.190 - - [15/Aug/2014 10:57:45] "GET /phpMyAdmin/scripts/setup.php HTTP/1.0" 404 464 0.0161
+61.19.246.190 - - [15/Aug/2014 10:57:45] "GET /phpmyadmin/scripts/setup.php HTTP/1.0" 404 464 0.0023
+61.19.246.190 - - [15/Aug/2014 10:57:46] "GET /pma/scripts/setup.php HTTP/1.0" 404 457 0.0021
+61.19.246.190 - - [15/Aug/2014 10:57:46] "GET /myadmin/scripts/setup.php HTTP/1.0" 404 461 0.0022
+61.19.246.190 - - [15/Aug/2014 10:57:47] "GET /MyAdmin/scripts/setup.php HTTP/1.0" 404 461 0.0022
+61.135.190.200 - - [15/Aug/2014 11:45:55] "GET / HTTP/1.0" 200 14283 0.6408
+61.135.190.200 - - [15/Aug/2014 11:46:10] "GET /funders_us.json HTTP/1.0" 200 19503 0.0407
+216.163.246.100 - - [15/Aug/2014 13:05:33] "GET /oapi/img/adspacer.gif?rm HTTP/1.0" 404 457 0.0030
+66.65.60.111 - - [15/Aug/2014 13:31:16] "GET / HTTP/1.0" 200 14283 0.6243
+66.65.60.111 - - [15/Aug/2014 13:31:17] "GET /funders_us.json HTTP/1.0" 200 19503 0.0384
+http://148.251.10.165:3001/v1/funders/100000002
+http://148.251.10.165:3001/v1/funders/100000002/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+24.44.80.116 - - [15/Aug/2014 13:33:43] "GET /?q=100000002&us-only=f HTTP/1.0" 200 89110 4.0822
+24.44.80.116 - - [15/Aug/2014 13:33:45] "GET /funders_us.json HTTP/1.0" 200 19503 0.0378
+66.65.60.111 - - [15/Aug/2014 13:48:09] "GET / HTTP/1.0" 200 14283 0.6465
+66.65.60.111 - - [15/Aug/2014 13:48:09] "GET /funders_us.json HTTP/1.0" 200 19503 0.0422
+http://148.251.10.165:3001/v1/funders/100000001
+http://148.251.10.165:3001/v1/funders/100000001/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.65.60.111 - - [15/Aug/2014 13:48:42] "GET /?q=100000001&us-only=t HTTP/1.0" 200 82607 4.1938
+66.65.60.111 - - [15/Aug/2014 13:48:43] "GET /funders_us.json HTTP/1.0" 200 19503 0.0273
+66.108.128.58 - - [15/Aug/2014 14:39:06] "GET / HTTP/1.0" 200 14283 0.6499
+66.108.128.58 - - [15/Aug/2014 14:39:07] "GET /funders_us.json HTTP/1.0" 200 19503 0.0432
+http://148.251.10.165:3001/v1/funders/100000002
+http://148.251.10.165:3001/v1/funders/100000002/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [15/Aug/2014 14:39:18] "GET /?q=100000002&us-only=f HTTP/1.0" 200 89110 4.1066
+66.108.128.58 - - [15/Aug/2014 14:39:18] "GET /funders_us.json HTTP/1.0" 200 19503 0.0451
+http://148.251.10.165:3001/v1/funders/100000002
+http://148.251.10.165:3001/v1/funders/100000002/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+24.44.80.116 - - [15/Aug/2014 14:39:24] "GET /?q=100000002&us-only=f HTTP/1.0" 200 88795 4.1254
+24.44.80.116 - - [15/Aug/2014 14:39:24] "GET /funders_us.json HTTP/1.0" 200 19503 0.0400
+24.44.80.116 - - [15/Aug/2014 14:45:58] "GET / HTTP/1.0" 200 14283 0.6674
+24.44.80.116 - - [15/Aug/2014 14:45:59] "GET /funders_us.json HTTP/1.0" 200 19503 0.0393
+24.44.80.116 - - [15/Aug/2014 15:28:09] "GET / HTTP/1.0" 200 14283 0.6319
+24.44.80.116 - - [15/Aug/2014 15:28:11] "GET /funders_us.json HTTP/1.0" 200 19503 0.0381
+61.135.190.71 - - [15/Aug/2014 15:49:29] "GET / HTTP/1.0" 200 14283 0.6157
+61.135.190.198 - - [15/Aug/2014 15:49:45] "GET /funders_us.json HTTP/1.0" 200 19503 0.0487
+199.30.20.12 - - [15/Aug/2014 15:57:43] "GET /robots.txt HTTP/1.0" 404 446 0.0041
+199.30.20.12 - - [15/Aug/2014 15:57:43] "GET /oapi/getAd;jsessionid=2D98F0321C8E08234C05B385BDAC01A9.soma-i-fb9bddd0 HTTP/1.0" 404 506 0.0021
+66.108.128.58 - - [15/Aug/2014 16:07:29] "GET / HTTP/1.0" 200 14283 0.6500
+66.108.128.58 - - [15/Aug/2014 16:07:29] "GET /funders_us.json HTTP/1.0" 200 19503 0.0294
+http://148.251.10.165:3001/v1/funders/100000001
+http://148.251.10.165:3001/v1/funders/100000001/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [15/Aug/2014 16:07:47] "GET /?q=100000001&us-only=f HTTP/1.0" 200 81899 3.8094
+66.108.128.58 - - [15/Aug/2014 16:07:48] "GET /funders_us.json HTTP/1.0" 200 19503 0.0303
+I, [2014-08-15T16:11:14.025607 #30305]  INFO -- : reaped #<Process::Status: pid 30308 exit 0> worker=0
+I, [2014-08-15T16:11:14.025823 #30305]  INFO -- : reaped #<Process::Status: pid 30311 exit 0> worker=1
+I, [2014-08-15T16:11:14.025992 #30305]  INFO -- : master complete
+I, [2014-08-15T16:12:54.306009 #31186]  INFO -- : unlinking existing socket=/tmp/unicorn.cr-search.sock
+I, [2014-08-15T16:12:54.306528 #31186]  INFO -- : listening on addr=/tmp/unicorn.cr-search.sock fd=8
+I, [2014-08-15T16:12:54.306787 #31186]  INFO -- : worker=0 spawning...
+I, [2014-08-15T16:12:54.337186 #31190]  INFO -- : worker=0 spawned pid=31190
+I, [2014-08-15T16:12:54.337735 #31190]  INFO -- : Refreshing Gem list
+I, [2014-08-15T16:12:54.338597 #31186]  INFO -- : worker=1 spawning...
+I, [2014-08-15T16:12:54.359353 #31193]  INFO -- : worker=1 spawned pid=31193
+I, [2014-08-15T16:12:54.359850 #31193]  INFO -- : Refreshing Gem list
+I, [2014-08-15T16:12:54.372552 #31186]  INFO -- : master process ready
+loading config file './config.yml'
+loading config file './config.yml'
+I, [2014-08-15T16:12:57.494791 #31190]  INFO -- : worker=0 ready
+I, [2014-08-15T16:12:57.495899 #31193]  INFO -- : worker=1 ready
+http://148.251.10.165:3001/v1/funders/100000001
+http://148.251.10.165:3001/v1/funders/100000001/works?facet=t&rows=20&sort=published&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [15/Aug/2014 16:26:20] "GET /?q=100000001&sort=published&us-only=f HTTP/1.0" 200 85800 3.8104
+66.108.128.58 - - [15/Aug/2014 16:26:20] "GET /funders_us.json HTTP/1.0" 200 19503 0.0891
+24.44.80.116 - - [15/Aug/2014 17:32:36] "GET / HTTP/1.0" 200 14281 0.6190
+24.44.80.116 - - [15/Aug/2014 17:32:37] "GET /funders_us.json HTTP/1.0" 200 19503 0.0829
+193.58.255.22 - - [15/Aug/2014 17:44:14] "GET / HTTP/1.0" 200 14281 0.6043
+193.58.255.22 - - [15/Aug/2014 17:44:16] "GET /funders_us.json HTTP/1.0" 200 19503 0.0398
+24.44.80.116 - - [15/Aug/2014 18:16:38] "GET / HTTP/1.0" 200 14278 0.6224
+24.44.80.116 - - [15/Aug/2014 18:16:38] "GET /funders_us.json HTTP/1.0" 200 19503 0.0389

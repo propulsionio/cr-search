@@ -10,15 +10,15 @@
   $(document).ready(function() {
     $('.example-link').click(function(e) {
       $('#search-input').val($(this).text());
-      $('#fundref-input').val("100000002");
+      $('#fundref-input').val("100000001");
       $('#fundref-form').submit();
     });
   });
 
 %dl.lead
   %dt
-    %a.example-link{:href => '#'} National Institutes of Health
+    %a.example-link{:href => '#'} National Science Foundation
   %dd
     Find all works produced from research that was funded by the National
-    Institutes of Health.
+    Science Foundation
 

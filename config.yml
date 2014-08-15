@@ -1,1 +1,4 @@
-funders_ids_api: "http://54.86.147.114:3000/funders_list_ids.json"
+development:
+  funders_ids_api: "http://127.0.0.1:3456/funders_list_ids.json"
+production:
+  funders_ids_api: "http://54.210.67.1:3000/funders_list_ids.json"

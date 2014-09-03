@@ -1,0 +1,393 @@
+/* CSS for Chorus Search & Dashboards */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(31,59,71);
+  background: #f1f1f1 url('http://chorus.windmilldesignworks.com/wp-content/themes/bedstone/images/body-bg.png');
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Montserrat', sans-serif;
+}
+a, a:visited {
+  color: rgb(88, 83, 168);
+  font-family: 'Montserrat', sans-serif;
+}
+a:hover {
+  color: rgb(88, 83, 168);
+}
+.notification {
+  font-size: 20px;
+  line-height: 25px;
+}
+.notification li {
+  line-height: 20px;
+}
+.search {
+  margin-top: 2em;
+  position: relative;
+}
+.search i {
+  position: absolute;
+  top: 0.25em;
+  left: 0.3em;
+  font-size: 2.8em;
+  color: #aaa;
+}
+.search input {
+  padding-left: 1.5em;
+  line-height: 1.2em;
+  height: 1.4em;
+  font-size: 2.5em;
+  width: 20em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+}
+h1 {
+  font-size: 4em;
+  line-height: 1.2em;
+}
+.row-centered {
+  margin: 0 auto;
+  width: 703px;
+}
+#help-accordion {
+  margin-top: 2em;
+  margin-left: -2px;
+}
+.break-below {
+  margin-bottom: 6em;
+}
+.right-aligned {
+  float: right;
+}
+.home-link, .home-link:visited, .home-link:hover {
+  text-decoration: none;
+  color: black;
+}
+.simple-nav {
+  font-size: 1.2em;
+  line-height: 1.1em;
+  margin-top: 1em;
+}
+.simple-nav a, .simple-nav a:visited {
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(88,83,168);
+  padding-left: .4em;
+}
+.search-in-header {
+  position: relative;
+  margin-top: .5em;
+  margin-right: 16em;
+  width: 22em;
+}
+.search-in-header i {
+  position: absolute;
+  top: 0.35em;
+  left: 0.5em;
+  font-size: 1.8em;
+  color: #aaa;
+}
+.search-in-header input {
+  line-height: 1.2em;
+  height: 1.4em;
+  font-size: 1.6em;
+  width: 22em;
+  padding-left: 2em;
+}
+a.home-link img {
+  width: 175px;
+}
+
+.span-header {
+  margin-top: 1.2em;
+  margin-bottom: -1.3em;
+}
+
+.simple-nav-outer {
+  position: relative;
+  width: 45em;
+}
+.simple-nav-bump-up {
+  margin-top: -1em;
+}
+.simple-nav {
+  position: absolute;
+  height: 2em;
+  top: 50%;
+  margin-top: 1em;
+  right: 0;
+}
+.simple-nav .pull-right {
+  margin-top: -0.05em;
+}
+.simple-nav .pull-right img {
+  margin-top: -0.2em;
+}
+.simple-nav > * {
+  margin-left: .4em;
+}
+.simple-nav.smaller {
+  font-size: 1em;
+  line-height: 2em;
+}
+
+.accordion-inner{
+  font-family: 'Open Sans', sans-serif;
+}
+
+dl, dd, dt{
+  line-height: 1.6em;
+}
+dd{
+  color: rgb(77,98,110);
+  margin-bottom: 0.4em;
+}
+
+span.twitter-typehead{
+  position: relative; 
+  display: inline-block; 
+  direction: ltr;
+}
+span.tt-dropdown-menu{
+  position: absolute; 
+  top: 100%; 
+  left: 0px; 
+  z-index: 100; 
+  display: none; 
+  right: auto;
+}
+input.tt-hint{
+  position: absolute; 
+  top: 0px; 
+  left: 0px; 
+  border-color: transparent; 
+  box-shadow: none; 
+  background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);
+}
+input.tt-input{
+  position: relative; 
+  vertical-align: top; 
+  background-color: transparent;
+}
+pre.tt{
+  position: absolute; 
+  visibility: hidden; 
+  white-space: pre; 
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+  font-size: 33px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 400; 
+  word-spacing: 0px; 
+  letter-spacing: 0px; 
+  text-indent: 0px; 
+  text-rendering: auto; 
+  text-transform: none;
+}
+
+.betaContent{
+  font-family: 'Open Sans', sans-serif;
+  margin: 10px 10px 10px 10px;
+  color: rgb(77,98,110);
+}
+.betaHead{
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(88,83,168);
+
+}
+.beta{
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  text-align: justify;
+}
+.fed{
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(77,98,110);
+}
+.feedback{
+  font-size: 13px;
+}
+#search-input:focus{
+  border-color: rgb(88,83,168);
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(88, 83, 168, 1);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(88, 83, 168, 1)
+}
+.chorusContainer{
+  margin-left:35px;
+}
+
+/* members -------------------------------------------------------------- */
+
+.members {
+  padding: 25px 0;
+  background: #FFF url('http://chorus.windmilldesignworks.com/wp-content/themes/bedstone/images/members-bg.png') top left repeat-x;
+  position: relative;
+  z-index: 20;
+}
+.members-meta {
+  color: #8e999f;
+  font: 12px 'Montserrat', sans-serif;
+}
+.members-meta a {
+  color: #716baa;
+  text-decoration: none;
+}
+.members-meta a:after {
+  content: '\00a0\00BB';
+}
+.members-scroll {
+    overflow: hidden;
+    height: 75px;
+    margin-top: 15px;
+    padding: 0 20px;
+    position: relative;
+}
+.members-scroll:before,
+.members-scroll:after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 100%;
+  background: #FFF; /* TODO: gradient masks? */
+  top: 0;
+  z-index: 10;
+}
+.members-scroll:before { left: 0; }
+.members-scroll:after { right: 0; }
+
+.members-scroll ul {
+    list-style: none;
+    margin: 0;
+    width: 930px; /* 155 * 6 */
+}
+.members-scroll2 ul {
+    list-style: none;
+    margin: 0;
+    width: 980px; /* 155 * 6 */
+}
+.members-scroll li,.members-scroll2 li {
+    float: left;
+    width: 155px; /* fixed */
+    text-align: center;
+}
+.members-scroll img,.members-scroll2 img {
+    max-height: 70px; /* fixed */
+    max-width: 135px; /* 155 - 10 - 10 */
+    margin: 0 10px;
+}
+.members-scroll button {
+  display: block;
+  width: 15px;
+  height: 30px;
+  padding: 0;
+  text-indent: -9999px;
+  outline: none;
+  border: none;
+  background: url('http://chorus.windmilldesignworks.com/wp-content/themes/bedstone/images/members-pager-sprite@2x.png') -99px -99px no-repeat;
+  position: absolute;
+  top: 20px;
+  z-index: 20;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+}
+.members-scroll button.doPrev {
+  left: 0;
+  background-position: 0 50%;
+}
+.members-scroll button.doNext {
+  right: 0;
+  background-position: -15px 50%;
+}
+.chorusFooter{
+  width: 1000px;
+}
+.content{
+  background: #fff;
+}
+
+/* footer -------------------------------------------------------------- */
+
+.site-footer{
+  position: relative;
+  padding: 30px 0;
+  background: url('http://chorus.windmilldesignworks.com/wp-content/themes/bedstone/images/footer-bg.png') top left repeat-x;
+  overflow: hidden; /* clearfix */
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-smoothing: subpixel-antialiased;
+}
+.site-footer:before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #FFF;
+  left: 50%;
+  top: -40px;
+  margin-left: -25px;
+  -webkit-border-radius: 99px;
+  -moz-border-radius: 99px;
+  border-radius: 99px;
+  -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+.site-footer a {
+  color: #4d626e;
+  text-decoration: none;
+}
+.site-footer a:hover {
+  color: #716baa;
+  text-decoration: none;
+}
+
+.site-footer-info {
+  float: left;
+  padding-left: 48px;
+  min-height: 55px;
+  line-height: 18px;
+  background: url('http://chorus.windmilldesignworks.com/wp-content/themes/bedstone/images/logo-footer.png') 0 5px no-repeat;
+}
+.site-footer .brand {
+  font-size: 13px;
+}
+.site-footer .copyright {
+  font-size: 11px;
+  color: #617986;
+  margin-top: 4px;
+  letter-spacing: 0.05em;
+}
+
+.nav-footer ul {
+  list-style: none;
+  margin: 3px 0 0 0;
+  padding: 0;
+  float: right;
+}
+.nav-footer li {
+  display: inline-block;
+  line-height: 12px;
+  border-left: #c1c5ce 1px solid;
+}
+.nav-footer li:first-child {
+  border: 0;
+}
+.nav-footer a {
+  padding: 0 8px 0 10px;
+  font: 13px 'Montserrat', sans-serif;
+  letter-spacing: 0.01em;
+}
+.nav-footer li.join a {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #6c68af;
+}
+.nav-footer li.join a:hover {
+  color: #514b8b;
+}
+
+

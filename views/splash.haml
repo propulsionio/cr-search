@@ -4,10 +4,10 @@
     $('#search-input').focus();
   });
 
+
 .row-centered.break-below
   = partial :search_header, page: page.merge(mini_header: true)
 
-.spacer
 .row-centered
   %center
     %img{src: "./chorus-logo.png"}/
@@ -43,3 +43,5 @@
       .accordion-body#help-body
         .accordion-inner
           = partial :fundref_help_list
+%br
+%br

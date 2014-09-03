@@ -1140,3 +1140,40 @@ loading config file './config.yml'
 I, [2014-09-02T20:31:42.958077 #1435]  INFO -- : worker=0 ready
 192.168.0.6 - - [02/Sep/2014 20:31:51] "GET / HTTP/1.0" 200 21193 0.6728
 192.168.0.6 - - [02/Sep/2014 20:31:51] "GET /funders_us.json HTTP/1.0" 200 19503 0.1215
+192.168.0.6 - - [02/Sep/2014 20:47:27] "GET / HTTP/1.0" 200 21193 0.2698
+192.168.0.6 - - [02/Sep/2014 20:47:27] "GET /funders_us.json HTTP/1.0" 200 19503 0.0466
+I, [2014-09-02T20:47:59.630212 #1432]  INFO -- : reaped #<Process::Status: pid 1435 exit 0> worker=0
+I, [2014-09-02T20:47:59.630307 #1432]  INFO -- : reaped #<Process::Status: pid 1437 exit 0> worker=1
+I, [2014-09-02T20:47:59.630391 #1432]  INFO -- : master complete
+I, [2014-09-03T11:44:46.620708 #1440]  INFO -- : listening on addr=/tmp/unicorn.cr-search.sock fd=8
+I, [2014-09-03T11:44:46.621522 #1440]  INFO -- : worker=0 spawning...
+I, [2014-09-03T11:44:46.621956 #1440]  INFO -- : worker=1 spawning...
+I, [2014-09-03T11:44:46.625737 #1440]  INFO -- : master process ready
+I, [2014-09-03T11:44:46.635703 #1443]  INFO -- : worker=0 spawned pid=1443
+I, [2014-09-03T11:44:46.635885 #1443]  INFO -- : Refreshing Gem list
+I, [2014-09-03T11:44:46.640283 #1445]  INFO -- : worker=1 spawned pid=1445
+I, [2014-09-03T11:44:46.640475 #1445]  INFO -- : Refreshing Gem list
+loading config file './config.yml'
+I, [2014-09-03T11:44:48.681582 #1443]  INFO -- : worker=0 ready
+loading config file './config.yml'
+I, [2014-09-03T11:44:48.699466 #1445]  INFO -- : worker=1 ready
+192.168.1.106 - - [03/Sep/2014 11:44:55] "GET / HTTP/1.0" 200 21193 0.4198
+192.168.1.106 - - [03/Sep/2014 11:44:56] "GET /funders_us.json HTTP/1.0" 200 19503 0.0847
+192.168.1.106 - - [03/Sep/2014 11:47:07] "GET / HTTP/1.0" 200 21207 0.2845
+192.168.1.106 - - [03/Sep/2014 11:47:07] "GET /funders_us.json HTTP/1.0" 200 19503 0.0447
+192.168.1.106 - - [03/Sep/2014 11:48:47] "GET / HTTP/1.0" 200 21134 0.2841
+192.168.1.106 - - [03/Sep/2014 11:48:48] "GET /funders_us.json HTTP/1.0" 200 19503 0.0293
+http://148.251.10.165:3001/v1/funders/100000001
+http://148.251.10.165:3001/v1/funders/100000001/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+192.168.1.106 - - [03/Sep/2014 11:49:14] "GET / HTTP/1.0" 200 21134 0.2869
+192.168.1.106 - - [03/Sep/2014 11:49:14] "GET /funders_us.json HTTP/1.0" 200 19503 0.0256
+192.168.1.106 - - [03/Sep/2014 11:49:20] "GET / HTTP/1.0" 200 21134 0.3297
+192.168.1.106 - - [03/Sep/2014 11:49:20] "GET /funders_us.json HTTP/1.0" 200 19503 0.0248
+192.168.1.106 - - [03/Sep/2014 11:49:31] "GET /?q=100000001&us-only=f HTTP/1.0" 200 97803 17.7640
+192.168.1.106 - - [03/Sep/2014 11:49:31] "GET /funders_us.json HTTP/1.0" 200 19503 0.0218
+192.168.1.106 - - [03/Sep/2014 11:50:06] "GET / HTTP/1.0" 200 21134 0.3107
+192.168.1.106 - - [03/Sep/2014 11:50:06] "GET /funders_us.json HTTP/1.0" 200 19503 0.0146
+http://148.251.10.165:3001/v1/funders/100000001
+http://148.251.10.165:3001/v1/funders/100000001/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+192.168.1.106 - - [03/Sep/2014 11:50:10] "GET /?q=100000001&us-only=f HTTP/1.0" 200 97803 1.0896
+192.168.1.106 - - [03/Sep/2014 11:50:10] "GET /funders_us.json HTTP/1.0" 200 19503 0.0216

@@ -1,1 +1,1 @@
-funders_ids_api: "http://192.168.0.12:3000/funders_list_ids.json"
+funders_ids_api: "http://192.168.1.117:3000/funders_list_ids.json"

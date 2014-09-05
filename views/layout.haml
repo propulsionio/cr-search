@@ -9,6 +9,7 @@
     %link{href: "./font-awesome/css/font-awesome.min.css", media: "screen", rel: "stylesheet", type: "text/css"}/
     %link{:href => "http://fonts.googleapis.com/css?family=Montserrat:400,700", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans:400,700", :rel => "stylesheet", :type => "text/css"}/
+    %link{:rel => "stylesheet", :href => "http://www.chorusaccess.org/wp-content/themes/bedstone/css/style-responsive.css"}/
     %link{href: "./typeahead.css", media: "screen", rel: "stylesheet", type: "text/css"}
 
     %link{:href => "/favicon.png", :rel => "icon", :type => "image/png"}
@@ -29,6 +30,8 @@
         background: #f1f1f1 url('http://chorus.windmilldesignworks.com/wp-content/themes/bedstone/images/body-bg.png');
         -webkit-font-smoothing: antialiased;
         font-smoothing: antialiased;
+        padding-left: 0px;
+        padding-right: 0px;
       }
       h1,h2,h3,h4,h5,h6{
         font-family: 'Montserrat', sans-serif;
@@ -40,6 +43,35 @@
       a:hover {
         color: rgb(88, 83, 168);
       }
+
+      @media (min-width: 767px) {      
+        .row-centered {
+          margin: 0 auto;
+          width: 703px;
+        }
+        .search input {
+          width: 137%;
+        }
+      }
+      
+      @media (min-width: 480px) and (max-width: 767px){      
+        .row-centered {
+          margin: 0 auto;
+          width: 460px;
+        }
+        .search input {
+          width: 100%;
+        }
+      }
+      @media (max-width: 480px) {
+        .row-centered {
+          .row-centered {
+            margin: 0 auto;
+            width: 320px;
+          }
+        }
+      }
+
       .notification {
         font-size: 20px;
         line-height: 25px;
@@ -63,7 +95,6 @@
         line-height: 1.2em;
         height: 1.4em;
         font-size: 2.5em;
-        width: 20em;
         font-family: 'Open Sans', sans-serif;
         font-weight: normal;
       }
@@ -71,10 +102,7 @@
         font-size: 4em;
         line-height: 1.2em;
       }
-      .row-centered {
-        margin: 0 auto;
-        width: 703px;
-      }
+      
       #help-accordion {
         margin-top: 2em;
         margin-left: -2px;
@@ -166,11 +194,6 @@
         color: rgb(77,98,110);
         margin-bottom: 0.4em;
       }
-      span.twitter-typehead{
-        position: relative;
-        display: inline-block;
-        direction: ltr;
-      }
       span.tt-dropdown-menu{
         position: absolute;
         top: 100%;
@@ -239,8 +262,10 @@
       .chorusContainer{
         margin-left:35px;
       }
-      .shorten{
+      .container{
         width: 990px;
+        padding-left: 20px;
+        padding-right: 20px;
       }
       .copyright{
         text-align: left;
@@ -332,6 +357,8 @@
       }
       .content{
         background: #fff;
+        padding-left: 20px;
+        padding-right: 20px;
       }
 
       /* footer -------------------------------------------------------------- */
@@ -414,6 +441,13 @@
         color: #514b8b;
       }
 
+      .img-responsive{
+        display: block;
+        width: 100% /9;
+        max-width: 100%;
+        height: auto;
+      }
+
     :coffee
       $(document).ready ()->
         message = "This website may not display correctly in your browser. If not, please use one of the following browsers:"
@@ -456,4 +490,4 @@
     .container-fluid.content
       = yield
     %center
-      = partial :footer
+    = partial :footer

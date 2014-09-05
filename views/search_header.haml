@@ -1,3 +1,54 @@
+:css
+  @media screen and (min-width: 1024px) {
+    .search-in-header {
+      width: 160%;
+    }
+    .search-in-header input {
+      width: 160%;
+    }             
+  }
+
+  @media screen and (max-width: 1024px) {
+    .search-in-header {
+      width: 140%;
+    }
+    .search-in-header input {
+      width: 140%;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .search-in-header {
+      margin: 5px auto;
+    }
+    .search-in-header input {
+      margin: 5px auto;      
+    }
+    .pull-right {
+      float: left;
+    }
+    .simple-nav {
+      position: relative;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .search-in-header {
+      margin: 5px auto;
+      width: 100%;
+    }
+    .search-in-header input {
+      margin: 5px auto;
+      width: 100%;
+    }
+    .pull-right {
+      left: 0;
+    }
+    .simple-nav {
+      position: relative;
+    }
+  }   
+
 :coffeescript
   $(document).ready ->
 
@@ -56,13 +107,14 @@
     .span-header.span3
       %a.home-link{href: '/'}
         %img{src: '/chorus-logo.png'}
-    .span-header.span9
-      .pull-right
-        .simple-nav-outer
-          .simple-nav.smaller
-            %a{href: 'http://chorusaccess.org'} CHORUS
+    .span-header.span6
       %form#search-form{:method => 'GET', action: '/'}
         .search-in-header
           %input.input.input-xlarge.search-input#search-input{placeholder: 'Funder name', name: 'q', type: 'text', value: page[:bare_query]}
           %input#us-only{name: "us-only", type: "hidden", value: (params['us-only'] == 't' ? 't' : 'f')}
           %i.icon-search
+    .span-header.span3
+      .pull-right
+        .simple-nav-outer
+          .simple-nav.smaller
+            %a{href: 'http://chorusaccess.org'} CHORUS

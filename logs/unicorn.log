@@ -1196,3 +1196,67 @@ I, [2014-09-03T15:02:36.783386 #1435]  INFO -- : worker=1 ready
 192.168.1.144 - - [03/Sep/2014 15:02:53] "GET /funders_us.json HTTP/1.0" 200 19503 0.0715
 192.168.1.144 - - [03/Sep/2014 15:06:44] "GET / HTTP/1.0" 200 21162 0.2808
 192.168.1.144 - - [03/Sep/2014 15:06:45] "GET /funders_us.json HTTP/1.0" 200 19503 0.0434
+I, [2014-09-07T15:47:06.181334 #2010]  INFO -- : listening on addr=/tmp/unicorn.cr-search.sock fd=8
+I, [2014-09-07T15:47:06.181668 #2010]  INFO -- : worker=0 spawning...
+I, [2014-09-07T15:47:06.182344 #2010]  INFO -- : worker=1 spawning...
+I, [2014-09-07T15:47:06.182891 #2013]  INFO -- : worker=0 spawned pid=2013
+I, [2014-09-07T15:47:06.183049 #2013]  INFO -- : Refreshing Gem list
+I, [2014-09-07T15:47:06.185306 #2010]  INFO -- : master process ready
+I, [2014-09-07T15:47:06.191461 #2016]  INFO -- : worker=1 spawned pid=2016
+I, [2014-09-07T15:47:06.191686 #2016]  INFO -- : Refreshing Gem list
+loading config file './config.yml'
+loading config file './config.yml'
+I, [2014-09-07T15:47:08.932989 #2013]  INFO -- : worker=0 ready
+I, [2014-09-07T15:47:08.934131 #2016]  INFO -- : worker=1 ready
+192.168.1.6 - - [07/Sep/2014 15:47:27] "GET / HTTP/1.0" 200 23173 0.7394
+192.168.1.6 - - [07/Sep/2014 15:47:28] "GET /funders_us.json HTTP/1.0" 200 19503 0.1761
+I, [2014-09-07T15:49:19.823066 #2010]  INFO -- : reaped #<Process::Status: pid 2016 exit 0> worker=1
+I, [2014-09-07T15:49:19.924904 #2010]  INFO -- : reaped #<Process::Status: pid 2013 exit 0> worker=0
+I, [2014-09-07T15:49:19.925252 #2010]  INFO -- : master complete
+I, [2014-09-07T15:52:52.838504 #2163]  INFO -- : unlinking existing socket=/tmp/unicorn.cr-search.sock
+I, [2014-09-07T15:52:52.838787 #2163]  INFO -- : listening on addr=/tmp/unicorn.cr-search.sock fd=8
+I, [2014-09-07T15:52:52.838936 #2163]  INFO -- : worker=0 spawning...
+I, [2014-09-07T15:52:52.839539 #2163]  INFO -- : worker=1 spawning...
+I, [2014-09-07T15:52:52.840056 #2166]  INFO -- : worker=0 spawned pid=2166
+I, [2014-09-07T15:52:52.840192 #2166]  INFO -- : Refreshing Gem list
+I, [2014-09-07T15:52:52.840957 #2163]  INFO -- : master process ready
+I, [2014-09-07T15:52:52.849561 #2169]  INFO -- : worker=1 spawned pid=2169
+I, [2014-09-07T15:52:52.849773 #2169]  INFO -- : Refreshing Gem list
+loading config file './config.yml'
+loading config file './config.yml'
+I, [2014-09-07T15:52:55.581263 #2169]  INFO -- : worker=1 ready
+I, [2014-09-07T15:52:55.591524 #2166]  INFO -- : worker=0 ready
+192.168.1.6 - - [07/Sep/2014 15:53:03] "GET / HTTP/1.0" 200 23173 0.4410
+192.168.1.6 - - [07/Sep/2014 15:53:03] "GET /funders_us.json HTTP/1.0" 200 19503 0.0892
+192.168.1.6 - - [07/Sep/2014 15:53:16] "GET / HTTP/1.0" 200 23173 0.4217
+192.168.1.6 - - [07/Sep/2014 15:53:16] "GET /funders_us.json HTTP/1.0" 200 19503 0.0515
+http://api.crossref.org/v1/funders/100000139
+http://api.crossref.org/v1/funders/100000139/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+192.168.1.6 - - [07/Sep/2014 15:53:33] "GET /?q=100000139&us-only=t HTTP/1.0" 200 89813 1.3166
+192.168.1.6 - - [07/Sep/2014 15:53:33] "GET /funders_us.json HTTP/1.0" 200 19503 0.0234
+192.168.1.6 - - [07/Sep/2014 15:53:45] "GET / HTTP/1.0" 200 23173 0.4291
+192.168.1.6 - - [07/Sep/2014 15:53:45] "GET /funders_us.json HTTP/1.0" 200 19503 0.0221
+192.168.1.6 - - [07/Sep/2014 15:54:10] "GET / HTTP/1.0" 200 23173 0.4796
+192.168.1.6 - - [07/Sep/2014 15:54:10] "GET /funders_us.json HTTP/1.0" 200 19503 0.0207
+192.168.1.6 - - [07/Sep/2014 15:54:21] "GET / HTTP/1.0" 200 23173 0.5117
+192.168.1.6 - - [07/Sep/2014 15:54:22] "GET /funders_us.json HTTP/1.0" 200 19503 0.0320
+192.168.1.6 - - [07/Sep/2014 15:54:49] "GET / HTTP/1.0" 200 23173 0.4227
+192.168.1.6 - - [07/Sep/2014 15:54:49] "GET /funders_us.json HTTP/1.0" 200 19503 0.0340
+I, [2014-09-07T15:58:31.206236 #2163]  INFO -- : reaped #<Process::Status: pid 2166 exit 0> worker=0
+I, [2014-09-07T15:58:31.206367 #2163]  INFO -- : reaped #<Process::Status: pid 2169 exit 0> worker=1
+I, [2014-09-07T15:58:31.206479 #2163]  INFO -- : master complete
+I, [2014-09-07T16:01:47.231888 #2429]  INFO -- : unlinking existing socket=/tmp/unicorn.cr-search.sock
+I, [2014-09-07T16:01:47.232375 #2429]  INFO -- : listening on addr=/tmp/unicorn.cr-search.sock fd=8
+I, [2014-09-07T16:01:47.232635 #2429]  INFO -- : worker=0 spawning...
+I, [2014-09-07T16:01:47.233545 #2429]  INFO -- : worker=1 spawning...
+I, [2014-09-07T16:01:47.234575 #2432]  INFO -- : worker=0 spawned pid=2432
+I, [2014-09-07T16:01:47.234807 #2432]  INFO -- : Refreshing Gem list
+I, [2014-09-07T16:01:47.246365 #2429]  INFO -- : master process ready
+I, [2014-09-07T16:01:47.259639 #2435]  INFO -- : worker=1 spawned pid=2435
+I, [2014-09-07T16:01:47.259851 #2435]  INFO -- : Refreshing Gem list
+loading config file './config.yml'
+I, [2014-09-07T16:01:49.974481 #2435]  INFO -- : worker=1 ready
+loading config file './config.yml'
+I, [2014-09-07T16:01:50.007736 #2432]  INFO -- : worker=0 ready
+192.168.1.6 - - [07/Sep/2014 16:03:43] "GET / HTTP/1.0" 200 23170 0.4651
+192.168.1.6 - - [07/Sep/2014 16:03:43] "GET /funders_us.json HTTP/1.0" 200 19503 0.0972

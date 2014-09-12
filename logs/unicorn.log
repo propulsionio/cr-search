@@ -1260,3 +1260,36 @@ loading config file './config.yml'
 I, [2014-09-07T16:01:50.007736 #2432]  INFO -- : worker=0 ready
 192.168.1.6 - - [07/Sep/2014 16:03:43] "GET / HTTP/1.0" 200 23170 0.4651
 192.168.1.6 - - [07/Sep/2014 16:03:43] "GET /funders_us.json HTTP/1.0" 200 19503 0.0972
+I, [2014-09-12T16:09:17.600243 #1487]  INFO -- : listening on addr=/tmp/unicorn.cr-search.sock fd=8
+I, [2014-09-12T16:09:17.601107 #1487]  INFO -- : worker=0 spawning...
+I, [2014-09-12T16:09:17.624625 #1487]  INFO -- : worker=1 spawning...
+I, [2014-09-12T16:09:17.611395 #1490]  INFO -- : worker=0 spawned pid=1490
+I, [2014-09-12T16:09:17.625259 #1490]  INFO -- : Refreshing Gem list
+I, [2014-09-12T16:09:17.628873 #1487]  INFO -- : master process ready
+I, [2014-09-12T16:09:17.676842 #1493]  INFO -- : worker=1 spawned pid=1493
+I, [2014-09-12T16:09:17.677760 #1493]  INFO -- : Refreshing Gem list
+loading config file './config.yml'
+loading config file './config.yml'
+I, [2014-09-12T16:09:23.296441 #1490]  INFO -- : worker=0 ready
+I, [2014-09-12T16:09:23.297356 #1493]  INFO -- : worker=1 ready
+192.168.0.4 - - [12/Sep/2014 16:13:14] "GET / HTTP/1.0" 200 23170 0.8837
+192.168.0.4 - - [12/Sep/2014 16:13:15] "GET /funders_us.json HTTP/1.0" 200 19503 0.1137
+I, [2014-09-12T16:23:41.373448 #1487]  INFO -- : reaped #<Process::Status: pid 1490 exit 0> worker=0
+I, [2014-09-12T16:23:41.373583 #1487]  INFO -- : reaped #<Process::Status: pid 1493 exit 0> worker=1
+I, [2014-09-12T16:23:41.373695 #1487]  INFO -- : master complete
+I, [2014-09-12T16:26:15.781822 #1959]  INFO -- : unlinking existing socket=/tmp/unicorn.cr-search.sock
+I, [2014-09-12T16:26:15.782040 #1959]  INFO -- : listening on addr=/tmp/unicorn.cr-search.sock fd=8
+I, [2014-09-12T16:26:15.782158 #1959]  INFO -- : worker=0 spawning...
+I, [2014-09-12T16:26:15.786494 #1959]  INFO -- : worker=1 spawning...
+I, [2014-09-12T16:26:15.787173 #1962]  INFO -- : worker=0 spawned pid=1962
+I, [2014-09-12T16:26:15.787448 #1962]  INFO -- : Refreshing Gem list
+I, [2014-09-12T16:26:15.792430 #1959]  INFO -- : master process ready
+I, [2014-09-12T16:26:15.798490 #1965]  INFO -- : worker=1 spawned pid=1965
+I, [2014-09-12T16:26:15.798668 #1965]  INFO -- : Refreshing Gem list
+loading config file './config.yml'
+loading config file './config.yml'
+I, [2014-09-12T16:26:17.636959 #1965]  INFO -- : worker=1 ready
+I, [2014-09-12T16:26:17.641704 #1962]  INFO -- : worker=0 ready
+192.168.0.4 - - [12/Sep/2014 16:29:55] "GET / HTTP/1.0" 200 23994 0.3064
+192.168.0.4 - - [12/Sep/2014 16:29:56] "GET /funders_us.json HTTP/1.0" 200 19503 0.0913
+192.168.0.4 - - [12/Sep/2014 16:30:03] "GET /favicon.ico HTTP/1.0" 404 446 0.0016

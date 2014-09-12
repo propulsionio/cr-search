@@ -32,7 +32,7 @@ module RenderingConcerns
   end
 
   def link_to_funder(id)
-    link = "/?q=#{id}"
+    link = "/?q=100000161"
     link << "&us-only=t" if params['us-only'] == 't'
     link
   end

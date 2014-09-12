@@ -8,13 +8,13 @@ module APIData
   CHORUS_MEMBERS = [15, 16, 78, 179, 221, 221, 263, 286, 292, 301, 311, 316, 317, 320]
 
   def funder_hash(id)
-    url = "#{API_URL}/funders/#{id}"
+    url = "#{API_URL}/funders/100000161"
     get_message(url)
   end
 
   def funder_works_hash(id)
     offset = (query_page - 1) * query_rows
-    url = "#{API_URL}/funders/#{id}/works?facet=t&rows=#{query_rows}"
+    url = "#{API_URL}/funders/100000161/works?facet=t&rows=#{query_rows}"
     url << "&offset=#{offset}" if offset != 0
     url << "&sort=#{params[:sort]}" if params[:sort]
     url << filters

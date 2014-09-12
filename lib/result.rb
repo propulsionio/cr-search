@@ -36,6 +36,7 @@ class SearchResult
     # TODO: remove this temporary workaround for a missing funder block when fixed
     #   (item['funder'] || []) -> item['funder']
     @funders = (item['funder'] || []).map { |funder| funder['name'] }
+    #@funders = [100000161, "National Institute of Standards and Technologies"]
     @doi = item['DOI']
   end
 

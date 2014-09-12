@@ -19721,3 +19721,37 @@ http://api.crossref.org/v1/funders/100000161
 http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&offset=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
 66.108.128.58 - - [12/Sep/2014 06:50:32] "GET /?q=501100003952&us-only=f&page=2 HTTP/1.0" 200 90470 1.0828
 66.108.128.58 - - [12/Sep/2014 06:50:32] "GET /funders_us.json HTTP/1.0" 200 19503 0.0353
+66.108.128.58 - - [12/Sep/2014 06:58:31] "GET / HTTP/1.0" 200 23046 0.3142
+66.108.128.58 - - [12/Sep/2014 06:58:31] "GET /funders_us.json HTTP/1.0" 200 19503 0.0168
+49.248.178.34 - - [12/Sep/2014 07:00:11] "GET / HTTP/1.0" 200 23046 0.2918
+49.248.178.34 - - [12/Sep/2014 07:00:19] "GET /funders_us.json HTTP/1.0" 200 19503 0.0170
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+49.248.178.34 - - [12/Sep/2014 07:01:26] "GET /?q=100000001&us-only=f HTTP/1.0" 200 91144 4.4404
+49.248.178.34 - - [12/Sep/2014 07:01:29] "GET /funders_us.json HTTP/1.0" 200 19503 0.0164
+49.248.178.34 - - [12/Sep/2014 07:01:31] "GET /funders_us.json HTTP/1.0" 200 19503 0.0158
+110.5.74.2 - - [12/Sep/2014 08:28:41] "GET / HTTP/1.0" 200 23046 0.2921
+110.5.74.2 - - [12/Sep/2014 08:28:43] "GET /funders_us.json HTTP/1.0" 200 19503 0.0227
+89.248.160.192 - - [12/Sep/2014 13:12:51] "GET /cgi-bin/php HTTP/1.0" 404 446 0.0015
+89.248.160.192 - - [12/Sep/2014 13:12:51] "GET /cgi-bin/php4 HTTP/1.0" 404 447 0.0013
+89.248.160.192 - - [12/Sep/2014 13:12:51] "GET /cgi-bin/php5 HTTP/1.0" 404 447 0.0015
+89.248.160.192 - - [12/Sep/2014 13:12:51] "GET /cgi-bin/php-cgi HTTP/1.0" 404 450 0.0015
+89.248.160.192 - - [12/Sep/2014 13:12:52] "GET /cgi-bin/php.cgi HTTP/1.0" 404 450 0.0012
+I, [2014-09-12T15:17:00.941799 #5251]  INFO -- : reaped #<Process::Status: pid 5254 exit 0> worker=0
+I, [2014-09-12T15:17:00.941893 #5251]  INFO -- : reaped #<Process::Status: pid 5256 exit 0> worker=1
+I, [2014-09-12T15:17:00.941973 #5251]  INFO -- : master complete
+I, [2014-09-12T15:18:34.756489 #5979]  INFO -- : unlinking existing socket=/tmp/unicorn.cr-search.sock
+I, [2014-09-12T15:18:34.756683 #5979]  INFO -- : listening on addr=/tmp/unicorn.cr-search.sock fd=8
+I, [2014-09-12T15:18:34.756788 #5979]  INFO -- : worker=0 spawning...
+I, [2014-09-12T15:18:34.757152 #5979]  INFO -- : worker=1 spawning...
+I, [2014-09-12T15:18:34.759660 #5979]  INFO -- : master process ready
+I, [2014-09-12T15:18:34.766721 #5982]  INFO -- : worker=0 spawned pid=5982
+I, [2014-09-12T15:18:34.766885 #5982]  INFO -- : Refreshing Gem list
+I, [2014-09-12T15:18:34.779189 #5984]  INFO -- : worker=1 spawned pid=5984
+I, [2014-09-12T15:18:34.779331 #5984]  INFO -- : Refreshing Gem list
+loading config file './config.yml'
+loading config file './config.yml'
+I, [2014-09-12T15:18:36.472677 #5984]  INFO -- : worker=1 ready
+I, [2014-09-12T15:18:36.470642 #5982]  INFO -- : worker=0 ready
+66.108.128.58 - - [12/Sep/2014 15:20:42] "GET / HTTP/1.0" 200 23064 0.3156
+66.108.128.58 - - [12/Sep/2014 15:20:42] "GET /funders_us.json HTTP/1.0" 200 19503 0.0465

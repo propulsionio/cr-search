@@ -11,6 +11,11 @@
 .row-centered
   %center
     %img.img-responsive{src: "NIST.png"}/
+
+  %label.right-aligned.fed
+    %input#us_only{type: "checkbox"}/
+    US Federal only
+
   %form#search-form{action: "http://search.chorusaccess.org/", method: "GET"}
     .search
       %span.twitter-typeahead

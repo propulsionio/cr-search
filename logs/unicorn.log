@@ -19755,3 +19755,148 @@ I, [2014-09-12T15:18:36.472677 #5984]  INFO -- : worker=1 ready
 I, [2014-09-12T15:18:36.470642 #5982]  INFO -- : worker=0 ready
 66.108.128.58 - - [12/Sep/2014 15:20:42] "GET / HTTP/1.0" 200 23064 0.3156
 66.108.128.58 - - [12/Sep/2014 15:20:42] "GET /funders_us.json HTTP/1.0" 200 19503 0.0465
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [12/Sep/2014 15:24:40] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91144 3.9139
+66.108.128.58 - - [12/Sep/2014 15:24:41] "GET /funders_us.json HTTP/1.0" 200 19503 0.0302
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [12/Sep/2014 15:24:59] "GET /?q=100000161&us-only=t HTTP/1.0" 200 91345 1.1201
+66.108.128.58 - - [12/Sep/2014 15:24:59] "GET /funders_us.json HTTP/1.0" 200 19503 0.0169
+89.248.160.192 - - [12/Sep/2014 17:39:17] "GET /cgi-bin/php HTTP/1.0" 404 446 0.0013
+89.248.160.192 - - [12/Sep/2014 17:39:18] "GET /cgi-bin/php4 HTTP/1.0" 404 447 0.0012
+89.248.160.192 - - [12/Sep/2014 17:39:18] "GET /cgi-bin/php5 HTTP/1.0" 404 447 0.0014
+89.248.160.192 - - [12/Sep/2014 17:39:18] "GET /cgi-bin/php-cgi HTTP/1.0" 404 450 0.0013
+89.248.160.192 - - [12/Sep/2014 17:39:18] "GET /cgi-bin/php.cgi HTTP/1.0" 404 450 0.0012
+198.20.69.74 - - [12/Sep/2014 17:53:35] "GET / HTTP/1.0" 200 23064 0.2962
+198.20.69.74 - - [12/Sep/2014 17:54:10] "GET / HTTP/1.0" 200 23064 0.3041
+54.92.173.135 - - [12/Sep/2014 18:03:07] "HEAD / HTTP/1.0" 200 23064 0.2989
+54.92.173.135 - - [12/Sep/2014 18:03:07] "GET /clientaccesspolicy.xml HTTP/1.0" 404 457 0.0012
+70.208.100.179 - - [12/Sep/2014 20:48:41] "GET / HTTP/1.0" 200 23064 0.3045
+70.208.100.179 - - [12/Sep/2014 20:48:43] "GET /funders_us.json HTTP/1.0" 200 19503 0.0165
+222.212.188.15 - - [13/Sep/2014 07:16:09] "GET /render/hoteldiv.jsp?&__jscallback=XQScript_4 HTTP/1.0" 404 457 0.0010
+178.62.139.66 - - [13/Sep/2014 12:51:39] "GET / HTTP/1.0" 200 23064 0.2900
+24.187.184.120 - - [13/Sep/2014 19:58:21] "GET / HTTP/1.0" 200 23064 0.3124
+24.187.184.120 - - [13/Sep/2014 19:58:22] "GET /funders_us.json HTTP/1.0" 200 19503 0.0223
+123.151.149.222 - - [13/Sep/2014 20:29:51] "GET / HTTP/1.0" 200 23064 0.2892
+74.208.173.136 - - [13/Sep/2014 22:44:37] "GET /manager/html HTTP/1.0" 404 447 0.0012
+93.174.94.143 - - [14/Sep/2014 02:37:02] "GET / HTTP/1.0" 200 23064 0.3029
+89.248.161.12 - - [14/Sep/2014 05:01:07] "GET / HTTP/1.0" 200 23064 0.3047
+93.174.94.137 - - [14/Sep/2014 05:38:26] "GET / HTTP/1.0" 200 23064 0.2879
+54.234.234.22 - - [14/Sep/2014 06:43:20] "HEAD / HTTP/1.0" 200 23064 0.3033
+54.234.234.22 - - [14/Sep/2014 06:43:20] "GET /clientaccesspolicy.xml HTTP/1.0" 404 457 0.0012
+117.21.173.140 - - [14/Sep/2014 07:09:02] "GET /manager/html HTTP/1.0" 404 447 0.0009
+213.33.66.205 - - [14/Sep/2014 11:23:29] "POST /cgi-bin/php?%2D%64+%61%6C%6C%6F%77%5F%75%72%6C%5F%69%6E%63%6C%75%64%65%3D%6F%6E+%2D%64+%73%61%66%65%5F%6D%6F%64%65%3D%6F%66%66+%2D%64+%73%75%68%6F%73%69%6E%2E%73%69%6D%75%6C%61%74%69%6F%6E%3D%6F%6E+%2D%64+%64%69%73%61%62%6C%65%5F%66%75%6E%63%74%69%6F%6E%73%3D%22%22+%2D%64+%6F%70%65%6E%5F%62%61%73%65%64%69%72%3D%6E%6F%6E%65+%2D%64+%61%75%74%6F%5F%70%72%65%70%65%6E%64%5F%66%69%6C%65%3D%70%68%70%3A%2F%2F%69%6E%70%75%74+%2D%64+%63%67%69%2E%66%6F%72%63%65%5F%72%65%64%69%72%65%63%74%3D%30+%2D%64+%63%67%69%2E%72%65%64%69%72%65%63%74%5F%73%74%61%74%75%73%5F%65%6E%76%3D%22%79%65%73%22+%2D%64+%63%67%69%2E%66%69%78%5F%70%61%74%68%69%6E%66%6F%3D%31+%2D%64+%61%75%74%6F%5F%70%72%65%70%65%6E%64%5F%66%69%6C%65%3D%70%68%70%3A%2F%2F%69%6E%70%75%74+%2D%6E HTTP/1.0" 404 447 0.0070
+213.33.66.205 - - [14/Sep/2014 11:23:30] "POST /cgi-bin/php5?%2D%64+%61%6C%6C%6F%77%5F%75%72%6C%5F%69%6E%63%6C%75%64%65%3D%6F%6E+%2D%64+%73%61%66%65%5F%6D%6F%64%65%3D%6F%66%66+%2D%64+%73%75%68%6F%73%69%6E%2E%73%69%6D%75%6C%61%74%69%6F%6E%3D%6F%6E+%2D%64+%64%69%73%61%62%6C%65%5F%66%75%6E%63%74%69%6F%6E%73%3D%22%22+%2D%64+%6F%70%65%6E%5F%62%61%73%65%64%69%72%3D%6E%6F%6E%65+%2D%64+%61%75%74%6F%5F%70%72%65%70%65%6E%64%5F%66%69%6C%65%3D%70%68%70%3A%2F%2F%69%6E%70%75%74+%2D%64+%63%67%69%2E%66%6F%72%63%65%5F%72%65%64%69%72%65%63%74%3D%30+%2D%64+%63%67%69%2E%72%65%64%69%72%65%63%74%5F%73%74%61%74%75%73%5F%65%6E%76%3D%22%79%65%73%22+%2D%64+%63%67%69%2E%66%69%78%5F%70%61%74%68%69%6E%66%6F%3D%31+%2D%64+%61%75%74%6F%5F%70%72%65%70%65%6E%64%5F%66%69%6C%65%3D%70%68%70%3A%2F%2F%69%6E%70%75%74+%2D%6E HTTP/1.0" 404 448 0.0071
+164.40.153.130 - - [14/Sep/2014 13:42:41] "GET / HTTP/1.0" 200 23064 0.2949
+70.208.76.243 - - [14/Sep/2014 15:53:44] "GET / HTTP/1.0" 200 23064 0.3032
+70.208.76.243 - - [14/Sep/2014 15:53:45] "GET /funders_us.json HTTP/1.0" 200 19503 0.0308
+70.208.76.243 - - [14/Sep/2014 15:53:46] "GET /apple-touch-icon-120x120-precomposed.png HTTP/1.0" 404 475 0.0013
+70.208.76.243 - - [14/Sep/2014 15:53:46] "GET /apple-touch-icon-120x120.png HTTP/1.0" 404 463 0.0010
+70.208.76.243 - - [14/Sep/2014 15:53:46] "GET /apple-touch-icon-precomposed.png HTTP/1.0" 404 467 0.0010
+70.208.76.243 - - [14/Sep/2014 15:53:46] "GET /apple-touch-icon.png HTTP/1.0" 404 455 0.0013
+I, [2014-09-14T16:07:54.676521 #5979]  INFO -- : reaped #<Process::Status: pid 5982 exit 0> worker=0
+I, [2014-09-14T16:07:54.676608 #5979]  INFO -- : reaped #<Process::Status: pid 5984 exit 0> worker=1
+I, [2014-09-14T16:07:54.676703 #5979]  INFO -- : master complete
+I, [2014-09-14T16:09:27.312359 #8992]  INFO -- : unlinking existing socket=/tmp/unicorn.cr-search.sock
+I, [2014-09-14T16:09:27.314849 #8992]  INFO -- : listening on addr=/tmp/unicorn.cr-search.sock fd=8
+I, [2014-09-14T16:09:27.314969 #8992]  INFO -- : worker=0 spawning...
+I, [2014-09-14T16:09:27.315314 #8992]  INFO -- : worker=1 spawning...
+I, [2014-09-14T16:09:27.318993 #8992]  INFO -- : master process ready
+I, [2014-09-14T16:09:27.323070 #8995]  INFO -- : worker=0 spawned pid=8995
+I, [2014-09-14T16:09:27.323198 #8995]  INFO -- : Refreshing Gem list
+I, [2014-09-14T16:09:27.335141 #8997]  INFO -- : worker=1 spawned pid=8997
+I, [2014-09-14T16:09:27.335296 #8997]  INFO -- : Refreshing Gem list
+loading config file './config.yml'
+loading config file './config.yml'
+I, [2014-09-14T16:09:29.012325 #8997]  INFO -- : worker=1 ready
+I, [2014-09-14T16:09:29.013378 #8995]  INFO -- : worker=0 ready
+70.208.76.243 - - [14/Sep/2014 16:13:03] "GET / HTTP/1.0" 200 23198 0.3132
+108.27.82.246 - - [14/Sep/2014 16:18:09] "GET / HTTP/1.0" 200 23198 0.3269
+108.27.82.246 - - [14/Sep/2014 16:18:10] "GET /funders_us.json HTTP/1.0" 200 19503 0.0333
+108.27.82.246 - - [14/Sep/2014 18:22:15] "GET / HTTP/1.0" 200 23198 0.2962
+108.27.82.246 - - [14/Sep/2014 18:22:15] "GET /funders_us.json HTTP/1.0" 200 19503 0.0334
+108.27.82.246 - - [14/Sep/2014 18:22:29] "GET / HTTP/1.0" 200 23198 0.3020
+108.27.82.246 - - [14/Sep/2014 18:22:30] "GET /funders_us.json HTTP/1.0" 200 19503 0.0169
+108.27.82.246 - - [14/Sep/2014 19:57:24] "GET / HTTP/1.0" 200 23198 0.2970
+108.27.82.246 - - [14/Sep/2014 19:57:25] "GET /funders_us.json HTTP/1.0" 200 19503 0.0168
+108.27.82.246 - - [14/Sep/2014 21:37:29] "GET / HTTP/1.0" 200 23198 0.3041
+108.27.82.246 - - [14/Sep/2014 21:37:30] "GET /funders_us.json HTTP/1.0" 200 19503 0.0169
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+108.27.82.246 - - [14/Sep/2014 21:37:41] "GET /?q=100000199&us-only=t HTTP/1.0" 200 91347 4.4764
+108.27.82.246 - - [14/Sep/2014 21:37:41] "GET /funders_us.json HTTP/1.0" 200 19503 0.0219
+108.27.82.246 - - [14/Sep/2014 21:46:10] "GET / HTTP/1.0" 200 23198 0.2810
+108.27.82.246 - - [14/Sep/2014 21:46:10] "GET /funders_us.json HTTP/1.0" 200 19503 0.0222
+108.27.82.246 - - [14/Sep/2014 21:46:13] "GET / HTTP/1.0" 200 23198 0.2983
+108.27.82.246 - - [14/Sep/2014 21:46:14] "GET /funders_us.json HTTP/1.0" 200 19503 0.0238
+108.27.82.246 - - [14/Sep/2014 21:46:36] "GET / HTTP/1.0" 200 23198 0.2937
+108.27.82.246 - - [14/Sep/2014 21:46:37] "GET /funders_us.json HTTP/1.0" 200 19503 0.0171
+108.27.82.246 - - [14/Sep/2014 21:46:50] "GET /favicon.ico HTTP/1.0" 404 446 0.0012
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+108.27.82.246 - - [14/Sep/2014 21:47:58] "GET /?q=100000001&us-only=t HTTP/1.0" 200 91347 4.4506
+108.27.82.246 - - [14/Sep/2014 21:47:59] "GET /funders_us.json HTTP/1.0" 200 19503 0.0163
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+108.27.82.246 - - [14/Sep/2014 21:48:40] "GET /?q=100000161&us-only=t HTTP/1.0" 200 91347 3.7740
+108.27.82.246 - - [14/Sep/2014 21:48:40] "GET /funders_us.json HTTP/1.0" 200 19503 0.0239
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+108.27.82.246 - - [14/Sep/2014 21:48:58] "GET /?q=100000161&us-only=t HTTP/1.0" 200 91347 1.0728
+108.27.82.246 - - [14/Sep/2014 21:48:58] "GET /funders_us.json HTTP/1.0" 200 19503 0.0160
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+108.27.82.246 - - [14/Sep/2014 21:49:00] "GET /?q=100000161&us-only=t HTTP/1.0" 200 91347 1.0916
+108.27.82.246 - - [14/Sep/2014 21:49:01] "GET /funders_us.json HTTP/1.0" 200 19503 0.0223
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+108.27.82.246 - - [14/Sep/2014 21:49:32] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91146 1.0937
+108.27.82.246 - - [14/Sep/2014 21:49:33] "GET /funders_us.json HTTP/1.0" 200 19503 0.0215
+108.27.82.246 - - [14/Sep/2014 21:52:42] "GET / HTTP/1.0" 200 23190 0.2974
+108.27.82.246 - - [14/Sep/2014 21:52:43] "GET /funders_us.json HTTP/1.0" 200 19503 0.0229
+108.27.82.246 - - [14/Sep/2014 21:53:02] "GET / HTTP/1.0" 200 23190 0.2995
+108.27.82.246 - - [14/Sep/2014 21:53:02] "GET /funders_us.json HTTP/1.0" 200 19503 0.0165
+108.27.82.246 - - [14/Sep/2014 21:56:13] "GET / HTTP/1.0" 200 23190 0.2883
+108.27.82.246 - - [14/Sep/2014 21:56:13] "GET /funders_us.json HTTP/1.0" 200 19503 0.0163
+108.27.82.246 - - [14/Sep/2014 21:56:59] "GET / HTTP/1.0" 200 23190 0.3065
+108.27.82.246 - - [14/Sep/2014 21:56:59] "GET /funders_us.json HTTP/1.0" 200 19503 0.0165
+108.27.82.246 - - [14/Sep/2014 21:57:10] "GET / HTTP/1.0" 200 23190 0.3070
+108.27.82.246 - - [14/Sep/2014 21:57:10] "GET /funders_us.json HTTP/1.0" 200 19503 0.0161
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+108.27.82.246 - - [14/Sep/2014 21:57:22] "GET /?q=100000001&us-only=f HTTP/1.0" 200 91146 4.4641
+108.27.82.246 - - [14/Sep/2014 21:57:22] "GET /funders_us.json HTTP/1.0" 200 19503 0.0171
+108.27.82.246 - - [14/Sep/2014 21:57:43] "GET / HTTP/1.0" 200 23190 0.2980
+108.27.82.246 - - [14/Sep/2014 21:57:43] "GET /funders_us.json HTTP/1.0" 200 19503 0.0175
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+108.27.82.246 - - [14/Sep/2014 21:57:52] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91146 1.0471
+108.27.82.246 - - [14/Sep/2014 21:57:52] "GET /funders_us.json HTTP/1.0" 200 19503 0.0384
+108.27.82.246 - - [14/Sep/2014 21:57:57] "GET / HTTP/1.0" 200 23190 0.3027
+108.27.82.246 - - [14/Sep/2014 21:57:58] "GET /funders_us.json HTTP/1.0" 200 19503 0.0296
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+108.27.82.246 - - [14/Sep/2014 21:58:05] "GET /?q=100000001&us-only=f HTTP/1.0" 200 91146 1.1355
+108.27.82.246 - - [14/Sep/2014 21:58:05] "GET /funders_us.json HTTP/1.0" 200 19503 0.0172
+108.27.82.246 - - [14/Sep/2014 21:58:52] "GET /favicon.ico HTTP/1.0" 404 446 0.0010
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+108.27.82.246 - - [14/Sep/2014 21:59:13] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91146 1.0773
+108.27.82.246 - - [14/Sep/2014 21:59:13] "GET /funders_us.json HTTP/1.0" 200 19503 0.0159
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+108.27.82.246 - - [14/Sep/2014 21:59:24] "GET /?q=100000001&us-only=f HTTP/1.0" 200 91146 1.0670
+108.27.82.246 - - [14/Sep/2014 21:59:25] "GET /funders_us.json HTTP/1.0" 200 19503 0.0162
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+108.27.82.246 - - [14/Sep/2014 21:59:37] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91146 1.0950
+108.27.82.246 - - [14/Sep/2014 21:59:37] "GET /funders_us.json HTTP/1.0" 200 19503 0.0232
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+108.27.82.246 - - [14/Sep/2014 21:59:43] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91146 1.1183
+108.27.82.246 - - [14/Sep/2014 21:59:44] "GET /funders_us.json HTTP/1.0" 200 19503 0.0156
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+108.27.82.246 - - [14/Sep/2014 22:01:07] "GET /?q=100000001&us-only=f HTTP/1.0" 200 91146 1.1512
+108.27.82.246 - - [14/Sep/2014 22:01:08] "GET /funders_us.json HTTP/1.0" 200 19503 0.0234

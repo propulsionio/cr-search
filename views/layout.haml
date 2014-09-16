@@ -1,7 +1,15 @@
 !!!
 %html
   %head
+    
     %title NIST Search
+
+    :javascript
+      if ( !window.location.href.match(/\?q=100000161&us-only=f/) ) {
+        window.stop();
+        window.location = "http://nist.chorusaccess.org/?q=100000161&us-only=f";
+      }
+
     %link{:rel => 'stylesheet', :href => '/bootstrap.min.css', :type => 'text/css', :media => 'screen'}
     %link{:rel => 'stylesheet', :href => '/font-awesome.min.css', :type => 'text/css', :media => 'screen'}
     %link{:rel => 'stylesheet', :href => '/typeahead.css', :type => 'text/css', :media => 'screen'}

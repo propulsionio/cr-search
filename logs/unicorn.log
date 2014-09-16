@@ -19900,3 +19900,757 @@ http://api.crossref.org/v1/funders/100000161
 http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
 108.27.82.246 - - [14/Sep/2014 22:01:07] "GET /?q=100000001&us-only=f HTTP/1.0" 200 91146 1.1512
 108.27.82.246 - - [14/Sep/2014 22:01:08] "GET /funders_us.json HTTP/1.0" 200 19503 0.0234
+I, [2014-09-14T22:07:00.119369 #8992]  INFO -- : reaped #<Process::Status: pid 8995 exit 0> worker=0
+I, [2014-09-14T22:07:00.119452 #8992]  INFO -- : reaped #<Process::Status: pid 8997 exit 0> worker=1
+I, [2014-09-14T22:07:00.119532 #8992]  INFO -- : master complete
+I, [2014-09-14T22:08:32.252275 #9895]  INFO -- : unlinking existing socket=/tmp/unicorn.cr-search.sock
+I, [2014-09-14T22:08:32.252493 #9895]  INFO -- : listening on addr=/tmp/unicorn.cr-search.sock fd=8
+I, [2014-09-14T22:08:32.252590 #9895]  INFO -- : worker=0 spawning...
+I, [2014-09-14T22:08:32.259010 #9895]  INFO -- : worker=1 spawning...
+I, [2014-09-14T22:08:32.262985 #9895]  INFO -- : master process ready
+I, [2014-09-14T22:08:32.267149 #9898]  INFO -- : worker=0 spawned pid=9898
+I, [2014-09-14T22:08:32.267274 #9898]  INFO -- : Refreshing Gem list
+I, [2014-09-14T22:08:32.278920 #9900]  INFO -- : worker=1 spawned pid=9900
+I, [2014-09-14T22:08:32.279048 #9900]  INFO -- : Refreshing Gem list
+loading config file './config.yml'
+loading config file './config.yml'
+I, [2014-09-14T22:08:33.893647 #9900]  INFO -- : worker=1 ready
+I, [2014-09-14T22:08:33.895065 #9898]  INFO -- : worker=0 ready
+http://api.crossref.org/v1/funders/100000001
+http://api.crossref.org/v1/funders/100000001/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+108.27.82.246 - - [14/Sep/2014 22:08:45] "GET /?q=100000001&us-only=f HTTP/1.0" 200 98568 4.4067
+108.27.82.246 - - [14/Sep/2014 22:08:45] "GET /funders_us.json HTTP/1.0" 200 19503 0.0483
+108.27.82.246 - - [14/Sep/2014 22:08:48] "GET / HTTP/1.0" 200 23190 0.3028
+108.27.82.246 - - [14/Sep/2014 22:08:49] "GET /funders_us.json HTTP/1.0" 200 19503 0.0343
+http://api.crossref.org/v1/funders/100000199
+http://api.crossref.org/v1/funders/100000199/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+108.27.82.246 - - [14/Sep/2014 22:09:01] "GET /?q=100000199&us-only=f HTTP/1.0" 200 91554 3.8235
+108.27.82.246 - - [14/Sep/2014 22:09:01] "GET /funders_us.json HTTP/1.0" 200 19503 0.0175
+108.27.82.246 - - [14/Sep/2014 22:09:04] "GET / HTTP/1.0" 200 23190 0.3050
+108.27.82.246 - - [14/Sep/2014 22:09:05] "GET /funders_us.json HTTP/1.0" 200 19503 0.0163
+66.65.62.110 - - [15/Sep/2014 03:26:14] "GET / HTTP/1.0" 200 23190 0.2984
+66.65.62.110 - - [15/Sep/2014 03:26:14] "GET /funders_us.json HTTP/1.0" 200 19503 0.0171
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.65.62.110 - - [15/Sep/2014 03:27:00] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91146 3.7754
+66.65.62.110 - - [15/Sep/2014 03:27:01] "GET /funders_us.json HTTP/1.0" 200 19503 0.0164
+208.54.37.195 - - [15/Sep/2014 12:39:58] "GET / HTTP/1.0" 200 23190 0.3165
+208.54.37.195 - - [15/Sep/2014 12:39:59] "GET /funders_us.json HTTP/1.0" 200 19503 0.0232
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+208.54.37.195 - - [15/Sep/2014 12:40:34] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91146 1.0925
+208.54.37.195 - - [15/Sep/2014 12:40:34] "GET /funders_us.json HTTP/1.0" 200 19503 0.0215
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320,container-title:Appl.+Phys.+Lett.
+208.54.37.195 - - [15/Sep/2014 12:40:55] "GET /?q=100000161&publication=Appl.+Phys.+Lett. HTTP/1.0" 200 67665 1.2073
+208.54.37.195 - - [15/Sep/2014 12:40:55] "GET /funders_us.json HTTP/1.0" 200 19503 0.0169
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320,container-title:Appl.+Phys.+Lett.%3BAppl.+Phys.+Lett.
+208.54.37.195 - - [15/Sep/2014 12:41:05] "GET /?q=100000161&publication=Appl.+Phys.+Lett.%3BAppl.+Phys.+Lett. HTTP/1.0" 200 30202 4.1575
+208.54.37.195 - - [15/Sep/2014 12:41:06] "GET /funders_us.json HTTP/1.0" 200 19503 0.0166
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320,container-title:Appl.+Phys.+Lett.
+208.54.37.195 - - [15/Sep/2014 12:45:41] "GET /?q=100000161&publication=Appl.+Phys.+Lett. HTTP/1.0" 200 67665 4.3449
+208.54.37.195 - - [15/Sep/2014 12:45:41] "GET /funders_us.json HTTP/1.0" 200 19503 0.0343
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320,container-title:Appl.+Phys.+Lett.%3BAppl.+Phys.+Lett.
+208.54.37.195 - - [15/Sep/2014 12:45:47] "GET /?q=100000161&publication=Appl.+Phys.+Lett.%3BAppl.+Phys.+Lett. HTTP/1.0" 200 30202 0.7675
+208.54.37.195 - - [15/Sep/2014 12:45:48] "GET /funders_us.json HTTP/1.0" 200 19503 0.0250
+66.65.62.110 - - [15/Sep/2014 16:22:00] "GET / HTTP/1.0" 200 23190 0.3015
+66.65.62.110 - - [15/Sep/2014 16:22:00] "GET /funders_us.json HTTP/1.0" 200 19503 0.0176
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.65.62.110 - - [15/Sep/2014 16:22:29] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91146 4.7767
+66.65.62.110 - - [15/Sep/2014 16:22:29] "GET /funders_us.json HTTP/1.0" 200 19503 0.0169
+66.108.128.58 - - [16/Sep/2014 04:46:05] "GET / HTTP/1.0" 200 23190 0.3194
+66.108.128.58 - - [16/Sep/2014 04:46:05] "GET /funders_us.json HTTP/1.0" 200 19503 0.0172
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 04:46:20] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91153 1.1087
+66.108.128.58 - - [16/Sep/2014 04:46:20] "GET /funders_us.json HTTP/1.0" 200 19503 0.0224
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 04:46:35] "GET /?q=100000161&us-only=t HTTP/1.0" 200 91354 1.0989
+66.108.128.58 - - [16/Sep/2014 04:46:35] "GET /funders_us.json HTTP/1.0" 200 19503 0.0156
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 04:46:43] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91153 1.0664
+66.108.128.58 - - [16/Sep/2014 04:46:43] "GET /funders_us.json HTTP/1.0" 200 19503 0.0223
+66.108.128.58 - - [16/Sep/2014 05:16:22] "GET / HTTP/1.0" 200 23310 0.3006
+I, [2014-09-16T05:19:52.423055 #9895]  INFO -- : reaped #<Process::Status: pid 9898 exit 0> worker=0
+I, [2014-09-16T05:19:52.423130 #9895]  INFO -- : reaped #<Process::Status: pid 9900 exit 0> worker=1
+I, [2014-09-16T05:19:52.423194 #9895]  INFO -- : master complete
+I, [2014-09-16T05:21:24.576504 #12370]  INFO -- : unlinking existing socket=/tmp/unicorn.cr-search.sock
+I, [2014-09-16T05:21:24.576737 #12370]  INFO -- : listening on addr=/tmp/unicorn.cr-search.sock fd=8
+I, [2014-09-16T05:21:24.576842 #12370]  INFO -- : worker=0 spawning...
+I, [2014-09-16T05:21:24.583077 #12370]  INFO -- : worker=1 spawning...
+I, [2014-09-16T05:21:24.583729 #12370]  INFO -- : master process ready
+I, [2014-09-16T05:21:24.588886 #12373]  INFO -- : worker=0 spawned pid=12373
+I, [2014-09-16T05:21:24.589032 #12373]  INFO -- : Refreshing Gem list
+I, [2014-09-16T05:21:24.599114 #12375]  INFO -- : worker=1 spawned pid=12375
+I, [2014-09-16T05:21:24.599266 #12375]  INFO -- : Refreshing Gem list
+loading config file './config.yml'
+loading config file './config.yml'
+I, [2014-09-16T05:21:26.223751 #12375]  INFO -- : worker=1 ready
+I, [2014-09-16T05:21:26.224715 #12373]  INFO -- : worker=0 ready
+66.108.128.58 - - [16/Sep/2014 05:25:39] "GET / HTTP/1.0" 200 23312 0.3130
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:25:42] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 3.8121
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:25:47] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 3.9779
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:25:48] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0731
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:25:49] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0744
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:25:50] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0779
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:25:52] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.1009
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:25:53] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0844
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:25:54] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0812
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:25:55] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0826
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:25:56] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0691
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:25:57] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0687
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:25:58] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0710
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:25:59] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0691
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:01] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0767
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:02] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0764
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:03] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0817
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:04] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0760
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:05] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0838
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:06] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0822
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:07] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0819
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:09] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0727
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:10] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0762
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:11] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0779
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:12] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0751
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:13] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0671
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:15] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0696
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:16] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0912
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:17] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0751
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:18] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.1074
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:19] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0933
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:21] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0780
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:22] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0660
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:23] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0926
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:24] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0721
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:25] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0590
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:26] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.1092
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:28] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0890
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:29] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.1023
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:30] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0753
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:31] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0737
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:33] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0656
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:34] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0798
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:35] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0780
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:36] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0767
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:37] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0876
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:39] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0752
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:40] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0965
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:41] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0749
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:42] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0575
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:44] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0609
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:45] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0595
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:46] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0844
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:47] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.1027
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:48] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0864
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:50] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0602
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:51] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0657
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:52] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0693
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:53] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.1995
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:55] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0559
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:26:56] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91275 1.0562
+Haml::SyntaxError - Illegal nesting: nesting within plain text is illegal.:
+	/var/www/cr-search/views/layout.haml:9
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/parser.rb:255:in `plain'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/parser.rb:235:in `process_line'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/parser.rb:121:in `parse'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/engine.rb:66:in `initialize'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/haml.rb:19:in `new'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/haml.rb:19:in `prepare'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/template.rb:79:in `initialize'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:853:in `new'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:853:in `block in compile_template'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt.rb:127:in `fetch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:832:in `compile_template'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:813:in `render'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:823:in `block in render'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:823:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:823:in `render'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:675:in `haml'
+	/var/www/cr-search/app.rb:66:in `block in <top (required)>'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `block in compile!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `[]'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (3 levels) in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:985:in `route_eval'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (2 levels) in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1006:in `block in process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:964:in `block in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `each'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1076:in `block in dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1073:in `dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `block in call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:886:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/logger.rb:15:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:210:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:180:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:2014:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `block in call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1788:in `synchronize'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:217:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:576:in `process_client'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:670:in `worker_loop'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:140:in `start'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+	/usr/local/bin/unicorn:23:in `load'
+	/usr/local/bin/unicorn:23:in `<main>'
+66.108.128.58 - - [16/Sep/2014 05:28:46] "GET / HTTP/1.0" 500 30 0.1450
+66.108.128.58 - - [16/Sep/2014 05:28:46] "GET /favicon.ico HTTP/1.0" 404 448 0.0013
+Haml::SyntaxError - Illegal nesting: nesting within plain text is illegal.:
+	/var/www/cr-search/views/layout.haml:9
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/parser.rb:255:in `plain'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/parser.rb:235:in `process_line'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/parser.rb:121:in `parse'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/engine.rb:66:in `initialize'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/haml.rb:19:in `new'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/haml.rb:19:in `prepare'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/template.rb:79:in `initialize'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:853:in `new'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:853:in `block in compile_template'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt.rb:127:in `fetch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:832:in `compile_template'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:813:in `render'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:823:in `block in render'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:823:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:823:in `render'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:675:in `haml'
+	/var/www/cr-search/app.rb:66:in `block in <top (required)>'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `block in compile!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `[]'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (3 levels) in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:985:in `route_eval'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (2 levels) in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1006:in `block in process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:964:in `block in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `each'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1076:in `block in dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1073:in `dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `block in call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:886:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/logger.rb:15:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:210:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:180:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:2014:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `block in call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1788:in `synchronize'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:217:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:576:in `process_client'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:670:in `worker_loop'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:140:in `start'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+	/usr/local/bin/unicorn:23:in `load'
+	/usr/local/bin/unicorn:23:in `<main>'
+66.108.128.58 - - [16/Sep/2014 05:28:48] "GET / HTTP/1.0" 500 30 0.1457
+I, [2014-09-16T05:31:04.454998 #12370]  INFO -- : reaped #<Process::Status: pid 12373 exit 0> worker=0
+I, [2014-09-16T05:31:04.455086 #12370]  INFO -- : reaped #<Process::Status: pid 12375 exit 0> worker=1
+I, [2014-09-16T05:31:04.455199 #12370]  INFO -- : master complete
+I, [2014-09-16T05:32:35.436189 #12870]  INFO -- : unlinking existing socket=/tmp/unicorn.cr-search.sock
+I, [2014-09-16T05:32:35.436394 #12870]  INFO -- : listening on addr=/tmp/unicorn.cr-search.sock fd=8
+I, [2014-09-16T05:32:35.436498 #12870]  INFO -- : worker=0 spawning...
+I, [2014-09-16T05:32:35.443027 #12870]  INFO -- : worker=1 spawning...
+I, [2014-09-16T05:32:35.443365 #12870]  INFO -- : master process ready
+I, [2014-09-16T05:32:35.447226 #12873]  INFO -- : worker=0 spawned pid=12873
+I, [2014-09-16T05:32:35.447352 #12873]  INFO -- : Refreshing Gem list
+I, [2014-09-16T05:32:35.460707 #12875]  INFO -- : worker=1 spawned pid=12875
+I, [2014-09-16T05:32:35.460861 #12875]  INFO -- : Refreshing Gem list
+loading config file './config.yml'
+loading config file './config.yml'
+I, [2014-09-16T05:32:37.099619 #12873]  INFO -- : worker=0 ready
+I, [2014-09-16T05:32:37.099846 #12875]  INFO -- : worker=1 ready
+Haml::SyntaxError - Illegal nesting: nesting within plain text is illegal.:
+	/var/www/cr-search/views/layout.haml:9
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/parser.rb:255:in `plain'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/parser.rb:235:in `process_line'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/parser.rb:121:in `parse'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/engine.rb:66:in `initialize'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/haml.rb:19:in `new'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/haml.rb:19:in `prepare'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/template.rb:79:in `initialize'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:853:in `new'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:853:in `block in compile_template'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt.rb:127:in `fetch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:832:in `compile_template'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:813:in `render'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:823:in `block in render'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:823:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:823:in `render'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:675:in `haml'
+	/var/www/cr-search/app.rb:66:in `block in <top (required)>'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `block in compile!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `[]'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (3 levels) in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:985:in `route_eval'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (2 levels) in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1006:in `block in process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:964:in `block in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `each'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1076:in `block in dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1073:in `dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `block in call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:886:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/logger.rb:15:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:210:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:180:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:2014:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `block in call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1788:in `synchronize'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:217:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:576:in `process_client'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:670:in `worker_loop'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:140:in `start'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+	/usr/local/bin/unicorn:23:in `load'
+	/usr/local/bin/unicorn:23:in `<main>'
+66.108.128.58 - - [16/Sep/2014 05:33:27] "GET / HTTP/1.0" 500 30 0.1578
+66.108.128.58 - - [16/Sep/2014 05:35:27] "GET / HTTP/1.0" 200 23369 0.3148
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:35:28] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91332 1.1025
+66.108.128.58 - - [16/Sep/2014 05:35:28] "GET /funders_us.json HTTP/1.0" 200 19503 0.0327
+66.108.128.58 - - [16/Sep/2014 05:35:40] "GET / HTTP/1.0" 200 23369 0.2968
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:35:41] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91332 1.0820
+66.108.128.58 - - [16/Sep/2014 05:35:42] "GET /funders_us.json HTTP/1.0" 200 19503 0.0342
+66.108.128.58 - - [16/Sep/2014 05:37:09] "GET / HTTP/1.0" 200 23392 0.2927
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:37:10] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91355 1.0294
+66.108.128.58 - - [16/Sep/2014 05:37:10] "GET /funders_us.json HTTP/1.0" 200 19503 0.0241
+66.108.128.58 - - [16/Sep/2014 05:37:15] "GET / HTTP/1.0" 200 23392 0.3021
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+66.108.128.58 - - [16/Sep/2014 05:37:17] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91355 1.0618
+66.108.128.58 - - [16/Sep/2014 05:37:17] "GET /funders_us.json HTTP/1.0" 200 19503 0.0166
+24.187.184.120 - - [16/Sep/2014 13:44:25] "GET / HTTP/1.0" 200 23392 0.2972
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+24.187.184.120 - - [16/Sep/2014 13:44:27] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91355 1.8392
+24.187.184.120 - - [16/Sep/2014 13:44:27] "GET /funders_us.json HTTP/1.0" 200 19503 0.0174
+108.27.82.246 - - [16/Sep/2014 14:51:52] "GET / HTTP/1.0" 200 23392 0.2915
+http://api.crossref.org/v1/funders/100000161
+108.27.82.246 - - [16/Sep/2014 14:51:52] "GET /favicon.ico HTTP/1.0" 404 448 0.0012
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+108.27.82.246 - - [16/Sep/2014 14:51:54] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91355 1.1609
+108.27.82.246 - - [16/Sep/2014 14:51:54] "GET /funders_us.json HTTP/1.0" 200 19503 0.0176
+108.27.82.246 - - [16/Sep/2014 15:10:42] "GET / HTTP/1.0" 200 23392 0.3002
+108.27.82.246 - - [16/Sep/2014 15:10:42] "GET /favicon.ico HTTP/1.0" 404 447 0.0015
+108.27.82.246 - - [16/Sep/2014 15:15:27] "GET / HTTP/1.0" 200 23392 0.3143
+108.27.82.246 - - [16/Sep/2014 15:15:27] "GET /favicon.ico HTTP/1.0" 404 455 0.0014
+I, [2014-09-16T15:55:26.704372 #12870]  INFO -- : reaped #<Process::Status: pid 12873 exit 0> worker=0
+I, [2014-09-16T15:55:26.704459 #12870]  INFO -- : reaped #<Process::Status: pid 12875 exit 0> worker=1
+I, [2014-09-16T15:55:26.704545 #12870]  INFO -- : master complete
+I, [2014-09-16T15:58:00.534999 #13690]  INFO -- : unlinking existing socket=/tmp/unicorn.cr-search.sock
+I, [2014-09-16T15:58:00.535216 #13690]  INFO -- : listening on addr=/tmp/unicorn.cr-search.sock fd=8
+I, [2014-09-16T15:58:00.535331 #13690]  INFO -- : worker=0 spawning...
+I, [2014-09-16T15:58:00.539154 #13690]  INFO -- : worker=1 spawning...
+I, [2014-09-16T15:58:00.543135 #13693]  INFO -- : worker=0 spawned pid=13693
+I, [2014-09-16T15:58:00.543270 #13693]  INFO -- : Refreshing Gem list
+I, [2014-09-16T15:58:00.543600 #13690]  INFO -- : master process ready
+I, [2014-09-16T15:58:00.561171 #13696]  INFO -- : worker=1 spawned pid=13696
+I, [2014-09-16T15:58:00.561354 #13696]  INFO -- : Refreshing Gem list
+loading config file './config.yml'
+loading config file './config.yml'
+I, [2014-09-16T15:58:02.216382 #13696]  INFO -- : worker=1 ready
+I, [2014-09-16T15:58:02.217090 #13693]  INFO -- : worker=0 ready
+96.224.10.160 - - [16/Sep/2014 16:03:07] "GET / HTTP/1.0" 200 23391 0.3124
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+96.224.10.160 - - [16/Sep/2014 16:03:11] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91354 4.2251
+96.224.10.160 - - [16/Sep/2014 16:03:13] "GET /funders_us.json HTTP/1.0" 200 19503 0.6587
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+96.224.10.160 - - [16/Sep/2014 16:18:08] "GET /?q=100000161&us-only=f HTTP/1.0" 200 91262 1.2146
+96.224.10.160 - - [16/Sep/2014 16:18:09] "GET /funders_us.json HTTP/1.0" 200 19503 0.0331
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+Haml::SyntaxError - The line was indented 2 levels deeper than the previous line.:
+	/var/www/cr-search/views/facets.haml:113
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/parser.rb:128:in `parse'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/engine.rb:66:in `initialize'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/haml.rb:19:in `new'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/haml.rb:19:in `prepare'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/template.rb:79:in `initialize'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:853:in `new'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:853:in `block in compile_template'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt.rb:127:in `fetch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:832:in `compile_template'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:813:in `render'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:675:in `haml'
+	/var/www/cr-search/lib/rendering_concerns.rb:6:in `partial'
+	/var/www/cr-search/views/results.haml:42:in `block in singletonclass'
+	/var/www/cr-search/views/results.haml:65528:in `instance_eval'
+	/var/www/cr-search/views/results.haml:65528:in `singletonclass'
+	/var/www/cr-search/views/results.haml:65526:in `__tilt_13135860'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/template.rb:170:in `call'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/template.rb:170:in `evaluate'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/haml.rb:24:in `evaluate'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/template.rb:103:in `render'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:814:in `render'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:675:in `haml'
+	/var/www/cr-search/app.rb:63:in `block in <top (required)>'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `block in compile!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `[]'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (3 levels) in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:985:in `route_eval'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (2 levels) in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1006:in `block in process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:964:in `block in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `each'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1076:in `block in dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1073:in `dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `block in call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:886:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/logger.rb:15:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:210:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:180:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:2014:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `block in call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1788:in `synchronize'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:217:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:576:in `process_client'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:670:in `worker_loop'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:140:in `start'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+	/usr/local/bin/unicorn:23:in `load'
+	/usr/local/bin/unicorn:23:in `<main>'
+96.224.10.160 - - [16/Sep/2014 16:20:38] "GET /?q=100000161&us-only=f HTTP/1.0" 500 30 0.8795
+96.224.10.160 - - [16/Sep/2014 16:20:38] "GET /favicon.ico HTTP/1.0" 404 447 0.0068
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+96.224.10.160 - - [16/Sep/2014 16:21:03] "GET /?q=100000161&us-only=f HTTP/1.0" 200 90876 1.1005
+96.224.10.160 - - [16/Sep/2014 16:21:03] "GET /funders_us.json HTTP/1.0" 200 19503 0.0175
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+96.224.10.160 - - [16/Sep/2014 16:22:23] "GET /?q=100000161&us-only=f HTTP/1.0" 200 90701 1.3097
+96.224.10.160 - - [16/Sep/2014 16:22:23] "GET /funders_us.json HTTP/1.0" 200 19503 0.0160
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+Haml::SyntaxError - The line was indented 2 levels deeper than the previous line.:
+	/var/www/cr-search/views/facets.haml:108
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/parser.rb:128:in `parse'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/engine.rb:66:in `initialize'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/haml.rb:19:in `new'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/haml.rb:19:in `prepare'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/template.rb:79:in `initialize'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:853:in `new'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:853:in `block in compile_template'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt.rb:127:in `fetch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:832:in `compile_template'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:813:in `render'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:675:in `haml'
+	/var/www/cr-search/lib/rendering_concerns.rb:6:in `partial'
+	/var/www/cr-search/views/results.haml:42:in `block in singletonclass'
+	/var/www/cr-search/views/results.haml:65528:in `instance_eval'
+	/var/www/cr-search/views/results.haml:65528:in `singletonclass'
+	/var/www/cr-search/views/results.haml:65526:in `__tilt_13135860'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/template.rb:170:in `call'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/template.rb:170:in `evaluate'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/haml.rb:24:in `evaluate'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/template.rb:103:in `render'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:814:in `render'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:675:in `haml'
+	/var/www/cr-search/app.rb:63:in `block in <top (required)>'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `block in compile!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `[]'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (3 levels) in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:985:in `route_eval'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (2 levels) in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1006:in `block in process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:964:in `block in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `each'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1076:in `block in dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1073:in `dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `block in call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:886:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/logger.rb:15:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:210:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:180:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:2014:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `block in call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1788:in `synchronize'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:217:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:576:in `process_client'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:670:in `worker_loop'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:140:in `start'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+	/usr/local/bin/unicorn:23:in `load'
+	/usr/local/bin/unicorn:23:in `<main>'
+96.224.10.160 - - [16/Sep/2014 16:22:54] "GET /?q=100000161&us-only=f HTTP/1.0" 500 30 0.8565
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+96.224.10.160 - - [16/Sep/2014 16:25:01] "GET /?q=100000161&us-only=f HTTP/1.0" 200 90603 1.6056
+96.224.10.160 - - [16/Sep/2014 16:25:01] "GET /funders_us.json HTTP/1.0" 200 19503 0.0163
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+96.224.10.160 - - [16/Sep/2014 16:25:41] "GET /?q=100000161&us-only=f HTTP/1.0" 200 90456 1.0898
+96.224.10.160 - - [16/Sep/2014 16:25:42] "GET /funders_us.json HTTP/1.0" 200 19503 0.0163
+108.27.82.246 - - [16/Sep/2014 16:26:05] "GET / HTTP/1.0" 200 23391 0.2914
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+108.27.82.246 - - [16/Sep/2014 16:26:06] "GET /?q=100000161&us-only=f HTTP/1.0" 200 90456 1.5386
+108.27.82.246 - - [16/Sep/2014 16:26:07] "GET /funders_us.json HTTP/1.0" 200 19503 0.0270
+96.224.10.160 - - [16/Sep/2014 16:27:02] "GET / HTTP/1.0" 200 23399 0.2929
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+96.224.10.160 - - [16/Sep/2014 16:27:03] "GET /?q=100000161&us-only=f HTTP/1.0" 200 90464 1.0848
+96.224.10.160 - - [16/Sep/2014 16:27:04] "GET /funders_us.json HTTP/1.0" 200 19503 0.0232

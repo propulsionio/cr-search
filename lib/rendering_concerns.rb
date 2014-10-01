@@ -22,12 +22,15 @@ module RenderingConcerns
   def render_funders m, names, indent, &block
     ks = m.keys
     ks.each do |k|
-      if m[k].keys == ['more']
-        block.call(indent + 1, k, names[k], true)
-      else
-        block.call(indent + 1, k, names[k], false)
-        render_funders(m[k], names, indent + 1, &block)
+      if (!m[k].is_a? Numeric) then
+        if m[k].keys.include? 'more'
+          block.call(indent + 1, k, names[k], true, m[k]['count'])
+        else
+          block.call(indent + 1, k, names[k], false, m[k]['count'])
+          render_funders(m[k], names, indent + 1, &block)
+        end
       end
+      
     end
   end
 

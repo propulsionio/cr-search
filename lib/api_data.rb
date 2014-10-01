@@ -9,7 +9,36 @@ module APIData
 
   def funder_hash(id)
     url = "#{API_URL}/funders/#{id}"
-    get_message(url)
+    funders = get_message(url)
+
+    parent_id = funders['hierarchy'].keys[0];
+    count_url = "#{API_URL}/funders/10.13039/#{parent_id}/works?rows=0&facet=funder-doi:*"
+    counts = get_message(count_url);
+   
+    values = Hash[counts['facets']['funder-doi']['values'].map {|k, v| [k.split("/").last, v]}]
+
+    if(funders['hierarchy'][parent_id] != nil) then
+      funders['hierarchy'][parent_id] = update_funder_hierarchy(funders['hierarchy'][parent_id], values)
+    end
+    
+    funders
+  end
+
+  def update_funder_hierarchy(hierarchy, values)
+    hierarchy.each do |key, value|
+      if values.has_key?(key) then         
+        hierarchy[key]['count'] = values[key];
+      elsif(key != 'count')
+        hierarchy[key]['count'] = 0;
+      end
+
+        if(key != 'count' && !hierarchy[key].empty? && !hierarchy[key].has_key?('more')) then
+          if(hierarchy[key].length > 1) then
+            update_funder_hierarchy(hierarchy[key], values);
+          end
+        end
+
+    end
   end
 
   def funder_works_hash(id)

@@ -103,16 +103,20 @@
       %h6
         %a{:href => link_to_funder(top_funder_id)}
           = render_top_funder_name(page[:nesting], page[:nesting_names])
-  - render_funders(rest_funder_nesting(page[:nesting]), page[:nesting_names], 0) do |indent, id, name, more|
+  - render_funders(rest_funder_nesting(page[:nesting]), page[:nesting_names], 0) do |indent, id, name, more, count|
     - if !page[:us_only] || (page[:us_only] && page[:us_only_funders_ids].include?(id))
       .funder{:class => "funder-level#{indent}", :style => "margin-left:#{(indent - 1) * 20}px;"}
         - if more
           .pull-right
             %span.funder-expand +
         - if id != page[:funder_id]
-          %a{:href => link_to_funder(id)}= name
+          %a{:href => link_to_funder(id)}
+            = name
+            %span.number= "(#{count})"
         - else
-          %span.funder-hl= name
+          %span.funder-hl
+            = name
+            %span.number= "(#{count})"
 
 .facets
   - page[:facets].each do |name, values|

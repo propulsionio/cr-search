@@ -43,6 +43,9 @@ a:hover {
   font-family: 'Open Sans', sans-serif;
   font-weight: normal;
 }
+.nav-list > .active > a{
+  background-color: rgb(137, 131, 190);
+}
 h1 {
   font-size: 4em;
   line-height: 1.2em;

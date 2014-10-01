@@ -13,6 +13,7 @@ module APIData
 
     parent_id = funders['hierarchy'].keys[0];
     count_url = "#{API_URL}/funders/10.13039/#{parent_id}/works?rows=0&facet=funder-doi:*"
+    count_url << filters
     counts = get_message(count_url);
    
     values = Hash[counts['facets']['funder-doi']['values'].map {|k, v| [k.split("/").last, v]}]

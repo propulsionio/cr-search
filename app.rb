@@ -11,6 +11,7 @@ Dir["lib/*.rb"].each { |file| require_relative file }
 
 config_file './config.yml'
 funder_ids_api_uri = settings.funders_ids_api
+funder_ids_json_uri = settings.funders_ids_json
 
 helpers do
   include RenderingConcerns, APIData, QueryParams, Facets
@@ -46,7 +47,7 @@ end
 
 get '/' do
   if params.has_key?('q')
-    funder = funder_hash(params['q'])
+    funder = funder_hash(params['q'], funder_ids_json_uri)
     works = funder_works_hash(params['q'])
     if params['us-only'] == 't'
       works['items'] = works['items'].select do |item|

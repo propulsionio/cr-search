@@ -7,11 +7,20 @@ module APIData
   API_URL = "http://api.crossref.org/v#{API_VERSION}"
   CHORUS_MEMBERS = [15, 16, 78, 179, 221, 221, 263, 286, 292, 301, 311, 316, 317, 320]
 
-  def funder_hash(id)
+  def funder_hash(id, funder_ids_url)
     url = "#{API_URL}/funders/#{id}"
     funders = get_message(url)
-
     parent_id = funders['hierarchy'].keys[0];
+
+    funder_descendants = "";
+    funder_ids = JSON.parse(fetch_us_only_funders(funder_ids_url))
+    funder_ids.each do |funder|
+      if(funder['id'] == parent_id.to_i) then
+        funder_descendants = funder
+        break
+      end
+    end
+
     count_url = "#{API_URL}/funders/10.13039/#{parent_id}/works?rows=0&facet=funder-doi:*"
     count_url << filters
     counts = get_message(count_url);
@@ -19,27 +28,53 @@ module APIData
     values = Hash[counts['facets']['funder-doi']['values'].map {|k, v| [k.split("/").last, v]}]
 
     if(funders['hierarchy'][parent_id] != nil) then
-      funders['hierarchy'][parent_id] = update_funder_hierarchy(funders['hierarchy'][parent_id], values)
+      funders['hierarchy'][parent_id] = update_funder_hierarchy(funders['hierarchy'][parent_id], values, funder_descendants)
     end
     
     funders
   end
 
-  def update_funder_hierarchy(hierarchy, values)
+  def update_funder_hierarchy(hierarchy, values, funder_descendants)
     hierarchy.each do |key, value|
-      if values.has_key?(key) then         
-        hierarchy[key]['count'] = values[key];
-      elsif(key != 'count')
-        hierarchy[key]['count'] = 0;
-      end
+      
+      if(hierarchy[key].empty?) then
+        hierarchy[key]['count'] = values[key] || 0;
 
-        if(key != 'count' && !hierarchy[key].empty? && !hierarchy[key].has_key?('more')) then
-          if(hierarchy[key].length > 1) then
-            update_funder_hierarchy(hierarchy[key], values);
+      elsif(hierarchy[key].has_key?('more')) then
+        descendants = []
+
+        funder_descendants['descendants'].each do |descendant|
+          if(descendant['id'] == key)
+            descendants << descendant
+            break
           end
         end
+        
+        hierarchy[key]['count'] = evaluate_funder_works_count(descendants, values, 0)
 
+      else
+        descendants = []
+
+        funder_descendants['descendants'].each do |descendant|
+          if(descendant['id'] == key)
+            descendants << descendant
+            break
+          end
+        end
+        update_funder_hierarchy(hierarchy[key], values, funder_descendants)
+        hierarchy[key]['count'] = evaluate_funder_works_count(descendants, values, 0)
+      end
     end
+  end
+
+  def evaluate_funder_works_count(descendants, values, count = 0)    
+    descendants.each do |descendant|
+      count += (values[descendant['id']] || 0)
+      if(descendant['descendants'].length > 0) then
+        count = evaluate_funder_works_count(descendant['descendants'], values, count)
+      end
+    end
+    return count
   end
 
   def funder_works_hash(id)

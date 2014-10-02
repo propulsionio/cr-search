@@ -81,6 +81,7 @@
     suggestionLayout = Hogan.compile("<p>{{name}} <small>{{location}}</small></p>")
     $("#search-input").typeahead null,
       name: "funders"
+      displayKey: "name"
       source: fundersRemote.ttAdapter()
       templates:
         suggestion: (d) ->

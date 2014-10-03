@@ -10,6 +10,7 @@ module APIData
   def funder_hash(id, funder_ids_url)
     url = "#{API_URL}/funders/#{id}"
     funders = get_message(url)
+
     parent_id = funders['hierarchy'].keys[0];
 
     funder_descendants = "";
@@ -43,24 +44,29 @@ module APIData
       elsif(hierarchy[key].has_key?('more')) then
         descendants = []
 
-        funder_descendants['descendants'].each do |descendant|
-          if(descendant['id'] == key)
-            descendants << descendant
-            break
+        if(funder_descendants['descendants'] != nil) then
+          funder_descendants['descendants'].each do |descendant|
+            if(descendant['id'] == key)
+              descendants << descendant
+              break
+            end
           end
-        end
+        end       
         
         hierarchy[key]['count'] = evaluate_funder_works_count(descendants, values, 0)
 
       else
         descendants = []
 
-        funder_descendants['descendants'].each do |descendant|
-          if(descendant['id'] == key)
-            descendants << descendant
-            break
+        if(funder_descendants['descendants'] != nil) then
+          funder_descendants['descendants'].each do |descendant|
+            if(descendant['id'] == key)
+              descendants << descendant
+              break
+            end
           end
         end
+        
         update_funder_hierarchy(hierarchy[key], values, funder_descendants)
         hierarchy[key]['count'] = evaluate_funder_works_count(descendants, values, 0)
       end
@@ -74,6 +80,7 @@ module APIData
         count = evaluate_funder_works_count(descendant['descendants'], values, count)
       end
     end
+
     return count
   end
 

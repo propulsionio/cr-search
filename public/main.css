@@ -64,6 +64,9 @@ h1 {
 .right-aligned {
   float: right;
 }
+.twitter-typeahead .tt-hint{
+  cursor: default !important;
+}
 .home-link, .home-link:visited, .home-link:hover {
   text-decoration: none;
   color: black;

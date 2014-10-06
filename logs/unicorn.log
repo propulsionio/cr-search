@@ -1476,3 +1476,92 @@ http://api.crossref.org/v1/funders/10.13039/100000001/works?rows=0&facet=funder-
 http://api.crossref.org/v1/funders/100000001/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:98,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
 96.232.16.91 - - [06/Oct/2014 16:03:53] "GET /?q=100000001&us-only=f HTTP/1.0" 200 103180 6.9844
 96.232.16.91 - - [06/Oct/2014 16:03:53] "GET /funders_us.json HTTP/1.0" 200 18211 0.3349
+I, [2014-10-06T16:32:43.552767 #16162]  INFO -- : unlinking existing socket=/tmp/unicorn.cr-search.sock
+I, [2014-10-06T16:32:43.553051 #16162]  INFO -- : listening on addr=/tmp/unicorn.cr-search.sock fd=8
+I, [2014-10-06T16:32:43.553177 #16162]  INFO -- : worker=0 spawning...
+I, [2014-10-06T16:32:43.553630 #16162]  INFO -- : worker=1 spawning...
+I, [2014-10-06T16:32:43.560939 #16162]  INFO -- : master process ready
+I, [2014-10-06T16:32:43.565689 #16165]  INFO -- : worker=0 spawned pid=16165
+I, [2014-10-06T16:32:43.565851 #16165]  INFO -- : Refreshing Gem list
+I, [2014-10-06T16:32:43.578074 #16167]  INFO -- : worker=1 spawned pid=16167
+I, [2014-10-06T16:32:43.578240 #16167]  INFO -- : Refreshing Gem list
+loading config file './config.yml'
+loading config file './config.yml'
+I, [2014-10-06T16:32:45.296406 #16165]  INFO -- : worker=0 ready
+I, [2014-10-06T16:32:45.302500 #16167]  INFO -- : worker=1 ready
+192.168.1.2 - - [06/Oct/2014 16:32:57] "GET / HTTP/1.0" 200 24030 0.4683
+192.168.1.2 - - [06/Oct/2014 16:32:57] "GET /funders_us.json HTTP/1.0" 200 18211 0.0849
+192.168.1.2 - - [06/Oct/2014 16:32:59] "GET / HTTP/1.0" 200 24030 0.2984
+192.168.1.2 - - [06/Oct/2014 16:32:59] "GET /funders_us.json HTTP/1.0" 200 18211 0.0467
+192.168.1.2 - - [06/Oct/2014 16:36:56] "GET / HTTP/1.0" 200 24030 0.2929
+192.168.1.2 - - [06/Oct/2014 16:36:56] "GET /funders_us.json HTTP/1.0" 200 18211 0.0118
+192.168.1.2 - - [06/Oct/2014 16:37:00] "GET / HTTP/1.0" 200 24030 0.2903
+192.168.1.2 - - [06/Oct/2014 16:37:00] "GET /funders_us.json HTTP/1.0" 200 18211 0.0146
+192.168.1.2 - - [06/Oct/2014 16:38:01] "GET / HTTP/1.0" 200 24030 0.2861
+192.168.1.2 - - [06/Oct/2014 16:38:01] "GET /funders_us.json HTTP/1.0" 200 18211 0.0144
+192.168.1.2 - - [06/Oct/2014 16:38:05] "GET / HTTP/1.0" 200 24030 0.5233
+192.168.1.2 - - [06/Oct/2014 16:38:05] "GET /funders_us.json HTTP/1.0" 200 18211 0.0496
+192.168.1.2 - - [06/Oct/2014 16:39:25] "GET / HTTP/1.0" 200 24030 0.5047
+192.168.1.2 - - [06/Oct/2014 16:39:25] "GET /funders_us.json HTTP/1.0" 200 18211 0.0140
+192.168.1.2 - - [06/Oct/2014 16:40:33] "GET / HTTP/1.0" 200 24030 0.3018
+192.168.1.2 - - [06/Oct/2014 16:40:34] "GET /funders_us.json HTTP/1.0" 200 18211 0.0251
+192.168.1.2 - - [06/Oct/2014 16:41:08] "GET / HTTP/1.0" 200 24030 0.2783
+192.168.1.2 - - [06/Oct/2014 16:41:08] "GET /funders_us.json HTTP/1.0" 200 18211 0.0132
+http://api.crossref.org/v1/funders/501100000305
+http://api.crossref.org/v1/funders/10.13039/501100000305/works?rows=0&facet=funder-doi:*&filter=member:15,member:16,member:78,member:98,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+http://api.crossref.org/v1/funders/501100000305/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:98,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+192.168.1.2 - - [06/Oct/2014 16:41:39] "GET /?q=501100000305&us-only=f HTTP/1.0" 200 29620 4.5075
+192.168.1.2 - - [06/Oct/2014 16:41:49] "GET / HTTP/1.0" 200 24030 0.4999
+192.168.1.2 - - [06/Oct/2014 16:41:49] "GET /funders_us.json HTTP/1.0" 200 18211 0.0175
+http://api.crossref.org/v1/funders/100000001
+http://api.crossref.org/v1/funders/10.13039/100000001/works?rows=0&facet=funder-doi:*&filter=member:15,member:16,member:78,member:98,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+http://api.crossref.org/v1/funders/100000001/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:98,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+192.168.1.2 - - [06/Oct/2014 16:42:57] "GET /?q=100000001&us-only=f HTTP/1.0" 200 103180 1.9669
+192.168.1.2 - - [06/Oct/2014 16:42:57] "GET /funders_us.json HTTP/1.0" 200 18211 0.0543
+http://api.crossref.org/v1/funders/100000083
+http://api.crossref.org/v1/funders/10.13039/100000001/works?rows=0&facet=funder-doi:*&filter=member:15,member:16,member:78,member:98,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+http://api.crossref.org/v1/funders/100000083/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:98,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+192.168.1.2 - - [06/Oct/2014 16:43:05] "GET /?q=100000083 HTTP/1.0" 200 96819 5.0229
+192.168.1.2 - - [06/Oct/2014 16:43:05] "GET /funders_us.json HTTP/1.0" 200 18211 0.0147
+http://api.crossref.org/v1/funders/100000083
+http://api.crossref.org/v1/funders/10.13039/100000001/works?rows=0&facet=funder-doi:*&filter=member:15,member:16,member:78,member:98,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+http://api.crossref.org/v1/funders/100000083/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:98,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+192.168.1.2 - - [06/Oct/2014 16:45:06] "GET /?q=100000083 HTTP/1.0" 200 96880 5.3023
+192.168.1.2 - - [06/Oct/2014 16:45:06] "GET /funders_us.json HTTP/1.0" 200 18211 0.0134
+192.168.1.2 - - [06/Oct/2014 16:46:59] "GET / HTTP/1.0" 200 24145 0.5969
+192.168.1.2 - - [06/Oct/2014 16:46:59] "GET / HTTP/1.0" 200 24145 0.6554
+192.168.1.2 - - [06/Oct/2014 16:46:59] "GET /funders_us.json HTTP/1.0" 200 18211 0.0408
+192.168.1.2 - - [06/Oct/2014 16:47:01] "GET / HTTP/1.0" 200 24145 0.5206
+192.168.1.2 - - [06/Oct/2014 16:47:01] "GET /funders_us.json HTTP/1.0" 200 18211 0.0119
+http://api.crossref.org/v1/funders/100003982
+http://api.crossref.org/v1/funders/10.13039/100003982/works?rows=0&facet=funder-doi:*&filter=member:15,member:16,member:78,member:98,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+http://api.crossref.org/v1/funders/100003982/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:98,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+192.168.1.2 - - [06/Oct/2014 16:47:22] "GET /?q=100003982&us-only=f HTTP/1.0" 200 34074 8.5259
+192.168.1.2 - - [06/Oct/2014 16:47:22] "GET /funders_us.json HTTP/1.0" 200 18211 0.0281
+http://api.crossref.org/v1/funders/100003982
+http://api.crossref.org/v1/funders/10.13039/100003982/works?rows=0&facet=funder-doi:*&filter=member:15,member:16,member:78,member:98,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320,category-name:Obstetrics+and+Gynaecology
+http://api.crossref.org/v1/funders/100003982/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:98,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320,category-name:Obstetrics+and+Gynaecology
+192.168.1.2 - - [06/Oct/2014 16:47:27] "GET /?q=100003982&category=Obstetrics+and+Gynaecology HTTP/1.0" 200 34327 1.7668
+192.168.1.2 - - [06/Oct/2014 16:47:27] "GET /funders_us.json HTTP/1.0" 200 18211 0.0184
+http://api.crossref.org/v1/funders/100000001
+http://api.crossref.org/v1/funders/10.13039/100000001/works?rows=0&facet=funder-doi:*&filter=member:15,member:16,member:78,member:98,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+http://api.crossref.org/v1/funders/100000001/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:98,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+192.168.1.2 - - [06/Oct/2014 16:47:45] "GET /?q=100000001&us-only=f HTTP/1.0" 200 103295 5.2065
+192.168.1.2 - - [06/Oct/2014 16:47:45] "GET /funders_us.json HTTP/1.0" 200 18211 0.0121
+http://api.crossref.org/v1/funders/100000083
+http://api.crossref.org/v1/funders/10.13039/100000001/works?rows=0&facet=funder-doi:*&filter=member:15,member:16,member:78,member:98,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+http://api.crossref.org/v1/funders/100000083/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:98,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+192.168.1.2 - - [06/Oct/2014 16:47:49] "GET /?q=100000083 HTTP/1.0" 200 96934 2.4156
+192.168.1.2 - - [06/Oct/2014 16:47:49] "GET /funders_us.json HTTP/1.0" 200 18211 0.0215
+192.168.1.2 - - [06/Oct/2014 16:54:31] "GET / HTTP/1.0" 200 24145 0.5234
+192.168.1.2 - - [06/Oct/2014 16:54:31] "GET /funders_us.json HTTP/1.0" 200 18211 0.0121
+http://api.crossref.org/v1/funders/100000001
+http://api.crossref.org/v1/funders/10.13039/100000001/works?rows=0&facet=funder-doi:*&filter=member:15,member:16,member:78,member:98,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+http://api.crossref.org/v1/funders/100000001/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:98,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+192.168.1.2 - - [06/Oct/2014 17:02:59] "GET /?q=100000001&us-only=f HTTP/1.0" 200 103295 8.0492
+192.168.1.2 - - [06/Oct/2014 17:03:00] "GET /funders_us.json HTTP/1.0" 200 18211 0.0112
+http://api.crossref.org/v1/funders/100000083
+http://api.crossref.org/v1/funders/10.13039/100000001/works?rows=0&facet=funder-doi:*&filter=member:15,member:16,member:78,member:98,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+http://api.crossref.org/v1/funders/100000083/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:98,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+192.168.1.2 - - [06/Oct/2014 17:03:04] "GET /?q=100000083 HTTP/1.0" 200 96934 1.9825
+192.168.1.2 - - [06/Oct/2014 17:03:04] "GET /funders_us.json HTTP/1.0" 200 18211 0.0313

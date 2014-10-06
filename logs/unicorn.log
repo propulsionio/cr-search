@@ -1440,3 +1440,39 @@ http://api.crossref.org/v1/funders/100003991/works?facet=t&rows=20&filter=member
 192.168.1.2 - - [30/Sep/2014 17:27:34] "GET /funders_us.json HTTP/1.0" 200 15179 0.0165
 192.168.1.2 - - [30/Sep/2014 17:30:50] "GET / HTTP/1.0" 200 23995 0.3077
 192.168.1.2 - - [30/Sep/2014 17:30:50] "GET /funders_us.json HTTP/1.0" 200 15179 0.0171
+I, [2014-10-06T16:00:15.204242 #20813]  INFO -- : unlinking existing socket=/tmp/unicorn.cr-search.sock
+I, [2014-10-06T16:00:15.209164 #20813]  INFO -- : listening on addr=/tmp/unicorn.cr-search.sock fd=8
+I, [2014-10-06T16:00:15.209464 #20813]  INFO -- : worker=0 spawning...
+I, [2014-10-06T16:00:15.921453 #20813]  INFO -- : worker=1 spawning...
+I, [2014-10-06T16:00:15.923036 #20816]  INFO -- : worker=0 spawned pid=20816
+I, [2014-10-06T16:00:15.923457 #20816]  INFO -- : Refreshing Gem list
+I, [2014-10-06T16:00:15.930666 #20819]  INFO -- : worker=1 spawned pid=20819
+I, [2014-10-06T16:00:15.931138 #20819]  INFO -- : Refreshing Gem list
+I, [2014-10-06T16:00:16.280344 #20813]  INFO -- : master process ready
+loading config file './config.yml'
+loading config file './config.yml'
+I, [2014-10-06T16:01:11.394200 #20819]  INFO -- : worker=1 ready
+I, [2014-10-06T16:01:11.631207 #20816]  INFO -- : worker=0 ready
+I, [2014-10-06T16:01:41.635153 #20813]  INFO -- : reaped #<Process::Status: pid 20819 exit 0> worker=1
+I, [2014-10-06T16:01:41.755105 #20813]  INFO -- : reaped #<Process::Status: pid 20816 exit 0> worker=0
+I, [2014-10-06T16:01:41.755280 #20813]  INFO -- : master complete
+I, [2014-10-06T16:03:37.612963 #20968]  INFO -- : unlinking existing socket=/tmp/unicorn.cr-search.sock
+I, [2014-10-06T16:03:37.615324 #20968]  INFO -- : listening on addr=/tmp/unicorn.cr-search.sock fd=8
+I, [2014-10-06T16:03:37.615610 #20968]  INFO -- : worker=0 spawning...
+I, [2014-10-06T16:03:37.636062 #20968]  INFO -- : worker=1 spawning...
+I, [2014-10-06T16:03:37.643355 #20971]  INFO -- : worker=0 spawned pid=20971
+I, [2014-10-06T16:03:37.650302 #20971]  INFO -- : Refreshing Gem list
+I, [2014-10-06T16:03:37.652275 #20968]  INFO -- : master process ready
+I, [2014-10-06T16:03:37.666756 #20974]  INFO -- : worker=1 spawned pid=20974
+I, [2014-10-06T16:03:37.667175 #20974]  INFO -- : Refreshing Gem list
+loading config file './config.yml'
+loading config file './config.yml'
+I, [2014-10-06T16:03:40.683767 #20974]  INFO -- : worker=1 ready
+I, [2014-10-06T16:03:40.684293 #20971]  INFO -- : worker=0 ready
+96.232.16.91 - - [06/Oct/2014 16:03:43] "GET / HTTP/1.0" 200 24030 0.6695
+96.232.16.91 - - [06/Oct/2014 16:03:43] "GET /funders_us.json HTTP/1.0" 200 18211 0.0928
+http://api.crossref.org/v1/funders/100000001
+http://api.crossref.org/v1/funders/10.13039/100000001/works?rows=0&facet=funder-doi:*&filter=member:15,member:16,member:78,member:98,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+http://api.crossref.org/v1/funders/100000001/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:98,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+96.232.16.91 - - [06/Oct/2014 16:03:53] "GET /?q=100000001&us-only=f HTTP/1.0" 200 103180 6.9844
+96.232.16.91 - - [06/Oct/2014 16:03:53] "GET /funders_us.json HTTP/1.0" 200 18211 0.3349

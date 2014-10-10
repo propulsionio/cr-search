@@ -1565,3 +1565,16 @@ http://api.crossref.org/v1/funders/10.13039/100000001/works?rows=0&facet=funder-
 http://api.crossref.org/v1/funders/100000083/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:98,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
 192.168.1.2 - - [06/Oct/2014 17:03:04] "GET /?q=100000083 HTTP/1.0" 200 96934 1.9825
 192.168.1.2 - - [06/Oct/2014 17:03:04] "GET /funders_us.json HTTP/1.0" 200 18211 0.0313
+I, [2014-10-09T22:06:46.146921 #1757]  INFO -- : unlinking existing socket=/tmp/unicorn.cr-search.sock
+I, [2014-10-09T22:06:46.147267 #1757]  INFO -- : listening on addr=/tmp/unicorn.cr-search.sock fd=8
+I, [2014-10-09T22:06:46.147453 #1757]  INFO -- : worker=0 spawning...
+I, [2014-10-09T22:06:46.149427 #1757]  INFO -- : worker=1 spawning...
+I, [2014-10-09T22:06:46.155125 #1757]  INFO -- : master process ready
+I, [2014-10-09T22:06:46.167106 #1760]  INFO -- : worker=0 spawned pid=1760
+I, [2014-10-09T22:06:46.167319 #1760]  INFO -- : Refreshing Gem list
+I, [2014-10-09T22:06:46.191488 #1762]  INFO -- : worker=1 spawned pid=1762
+I, [2014-10-09T22:06:46.191707 #1762]  INFO -- : Refreshing Gem list
+loading config file './config.yml'
+loading config file './config.yml'
+I, [2014-10-09T22:06:48.444463 #1760]  INFO -- : worker=0 ready
+I, [2014-10-09T22:06:48.482305 #1762]  INFO -- : worker=1 ready

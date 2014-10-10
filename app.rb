@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-require 'sinatra'
+require 'sinatra'  
 require "sinatra/config_file"
 require 'haml'
 require 'coffee_script'

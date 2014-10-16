@@ -4,7 +4,6 @@
     $('#search-input').focus();
   });
 
-
 .row-centered.break-below
   = partial :search_header, page: page.merge(mini_header: true)
 
@@ -17,13 +16,13 @@
   %form#search-form{action: "http://search.chorusaccess.org/", method: "GET"}
     .search
       %span.twitter-typeahead
-        %input.input.input-xlarge.search-input.tt-hint{autocomplete: "off", disabled: "disabled", spellcheck: "false", type: "text"}/
+        %input.input.input-xlarge.search-input.tt-hint{autocomplete: "off", disabled: "disabled", spellcheck: "false", type: "text"}/ 
         %input#search-input.input.input-xlarge.search-input{autocomplete: "off", dir: "auto", name: "q", placeholder: "Funder name", spellcheck: "false", type: "text"}/
         %pre.tt{"aria-hidden" => "true"}
         %span.tt-dropdown-menu
           .tt-dataset-funders
       %input#us-only{name: "us-only", type: "hidden", value: "f"}/
-      %i.fa.fa-search
+      %i#spinner.fa.fa-search
 
 %center
   .row-centered.beta

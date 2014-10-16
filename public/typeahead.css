@@ -6,7 +6,7 @@
 .twitter-typeahead .tt-hint {
   color: #999;
 }
-.tt-suggestion p:hover small{
+.tt-suggestion:hover small{
   color: #000;
 }
 .tt-dropdown-menu {

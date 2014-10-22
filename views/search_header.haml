@@ -90,7 +90,7 @@
       limit: 16
 
     $("#search-input").bind "typeahead:autocompleted typeahead:selected", (e, datum) ->
-      $('#spinner').css("color", "#fff")
+      $('#spinner').css("color", "rgb(255, 255, 255)")
       opts =
         lines: 8 # The number of lines to draw
         length: 10 # The length of each line
@@ -111,8 +111,15 @@
       target = document.getElementById("spinner")
       spinner = new Spinner(opts).spin(target)
       $("#fundref-input").val datum["id"]
-      $("#fundref-form").submit()
-    
+      readyCheck = setInterval (->
+        ready = $("#spinner").css("color")
+        console.log ready
+        if ready is "rgb(255, 255, 255)"
+          clearInterval readyCheck
+          $("#fundref-form").submit()
+        return
+      ), 100
+
 .proxy-form{style: "display: none;"}
   %form#fundref-form{method: 'GET', action: '/'}
     %input#fundref-input{name: 'q'}

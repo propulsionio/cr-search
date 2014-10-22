@@ -113,7 +113,6 @@
       $("#fundref-input").val datum["id"]
       readyCheck = setInterval (->
         ready = $("#spinner").css("color")
-        console.log ready
         if ready is "rgb(255, 255, 255)"
           clearInterval readyCheck
           $("#fundref-form").submit()

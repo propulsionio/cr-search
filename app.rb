@@ -6,6 +6,7 @@ require 'coffee_script'
 require 'net/http'
 require 'json'
 require 'pry'
+require 'site24x7_apminsight'
 
 Dir["lib/*.rb"].each { |file| require_relative file }
 

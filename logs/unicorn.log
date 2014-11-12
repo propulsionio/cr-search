@@ -5699,3 +5699,602 @@ http://api.crossref.org/v1/funders/100000001/works?facet=t&rows=20&filter=member
 175.122.253.28 - - [22/Oct/2014 16:42:30] "GET //phpMyAdmin2/scripts/setup.php HTTP/1.0" 404 465 0.0030
 175.122.253.28 - - [22/Oct/2014 16:42:31] "GET //phpMyAdmin3/scripts/setup.php HTTP/1.0" 404 465 0.0020
 >>>>>>> c793021238cf3e2f2c10fc8bdfe50c7eab8c103a
+I, [2014-11-04T04:59:53.135774 #24615]  INFO -- : unlinking existing socket=/tmp/unicorn.cr-search.sock
+I, [2014-11-04T04:59:53.136305 #24615]  INFO -- : listening on addr=/tmp/unicorn.cr-search.sock fd=8
+I, [2014-11-04T04:59:53.136553 #24615]  INFO -- : worker=0 spawning...
+I, [2014-11-04T04:59:53.154847 #24618]  INFO -- : worker=0 spawned pid=24618
+I, [2014-11-04T04:59:53.155272 #24618]  INFO -- : Refreshing Gem list
+I, [2014-11-04T04:59:53.169219 #24615]  INFO -- : worker=1 spawning...
+I, [2014-11-04T04:59:53.193387 #24615]  INFO -- : master process ready
+I, [2014-11-04T04:59:53.198575 #24621]  INFO -- : worker=1 spawned pid=24621
+I, [2014-11-04T04:59:53.198972 #24621]  INFO -- : Refreshing Gem list
+APM Insight Ruby Agent Started
+APM Insight Ruby Agent Started
+loading config file './config.yml'
+loading config file './config.yml'
+I, [2014-11-04T04:59:57.477144 #24621]  INFO -- : worker=1 ready
+I, [2014-11-04T04:59:57.479295 #24618]  INFO -- : worker=0 ready
+61.135.190.71 - - [04/Nov/2014 05:06:16] "GET / HTTP/1.0" 200 25179 0.7528
+67.87.199.155 - - [04/Nov/2014 06:08:14] "GET / HTTP/1.0" 200 25179 0.6338
+67.87.199.155 - - [04/Nov/2014 06:08:15] "GET /funders_us.json HTTP/1.0" 200 18211 0.1649
+61.135.190.70 - - [04/Nov/2014 09:16:01] "GET / HTTP/1.0" 200 25179 0.8161
+61.135.190.199 - - [04/Nov/2014 09:16:17] "GET /funders_us.json HTTP/1.0" 200 18211 0.2020
+114.143.73.146 - - [04/Nov/2014 09:19:47] "GET / HTTP/1.0" 200 25179 0.6426
+114.143.73.146 - - [04/Nov/2014 09:19:50] "GET /funders_us.json HTTP/1.0" 200 18211 0.0667
+5.178.86.77 - - [04/Nov/2014 10:47:12] "POST /azenv.php?rand=6bdd62134275e8069489174d0c7c4e72 HTTP/1.0" 404 448 0.0214
+188.112.175.223 - - [04/Nov/2014 12:34:46] "GET /cgi-bin/test.cgi HTTP/1.0" 404 452 0.0030
+188.112.175.223 - - [04/Nov/2014 12:40:17] "GET /cgi-bin/ HTTP/1.0" 404 444 0.0023
+61.135.190.201 - - [04/Nov/2014 13:22:57] "GET / HTTP/1.0" 200 25179 0.7420
+61.135.190.71 - - [04/Nov/2014 13:23:13] "GET /funders_us.json HTTP/1.0" 200 18211 0.1128
+61.135.190.68 - - [04/Nov/2014 22:58:57] "GET / HTTP/1.0" 200 25179 7.0466
+61.135.190.69 - - [04/Nov/2014 22:59:12] "GET /funders_us.json HTTP/1.0" 200 18211 0.5148
+117.21.173.27 - - [05/Nov/2014 05:20:09] "GET /manager/html HTTP/1.0" 404 448 0.0024
+5.178.86.77 - - [05/Nov/2014 05:56:13] "POST /azenv.php?rand=008a587826350e474c7dd682bf9f708c HTTP/1.0" 404 448 0.0041
+117.21.225.165 - - [05/Nov/2014 08:14:16] "GET /manager/html HTTP/1.0" 404 448 0.0071
+192.3.205.154 - - [05/Nov/2014 10:25:40] "GET /etc/lib/pChart2/examples/index.php HTTP/1.0" 404 470 0.0026
+85.25.211.252 - - [05/Nov/2014 13:12:29] "GET /cgi-bin/test-cgi HTTP/1.0" 404 452 0.0022
+5.178.86.77 - - [05/Nov/2014 15:44:19] "POST /azenv.php?rand=be26fb1fa647880e688e219469ba03bd HTTP/1.0" 404 448 0.0062
+198.144.189.136 - - [05/Nov/2014 15:55:10] "GET /ProxyCheck/IPCheck.php?ip=198.144.189.136 HTTP/1.0" 404 470 0.0043
+198.144.189.136 - - [05/Nov/2014 16:22:32] "GET /ProxyCheck/IPCheck.php?ip=198.144.189.136 HTTP/1.0" 404 470 0.0018
+188.165.15.121 - - [05/Nov/2014 16:41:30] "GET /robots.txt HTTP/1.0" 404 446 0.0021
+198.144.189.136 - - [05/Nov/2014 17:03:54] "GET /ProxyCheck/IPCheck.php?ip=198.144.189.136 HTTP/1.0" 404 470 0.0018
+141.212.121.245 - - [05/Nov/2014 18:30:36] "GET / HTTP/1.0" 200 25179 0.7313
+76.164.225.90 - - [05/Nov/2014 19:46:31] "GET / HTTP/1.0" 200 25179 0.6638
+198.20.69.74 - - [06/Nov/2014 00:33:35] "GET / HTTP/1.0" 200 25179 0.8227
+198.20.69.74 - - [06/Nov/2014 00:33:35] "GET /robots.txt HTTP/1.0" 404 446 0.0030
+113.30.141.46 - - [06/Nov/2014 01:45:17] "GET /manager/html HTTP/1.0" 404 448 0.0018
+192.3.205.154 - - [06/Nov/2014 02:55:32] "GET /etc/lib/pChart2/examples/index.php HTTP/1.0" 404 470 0.0030
+60.208.209.205 - - [06/Nov/2014 03:31:26] "GET / HTTP/1.0" 200 25179 0.8234
+141.212.121.245 - - [06/Nov/2014 05:04:32] "GET / HTTP/1.0" 200 25179 0.6846
+123.157.150.56 - - [06/Nov/2014 05:30:31] "GET /manager/html HTTP/1.0" 404 448 0.0027
+23.20.138.174 - - [06/Nov/2014 10:28:27] "HEAD / HTTP/1.0" 200 25179 13.6484
+23.20.138.174 - - [06/Nov/2014 10:28:28] "GET / HTTP/1.0" 200 25179 13.6895
+5.178.86.77 - - [06/Nov/2014 11:14:40] "POST /azenv.php?rand=d0edc20c251c286370f8ebac1b4497b4 HTTP/1.0" 404 448 0.0056
+164.40.153.130 - - [06/Nov/2014 16:59:45] "GET / HTTP/1.0" 200 25179 0.8158
+141.212.121.245 - - [06/Nov/2014 17:04:32] "GET / HTTP/1.0" 200 25179 0.6171
+222.124.186.237 - - [06/Nov/2014 19:29:26] "GET /jmx-console/ HTTP/1.0" 404 444 0.0024
+222.124.186.237 - - [06/Nov/2014 19:59:38] "GET /jmx-console/ HTTP/1.0" 404 444 0.0032
+222.124.186.237 - - [06/Nov/2014 21:35:51] "GET /jmx-console/ HTTP/1.0" 404 444 0.0020
+121.127.241.197 - - [06/Nov/2014 22:01:02] "GET /web-console/ServerInfo.jsp HTTP/1.0" 404 462 0.0020
+68.194.34.27, 66.249.83.163 - - [07/Nov/2014 03:31:00] "GET / HTTP/1.0" 200 25179 0.7634
+141.212.121.245 - - [07/Nov/2014 05:04:33] "GET / HTTP/1.0" 200 25179 0.6682
+117.21.173.27 - - [07/Nov/2014 05:55:03] "GET /manager/html HTTP/1.0" 404 448 0.0027
+5.178.86.77 - - [07/Nov/2014 09:27:36] "POST /azenv.php?rand=f625e96eb6315357be3f530f1b26d8b4 HTTP/1.0" 404 448 0.0024
+222.186.56.34 - - [07/Nov/2014 11:37:08] "GET / HTTP/1.0" 200 25179 0.8077
+54.80.25.69 - - [07/Nov/2014 16:29:03] "HEAD / HTTP/1.0" 200 25179 13.7981
+54.80.25.69 - - [07/Nov/2014 16:29:04] "GET / HTTP/1.0" 200 25179 13.6735
+93.120.27.62 - - [07/Nov/2014 19:52:56] "GET / HTTP/1.0" 200 25179 15.4791
+182.254.134.114 - - [08/Nov/2014 05:26:30] "GET / HTTP/1.0" 200 25179 7.2407
+104.192.103.78 - - [08/Nov/2014 07:30:17] "GET /xmlrpc.php HTTP/1.0" 404 446 0.0074
+80.82.64.29 - - [08/Nov/2014 07:43:39] "GET /api/process.php HTTP/1.0" 404 451 0.0021
+182.254.208.209 - - [08/Nov/2014 07:57:06] "GET / HTTP/1.0" 200 25179 7.3082
+5.178.86.77 - - [08/Nov/2014 08:08:28] "POST /azenv.php?rand=f15cb2709101823386ecd5647ac61acf HTTP/1.0" 404 448 0.0607
+117.21.225.165 - - [08/Nov/2014 08:16:53] "GET /manager/html HTTP/1.0" 404 448 0.0202
+117.21.173.27 - - [08/Nov/2014 08:21:11] "GET /manager/html HTTP/1.0" 404 448 0.0018
+121.14.212.246 - - [08/Nov/2014 10:03:27] "GET / HTTP/1.0" 200 25179 0.6780
+117.21.191.206 - - [08/Nov/2014 15:56:03] "GET /manager/html HTTP/1.0" 404 448 0.0044
+198.23.213.202 - - [08/Nov/2014 20:54:56] "GET /apiv7/appledaily/article/issue/20120511/artid/16327498/catid/4104/format/xml HTTP/1.0" 404 522 0.1894
+182.254.208.113 - - [09/Nov/2014 03:26:42] "GET / HTTP/1.0" 200 25179 6.9512
+117.21.173.27 - - [09/Nov/2014 06:43:04] "GET /manager/html HTTP/1.0" 404 448 0.0081
+196.215.1.39 - - [09/Nov/2014 07:00:36] "GET /oapi/img/adspacer.gif HTTP/1.0" 404 457 0.0020
+196.215.1.39 - - [09/Nov/2014 07:00:44] "GET /__sinatra__/404.png HTTP/1.0" 200 18893 0.0176
+196.215.1.39 - - [09/Nov/2014 07:00:52] "GET /favicon.ico HTTP/1.0" 404 447 0.0033
+196.215.1.39 - - [09/Nov/2014 07:08:21] "GET /oapi/img/adspacer.gif HTTP/1.0" 404 457 0.0017
+196.215.1.39 - - [09/Nov/2014 07:08:24] "GET /__sinatra__/404.png HTTP/1.0" 200 18893 0.0050
+196.215.1.39 - - [09/Nov/2014 07:08:34] "GET /favicon.ico HTTP/1.0" 404 447 0.0017
+5.178.86.77 - - [09/Nov/2014 07:37:16] "POST /azenv.php?rand=e9375f595fb383024620150559da8a20 HTTP/1.0" 404 448 0.0029
+54.166.180.25 - - [09/Nov/2014 10:28:25] "HEAD / HTTP/1.0" 200 25179 12.8759
+54.166.180.25 - - [09/Nov/2014 10:28:26] "GET / HTTP/1.0" 200 25179 12.7844
+196.215.1.39 - - [09/Nov/2014 10:28:40] "GET /oapi/img/adspacer.gif HTTP/1.0" 404 457 0.0032
+196.215.1.39 - - [09/Nov/2014 10:29:22] "GET /__sinatra__/404.png HTTP/1.0" 200 18893 0.0070
+196.215.1.39 - - [09/Nov/2014 10:29:34] "GET /favicon.ico HTTP/1.0" 404 447 0.0030
+198.20.69.74 - - [09/Nov/2014 22:47:55] "GET / HTTP/1.0" 200 25179 0.7568
+198.20.69.74 - - [09/Nov/2014 22:47:56] "GET /robots.txt HTTP/1.0" 404 446 0.0034
+188.165.15.121 - - [09/Nov/2014 23:32:59] "GET /robots.txt HTTP/1.0" 404 446 0.0017
+5.178.86.77 - - [10/Nov/2014 07:10:28] "POST /azenv.php?rand=50de7f54346648dca3a5c25bd8f0f572 HTTP/1.0" 404 448 0.0301
+74.50.23.94 - - [10/Nov/2014 11:12:25] "HEAD / HTTP/1.0" 200 25179 0.6475
+182.254.208.209 - - [10/Nov/2014 11:30:29] "GET / HTTP/1.0" 200 25179 0.6671
+182.254.209.73 - - [10/Nov/2014 12:42:33] "GET / HTTP/1.0" 200 25179 0.6770
+220.181.51.137 - - [10/Nov/2014 13:23:46] "GET / HTTP/1.0" 200 25179 8.0150
+117.21.225.165 - - [10/Nov/2014 13:32:04] "GET /manager/html HTTP/1.0" 404 448 0.0029
+117.21.173.27 - - [10/Nov/2014 17:05:41] "GET /manager/html HTTP/1.0" 404 448 0.0044
+192.211.50.42 - - [10/Nov/2014 17:29:58] "GET / HTTP/1.0" 200 25179 0.6283
+220.181.51.138 - - [10/Nov/2014 17:59:51] "GET / HTTP/1.0" 200 25179 3.0328
+220.181.51.141 - - [10/Nov/2014 18:00:07] "GET /funders_us.json HTTP/1.0" 200 18211 0.1818
+23.20.129.65 - - [10/Nov/2014 19:04:11] "HEAD / HTTP/1.0" 200 25179 0.6276
+23.20.129.65 - - [10/Nov/2014 19:04:11] "GET /clientaccesspolicy.xml HTTP/1.0" 404 458 0.0031
+115.239.248.56 - - [10/Nov/2014 19:38:55] "GET /manager/html HTTP/1.0" 404 448 0.0018
+182.254.153.120 - - [10/Nov/2014 20:53:43] "GET / HTTP/1.0" 200 25179 0.7440
+61.135.190.71 - - [10/Nov/2014 22:12:20] "GET / HTTP/1.0" 200 25179 0.6293
+61.135.190.199 - - [10/Nov/2014 22:12:36] "GET /funders_us.json HTTP/1.0" 200 18211 0.1611
+222.186.56.88 - - [10/Nov/2014 22:31:20] "GET /manager/html HTTP/1.0" 404 448 0.0020
+61.135.190.199 - - [11/Nov/2014 02:39:53] "GET / HTTP/1.0" 200 25179 0.7686
+61.135.190.70 - - [11/Nov/2014 02:40:09] "GET /funders_us.json HTTP/1.0" 200 18211 0.1466
+125.64.35.67 - - [11/Nov/2014 04:39:58] "GET /zc/chs/img/body.png HTTP/1.0" 404 450 0.0022
+5.178.86.77 - - [11/Nov/2014 06:01:42] "POST /azenv.php?rand=e83ed2f411cf646cdbd7515509502ab6 HTTP/1.0" 404 448 0.0030
+61.135.190.201 - - [11/Nov/2014 07:00:00] "GET / HTTP/1.0" 200 25179 0.8346
+61.135.190.200 - - [11/Nov/2014 07:00:15] "GET /funders_us.json HTTP/1.0" 200 18211 0.1688
+220.181.51.143 - - [11/Nov/2014 11:16:58] "GET / HTTP/1.0" 200 25179 0.6529
+220.181.51.139 - - [11/Nov/2014 11:17:13] "GET /funders_us.json HTTP/1.0" 200 18211 0.0474
+54.160.67.24 - - [11/Nov/2014 13:08:04] "GET / HTTP/1.0" 200 25179 0.7264
+61.135.190.72 - - [11/Nov/2014 16:23:30] "GET / HTTP/1.0" 200 25179 6.7717
+61.135.190.71 - - [11/Nov/2014 16:23:45] "GET /funders_us.json HTTP/1.0" 200 18211 0.4907
+220.181.51.142 - - [11/Nov/2014 20:29:56] "GET / HTTP/1.0" 200 25179 0.8214
+222.74.212.77 - - [12/Nov/2014 01:36:45] "GET /muieblackcat HTTP/1.0" 404 448 0.0029
+222.74.212.77 - - [12/Nov/2014 01:36:50] "GET //phpmyadmin/scripts/setup.php HTTP/1.0" 404 464 0.0026
+222.74.212.77 - - [12/Nov/2014 01:36:50] "GET //myadmin/scripts/setup.php HTTP/1.0" 404 461 0.0021
+222.74.212.77 - - [12/Nov/2014 01:36:51] "GET //mysqladmin/scripts/setup.php HTTP/1.0" 404 464 0.0022
+222.74.212.77 - - [12/Nov/2014 01:36:53] "GET //pma/scripts/setup.php HTTP/1.0" 404 457 0.0018
+222.74.212.77 - - [12/Nov/2014 01:36:54] "GET //mysql/scripts/setup.php HTTP/1.0" 404 459 0.0018
+222.74.212.77 - - [12/Nov/2014 01:36:54] "GET //phpadmin/scripts/setup.php HTTP/1.0" 404 462 0.0021
+222.74.212.77 - - [12/Nov/2014 01:36:55] "GET //websql/scripts/setup.php HTTP/1.0" 404 460 0.0023
+222.74.212.77 - - [12/Nov/2014 01:36:55] "GET //web/scripts/setup.php HTTP/1.0" 404 457 0.0021
+222.74.212.77 - - [12/Nov/2014 01:36:56] "GET //MyAdmin/scripts/setup.php HTTP/1.0" 404 461 0.0032
+222.74.212.77 - - [12/Nov/2014 01:36:56] "GET //typo3/phpmyadmin/scripts/setup.php HTTP/1.0" 404 470 0.0031
+222.74.212.77 - - [12/Nov/2014 01:36:57] "GET //phpadmin/scripts/setup.php HTTP/1.0" 404 462 0.0022
+222.74.212.77 - - [12/Nov/2014 01:36:58] "GET //web/phpMyAdmin/scripts/setup.php HTTP/1.0" 404 468 0.0020
+222.74.212.77 - - [12/Nov/2014 01:36:58] "GET //xampp/phpmyadmin/scripts/setup.php HTTP/1.0" 404 470 0.0021
+222.74.212.77 - - [12/Nov/2014 01:36:58] "GET //typo3/phpmyadmin/scripts/setup.php HTTP/1.0" 404 470 0.0020
+222.74.212.77 - - [12/Nov/2014 01:36:59] "GET //web/phpMyAdmin/scripts/setup.php HTTP/1.0" 404 468 0.0021
+222.74.212.77 - - [12/Nov/2014 01:36:59] "GET //php-my-admin/scripts/setup.php HTTP/1.0" 404 466 0.0018
+222.74.212.77 - - [12/Nov/2014 01:37:00] "GET //cpanelphpmyadmin/scripts/setup.php HTTP/1.0" 404 470 0.0021
+222.74.212.77 - - [12/Nov/2014 01:37:00] "GET //cpphpmyadmin/scripts/setup.php HTTP/1.0" 404 466 0.0020
+222.74.212.77 - - [12/Nov/2014 01:37:01] "GET //forum/phpmyadmin/scripts/setup.php HTTP/1.0" 404 470 0.0021
+222.74.212.77 - - [12/Nov/2014 01:37:03] "GET //phpMyAdmin-2.11.1-all-languages/scripts/setup.php HTTP/1.0" 404 485 0.0017
+222.74.212.77 - - [12/Nov/2014 01:37:03] "GET //phpMyAdmin-3.0.0-rc1-english/scripts/setup.php HTTP/1.0" 404 482 0.0021
+222.74.212.77 - - [12/Nov/2014 01:37:04] "GET //phpMyAdmin-3.0.0.0-all-languages/scripts/setup.php HTTP/1.0" 404 486 0.0019
+222.74.212.77 - - [12/Nov/2014 01:37:05] "GET //phpMyAdmin-3.0.1.0-english/scripts/setup.php HTTP/1.0" 404 480 0.0021
+222.74.212.77 - - [12/Nov/2014 01:37:06] "GET //phpMyAdmin2/scripts/setup.php HTTP/1.0" 404 465 0.0017
+222.74.212.77 - - [12/Nov/2014 01:37:06] "GET //phpMyAdmin3/scripts/setup.php HTTP/1.0" 404 465 0.0021
+61.135.190.70 - - [12/Nov/2014 02:04:09] "GET / HTTP/1.0" 200 25179 0.7412
+61.135.190.198 - - [12/Nov/2014 02:04:25] "GET /funders_us.json HTTP/1.0" 200 18211 0.1646
+117.21.225.165 - - [12/Nov/2014 02:17:32] "GET /manager/html HTTP/1.0" 404 448 0.0021
+125.64.35.67 - - [12/Nov/2014 04:20:56] "GET /zc/chs/img/body.png HTTP/1.0" 404 450 0.0036
+183.136.214.248 - - [12/Nov/2014 04:31:51] "POST /cgi-bin/php5?%2D%64+%61%6C%6C%6F%77%5F%75%72%6C%5F%69%6E%63%6C%75%64%65%3D%6F%6E+%2D%64+%73%61%66%65%5F%6D%6F%64%65%3D%6F%66%66+%2D%64+%73%75%68%6F%73%69%6E%2E%73%69%6D%75%6C%61%74%69%6F%6E%3D%6F%6E+%2D%64+%64%69%73%61%62%6C%65%5F%66%75%6E%63%74%69%6F%6E%73%3D%22%22+%2D%64+%6F%70%65%6E%5F%62%61%73%65%64%69%72%3D%6E%6F%6E%65+%2D%64+%61%75%74%6F%5F%70%72%65%70%65%6E%64%5F%66%69%6C%65%3D%70%68%70%3A%2F%2F%69%6E%70%75%74+%2D%64+%63%67%69%2E%66%6F%72%63%65%5F%72%65%64%69%72%65%63%74%3D%30+%2D%64+%63%67%69%2E%72%65%64%69%72%65%63%74%5F%73%74%61%74%75%73%5F%65%6E%76%3D%30+%2D%6E HTTP/1.0" 404 449 0.0025
+183.136.214.248 - - [12/Nov/2014 04:31:53] "POST /cgi-bin/php.cgi?%2D%64+%61%6C%6C%6F%77%5F%75%72%6C%5F%69%6E%63%6C%75%64%65%3D%6F%6E+%2D%64+%73%61%66%65%5F%6D%6F%64%65%3D%6F%66%66+%2D%64+%73%75%68%6F%73%69%6E%2E%73%69%6D%75%6C%61%74%69%6F%6E%3D%6F%6E+%2D%64+%64%69%73%61%62%6C%65%5F%66%75%6E%63%74%69%6F%6E%73%3D%22%22+%2D%64+%6F%70%65%6E%5F%62%61%73%65%64%69%72%3D%6E%6F%6E%65+%2D%64+%61%75%74%6F%5F%70%72%65%70%65%6E%64%5F%66%69%6C%65%3D%70%68%70%3A%2F%2F%69%6E%70%75%74+%2D%64+%63%67%69%2E%66%6F%72%63%65%5F%72%65%64%69%72%65%63%74%3D%30+%2D%64+%63%67%69%2E%72%65%64%69%72%65%63%74%5F%73%74%61%74%75%73%5F%65%6E%76%3D%30+%2D%6E HTTP/1.0" 404 452 0.0026
+183.136.214.248 - - [12/Nov/2014 04:31:54] "POST /cgi-bin/php-cgi?%2D%64+%61%6C%6C%6F%77%5F%75%72%6C%5F%69%6E%63%6C%75%64%65%3D%6F%6E+%2D%64+%73%61%66%65%5F%6D%6F%64%65%3D%6F%66%66+%2D%64+%73%75%68%6F%73%69%6E%2E%73%69%6D%75%6C%61%74%69%6F%6E%3D%6F%6E+%2D%64+%64%69%73%61%62%6C%65%5F%66%75%6E%63%74%69%6F%6E%73%3D%22%22+%2D%64+%6F%70%65%6E%5F%62%61%73%65%64%69%72%3D%6E%6F%6E%65+%2D%64+%61%75%74%6F%5F%70%72%65%70%65%6E%64%5F%66%69%6C%65%3D%70%68%70%3A%2F%2F%69%6E%70%75%74+%2D%64+%63%67%69%2E%66%6F%72%63%65%5F%72%65%64%69%72%65%63%74%3D%30+%2D%64+%63%67%69%2E%72%65%64%69%72%65%63%74%5F%73%74%61%74%75%73%5F%65%6E%76%3D%30+%2D%6E HTTP/1.0" 404 452 0.0020
+183.136.214.248 - - [12/Nov/2014 04:31:55] "POST /cgi-bin/php?%2D%64+%61%6C%6C%6F%77%5F%75%72%6C%5F%69%6E%63%6C%75%64%65%3D%6F%6E+%2D%64+%73%61%66%65%5F%6D%6F%64%65%3D%6F%66%66+%2D%64+%73%75%68%6F%73%69%6E%2E%73%69%6D%75%6C%61%74%69%6F%6E%3D%6F%6E+%2D%64+%64%69%73%61%62%6C%65%5F%66%75%6E%63%74%69%6F%6E%73%3D%22%22+%2D%64+%6F%70%65%6E%5F%62%61%73%65%64%69%72%3D%6E%6F%6E%65+%2D%64+%61%75%74%6F%5F%70%72%65%70%65%6E%64%5F%66%69%6C%65%3D%70%68%70%3A%2F%2F%69%6E%70%75%74+%2D%64+%63%67%69%2E%66%6F%72%63%65%5F%72%65%64%69%72%65%63%74%3D%30+%2D%64+%63%67%69%2E%72%65%64%69%72%65%63%74%5F%73%74%61%74%75%73%5F%65%6E%76%3D%30+%2D%6E HTTP/1.0" 404 448 0.0023
+183.136.214.248 - - [12/Nov/2014 04:31:56] "POST /cgi-bin/php4?%2D%64+%61%6C%6C%6F%77%5F%75%72%6C%5F%69%6E%63%6C%75%64%65%3D%6F%6E+%2D%64+%73%61%66%65%5F%6D%6F%64%65%3D%6F%66%66+%2D%64+%73%75%68%6F%73%69%6E%2E%73%69%6D%75%6C%61%74%69%6F%6E%3D%6F%6E+%2D%64+%64%69%73%61%62%6C%65%5F%66%75%6E%63%74%69%6F%6E%73%3D%22%22+%2D%64+%6F%70%65%6E%5F%62%61%73%65%64%69%72%3D%6E%6F%6E%65+%2D%64+%61%75%74%6F%5F%70%72%65%70%65%6E%64%5F%66%69%6C%65%3D%70%68%70%3A%2F%2F%69%6E%70%75%74+%2D%64+%63%67%69%2E%66%6F%72%63%65%5F%72%65%64%69%72%65%63%74%3D%30+%2D%64+%63%67%69%2E%72%65%64%69%72%65%63%74%5F%73%74%61%74%75%73%5F%65%6E%76%3D%30+%2D%6E HTTP/1.0" 404 449 0.0020
+117.21.224.216 - - [12/Nov/2014 04:56:01] "GET /manager/html HTTP/1.0" 404 448 0.0018
+117.21.224.216 - - [12/Nov/2014 04:56:58] "GET /manager/html HTTP/1.0" 404 448 0.0017
+117.21.191.206 - - [12/Nov/2014 05:04:09] "GET /manager/html HTTP/1.0" 404 448 0.0017
+5.178.86.77 - - [12/Nov/2014 05:39:45] "POST /azenv.php?rand=f47f25b736484249d6bcc3f043c05a69 HTTP/1.0" 404 448 0.0021
+54.194.2.119 - - [12/Nov/2014 07:06:31] "HEAD / HTTP/1.0" 200 25179 0.8438
+182.254.153.120 - - [12/Nov/2014 07:55:37] "GET / HTTP/1.0" 200 25179 7.0069
+117.21.191.206 - - [12/Nov/2014 08:09:24] "GET /manager/html HTTP/1.0" 404 448 0.0025
+61.135.190.70 - - [12/Nov/2014 08:36:47] "GET / HTTP/1.0" 200 25179 0.6502
+61.135.190.71 - - [12/Nov/2014 08:37:02] "GET /funders_us.json HTTP/1.0" 200 18211 0.1573
+179.99.200.39 - - [12/Nov/2014 09:18:24] "GET /ip_json.php HTTP/1.0" 404 457 0.0024
+61.135.190.201 - - [12/Nov/2014 09:58:22] "GET / HTTP/1.0" 200 25179 7.5564
+61.135.190.197 - - [12/Nov/2014 09:58:38] "GET /funders_us.json HTTP/1.0" 200 18211 0.2346
+123.252.215.6 - - [12/Nov/2014 10:30:00] "GET / HTTP/1.0" 200 25179 0.6722
+123.252.215.6 - - [12/Nov/2014 10:30:04] "GET /funders_us.json HTTP/1.0" 200 18211 0.0379
+54.162.147.172 - - [12/Nov/2014 13:14:39] "HEAD / HTTP/1.0" 200 25179 0.8389
+54.162.147.172 - - [12/Nov/2014 13:14:39] "GET /clientaccesspolicy.xml HTTP/1.0" 404 458 0.0042
+61.135.190.200 - - [12/Nov/2014 14:32:02] "GET / HTTP/1.0" 200 25179 0.6287
+182.254.153.120 - - [12/Nov/2014 15:39:43] "GET / HTTP/1.0" 200 25179 0.6540
+101.56.112.144 - - [12/Nov/2014 15:50:35] "GET / HTTP/1.0" 200 25179 0.6460
+101.56.112.144 - - [12/Nov/2014 15:50:40] "GET /funders_us.json HTTP/1.0" 200 18211 0.1431
+http://api.crossref.org/v1/funders/100000001
+http://api.crossref.org/v1/funders/10.13039/100000001/works?rows=0&facet=funder-doi:*&filter=member:15,member:16,member:78,member:98,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+http://api.crossref.org/v1/funders/100000001/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:98,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+101.56.112.144 - - [12/Nov/2014 15:51:02] "GET /?q=100000001&us-only=f HTTP/1.0" 200 104269 8.5448
+101.56.112.144 - - [12/Nov/2014 15:51:07] "GET /funders_us.json HTTP/1.0" 200 18211 0.0374
+http://api.crossref.org/v1/funders/100000161
+http://api.crossref.org/v1/funders/10.13039/100000190/works?rows=0&facet=funder-doi:*&filter=member:15,member:16,member:78,member:98,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+http://api.crossref.org/v1/funders/100000161/works?facet=t&rows=20&filter=member:15,member:16,member:78,member:98,member:179,member:221,member:221,member:263,member:286,member:292,member:301,member:311,member:316,member:317,member:320
+101.56.112.144 - - [12/Nov/2014 15:52:06] "GET /?q=100000161&us-only=f HTTP/1.0" 200 94651 14.3871
+101.56.112.144 - - [12/Nov/2014 15:52:09] "GET /funders_us.json HTTP/1.0" 200 18211 0.2887
+108.12.143.53 - - [12/Nov/2014 16:36:57] "GET / HTTP/1.0" 200 25179 0.6262
+166.137.252.62 - - [12/Nov/2014 16:39:29] "GET / HTTP/1.0" 200 25179 0.6704
+166.137.252.62 - - [12/Nov/2014 16:39:31] "GET /funders_us.json HTTP/1.0" 200 18211 0.0498
+I, [2014-11-12T16:47:57.998581 #24615]  INFO -- : reaped #<Process::Status: pid 24618 exit 0> worker=0
+I, [2014-11-12T16:47:57.998789 #24615]  INFO -- : reaped #<Process::Status: pid 24621 exit 0> worker=1
+I, [2014-11-12T16:47:57.998944 #24615]  INFO -- : master complete
+I, [2014-11-12T16:49:28.234799 #7515]  INFO -- : unlinking existing socket=/tmp/unicorn.cr-search.sock
+I, [2014-11-12T16:49:28.235331 #7515]  INFO -- : listening on addr=/tmp/unicorn.cr-search.sock fd=8
+I, [2014-11-12T16:49:28.235580 #7515]  INFO -- : worker=0 spawning...
+I, [2014-11-12T16:49:28.256570 #7518]  INFO -- : worker=0 spawned pid=7518
+I, [2014-11-12T16:49:28.265194 #7515]  INFO -- : worker=1 spawning...
+I, [2014-11-12T16:49:28.265411 #7518]  INFO -- : Refreshing Gem list
+I, [2014-11-12T16:49:28.286618 #7515]  INFO -- : master process ready
+I, [2014-11-12T16:49:28.298155 #7521]  INFO -- : worker=1 spawned pid=7521
+I, [2014-11-12T16:49:28.298525 #7521]  INFO -- : Refreshing Gem list
+APM Insight Ruby Agent Started
+APM Insight Ruby Agent Started
+loading config file './config.yml'
+loading config file './config.yml'
+I, [2014-11-12T16:49:32.673880 #7518]  INFO -- : worker=0 ready
+I, [2014-11-12T16:49:32.674641 #7521]  INFO -- : worker=1 ready
+108.12.143.53 - - [12/Nov/2014 16:49:36] "GET / HTTP/1.0" 200 25181 0.7190
+108.12.143.53 - - [12/Nov/2014 16:49:37] "GET /funders_us.json HTTP/1.0" 200 18211 0.1246
+108.12.143.53 - - [12/Nov/2014 16:49:42] "GET / HTTP/1.0" 200 25181 0.6734
+108.12.143.53 - - [12/Nov/2014 16:49:43] "GET /funders_us.json HTTP/1.0" 200 18211 0.0577
+66.249.83.193 - - [12/Nov/2014 16:58:24] "GET / HTTP/1.0" 200 25179 14.3040
+108.12.143.53, 66.249.93.202 - - [12/Nov/2014 16:58:24] "GET / HTTP/1.0" 200 25179 13.9220
+117.21.225.165 - - [12/Nov/2014 16:59:43] "GET /manager/html HTTP/1.0" 404 448 0.0031
+108.12.143.53 - - [12/Nov/2014 17:00:38] "GET / HTTP/1.0" 200 25179 0.6904
+108.12.143.53 - - [12/Nov/2014 17:00:39] "GET /funders_us.json HTTP/1.0" 200 18211 0.0531
+108.12.143.53 - - [12/Nov/2014 17:01:20] "GET / HTTP/1.0" 200 25179 0.6583
+108.12.143.53 - - [12/Nov/2014 17:01:21] "GET /funders_us.json HTTP/1.0" 200 18211 0.0468
+108.12.143.53 - - [12/Nov/2014 17:01:33] "GET / HTTP/1.0" 200 25179 0.6822
+108.12.143.53 - - [12/Nov/2014 17:01:33] "GET /funders_us.json HTTP/1.0" 200 18211 0.0263
+108.12.143.53 - - [12/Nov/2014 17:01:45] "GET / HTTP/1.0" 200 25179 0.6471
+108.12.143.53 - - [12/Nov/2014 17:01:46] "GET /funders_us.json HTTP/1.0" 200 18211 0.0266
+108.12.143.53 - - [12/Nov/2014 17:12:11] "GET / HTTP/1.0" 200 25207 0.6634
+108.12.143.53 - - [12/Nov/2014 17:12:11] "GET /funders_us.json HTTP/1.0" 200 18211 0.0386
+108.12.143.53 - - [12/Nov/2014 17:12:13] "GET / HTTP/1.0" 200 25207 0.6590
+108.12.143.53 - - [12/Nov/2014 17:12:13] "GET /funders_us.json HTTP/1.0" 200 18211 0.0388
+I, [2014-11-12T17:14:21.455342 #7515]  INFO -- : reaped #<Process::Status: pid 7518 exit 0> worker=0
+I, [2014-11-12T17:14:21.455516 #7515]  INFO -- : reaped #<Process::Status: pid 7521 exit 0> worker=1
+I, [2014-11-12T17:14:21.455657 #7515]  INFO -- : master complete
+I, [2014-11-12T17:15:51.191192 #7854]  INFO -- : unlinking existing socket=/tmp/unicorn.cr-search.sock
+I, [2014-11-12T17:15:51.191699 #7854]  INFO -- : listening on addr=/tmp/unicorn.cr-search.sock fd=8
+I, [2014-11-12T17:15:51.191945 #7854]  INFO -- : worker=0 spawning...
+I, [2014-11-12T17:15:51.213350 #7854]  INFO -- : worker=1 spawning...
+I, [2014-11-12T17:15:51.222203 #7857]  INFO -- : worker=0 spawned pid=7857
+I, [2014-11-12T17:15:51.222602 #7857]  INFO -- : Refreshing Gem list
+I, [2014-11-12T17:15:51.237311 #7854]  INFO -- : master process ready
+I, [2014-11-12T17:15:51.246459 #7860]  INFO -- : worker=1 spawned pid=7860
+I, [2014-11-12T17:15:51.246819 #7860]  INFO -- : Refreshing Gem list
+APM Insight Ruby Agent Started
+APM Insight Ruby Agent Started
+loading config file './config.yml'
+loading config file './config.yml'
+I, [2014-11-12T17:15:55.527988 #7860]  INFO -- : worker=1 ready
+I, [2014-11-12T17:15:55.529232 #7857]  INFO -- : worker=0 ready
+108.12.143.53 - - [12/Nov/2014 17:16:01] "GET / HTTP/1.0" 200 25203 0.7102
+108.12.143.53 - - [12/Nov/2014 17:16:01] "GET /funders_us.json HTTP/1.0" 200 18211 0.1274
+108.12.143.53 - - [12/Nov/2014 17:16:06] "GET / HTTP/1.0" 200 25203 0.6364
+108.12.143.53 - - [12/Nov/2014 17:16:06] "GET /funders_us.json HTTP/1.0" 200 18211 0.0539
+172.56.18.0 - - [12/Nov/2014 17:16:33] "GET / HTTP/1.0" 200 25203 0.6697
+172.56.18.0 - - [12/Nov/2014 17:16:35] "GET /funders_us.json HTTP/1.0" 200 18211 0.0448
+I, [2014-11-12T17:20:56.712149 #7854]  INFO -- : reaped #<Process::Status: pid 7857 exit 0> worker=0
+I, [2014-11-12T17:20:56.712294 #7854]  INFO -- : reaped #<Process::Status: pid 7860 exit 0> worker=1
+I, [2014-11-12T17:20:56.712453 #7854]  INFO -- : master complete
+I, [2014-11-12T17:23:44.669998 #8045]  INFO -- : unlinking existing socket=/tmp/unicorn.cr-search.sock
+I, [2014-11-12T17:23:44.670537 #8045]  INFO -- : listening on addr=/tmp/unicorn.cr-search.sock fd=8
+I, [2014-11-12T17:23:44.670780 #8045]  INFO -- : worker=0 spawning...
+I, [2014-11-12T17:23:44.676535 #8049]  INFO -- : worker=0 spawned pid=8049
+I, [2014-11-12T17:23:44.677173 #8045]  INFO -- : worker=1 spawning...
+I, [2014-11-12T17:23:44.677317 #8049]  INFO -- : Refreshing Gem list
+I, [2014-11-12T17:23:45.397800 #8052]  INFO -- : worker=1 spawned pid=8052
+I, [2014-11-12T17:23:45.398269 #8052]  INFO -- : Refreshing Gem list
+I, [2014-11-12T17:23:45.749664 #8045]  INFO -- : master process ready
+APM Insight Ruby Agent Started
+APM Insight Ruby Agent Started
+loading config file './config.yml'
+loading config file './config.yml'
+I, [2014-11-12T17:24:29.271549 #8049]  INFO -- : worker=0 ready
+I, [2014-11-12T17:24:29.385903 #8052]  INFO -- : worker=1 ready
+108.12.143.53 - - [12/Nov/2014 17:26:54] "GET / HTTP/1.0" 200 25210 17.4152
+108.12.143.53 - - [12/Nov/2014 17:26:55] "GET / HTTP/1.0" 200 25210 16.9634
+108.12.143.53 - - [12/Nov/2014 17:26:56] "GET /funders_us.json HTTP/1.0" 200 18211 0.4965
+117.21.225.165 - - [12/Nov/2014 17:30:14] "GET /manager/html HTTP/1.0" 404 448 0.0026
+I, [2014-11-12T17:41:37.869795 #8045]  INFO -- : reaped #<Process::Status: pid 8049 exit 0> worker=0
+I, [2014-11-12T17:41:37.869977 #8045]  INFO -- : reaped #<Process::Status: pid 8052 exit 0> worker=1
+I, [2014-11-12T17:41:37.870134 #8045]  INFO -- : master complete
+I, [2014-11-12T17:43:08.751769 #8288]  INFO -- : unlinking existing socket=/tmp/unicorn.cr-search.sock
+I, [2014-11-12T17:43:08.752286 #8288]  INFO -- : listening on addr=/tmp/unicorn.cr-search.sock fd=8
+I, [2014-11-12T17:43:08.752520 #8288]  INFO -- : worker=0 spawning...
+I, [2014-11-12T17:43:08.778174 #8288]  INFO -- : worker=1 spawning...
+I, [2014-11-12T17:43:08.790889 #8291]  INFO -- : worker=0 spawned pid=8291
+I, [2014-11-12T17:43:08.791324 #8291]  INFO -- : Refreshing Gem list
+I, [2014-11-12T17:43:08.801869 #8293]  INFO -- : worker=1 spawned pid=8293
+I, [2014-11-12T17:43:08.802302 #8293]  INFO -- : Refreshing Gem list
+I, [2014-11-12T17:43:08.818331 #8288]  INFO -- : master process ready
+APM Insight Ruby Agent Started
+APM Insight Ruby Agent Started
+loading config file './config.yml'
+loading config file './config.yml'
+I, [2014-11-12T17:43:12.926046 #8293]  INFO -- : worker=1 ready
+I, [2014-11-12T17:43:12.930558 #8291]  INFO -- : worker=0 ready
+ExecJS::RuntimeError - SyntaxError: [stdin]:25:95: missing ", starting:
+	/var/lib/gems/1.9.1/gems/execjs-2.2.1/lib/execjs/external_runtime.rb:62:in `extract_result'
+	/var/lib/gems/1.9.1/gems/execjs-2.2.1/lib/execjs/external_runtime.rb:29:in `exec'
+	/var/lib/gems/1.9.1/gems/execjs-2.2.1/lib/execjs/external_runtime.rb:18:in `eval'
+	/var/lib/gems/1.9.1/gems/execjs-2.2.1/lib/execjs/external_runtime.rb:36:in `call'
+	/var/lib/gems/1.9.1/gems/coffee-script-2.3.0/lib/coffee_script.rb:76:in `compile'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/coffee.rb:46:in `evaluate'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/template.rb:103:in `render'
+	(eval):5:in `render_with_options'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/filters.rb:184:in `block in compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/filters.rb:162:in `instance_eval'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/filters.rb:162:in `compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/filters.rb:141:in `internal_compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:273:in `compile_filter'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:20:in `compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `block (2 levels) in compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `each'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `block in compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:228:in `compile_tag'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `block (2 levels) in compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `each'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `block in compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:228:in `compile_tag'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `block (2 levels) in compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `each'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `block in compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:95:in `compile_root'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/engine.rb:66:in `initialize'
+	/var/lib/gems/1.9.1/gems/site24x7_apminsight-1.1/lib/agent/server/instrument/am_apm.rb:9:in `new'
+	/var/lib/gems/1.9.1/gems/site24x7_apminsight-1.1/lib/agent/server/instrument/am_apm.rb:9:in `new'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/haml.rb:19:in `prepare'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/template.rb:79:in `initialize'
+	/var/lib/gems/1.9.1/gems/site24x7_apminsight-1.1/lib/agent/server/instrument/am_apm.rb:9:in `new'
+	/var/lib/gems/1.9.1/gems/site24x7_apminsight-1.1/lib/agent/server/instrument/am_apm.rb:9:in `new'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:853:in `block in compile_template'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt.rb:127:in `fetch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:832:in `compile_template'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:813:in `render'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:823:in `block in render'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:823:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:823:in `render'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:675:in `haml'
+	/var/www/cr-search/app.rb:68:in `block in <top (required)>'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `block in compile!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `[]'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (3 levels) in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:985:in `route_eval'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (2 levels) in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1006:in `block in process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:964:in `block in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `each'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1076:in `block in dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1073:in `dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `block in call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:886:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/logger.rb:15:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:210:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:180:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:2014:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `block in call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1788:in `synchronize'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:217:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:576:in `process_client'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:670:in `worker_loop'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:140:in `start'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+	/usr/local/bin/unicorn:23:in `load'
+	/usr/local/bin/unicorn:23:in `<main>'
+108.12.143.53 - - [12/Nov/2014 17:43:13] "GET / HTTP/1.0" 500 30 0.6504
+ExecJS::RuntimeError - SyntaxError: [stdin]:25:95: missing ", starting:
+	/var/lib/gems/1.9.1/gems/execjs-2.2.1/lib/execjs/external_runtime.rb:62:in `extract_result'
+	/var/lib/gems/1.9.1/gems/execjs-2.2.1/lib/execjs/external_runtime.rb:29:in `exec'
+	/var/lib/gems/1.9.1/gems/execjs-2.2.1/lib/execjs/external_runtime.rb:18:in `eval'
+	/var/lib/gems/1.9.1/gems/execjs-2.2.1/lib/execjs/external_runtime.rb:36:in `call'
+	/var/lib/gems/1.9.1/gems/coffee-script-2.3.0/lib/coffee_script.rb:76:in `compile'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/coffee.rb:46:in `evaluate'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/template.rb:103:in `render'
+	(eval):5:in `render_with_options'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/filters.rb:184:in `block in compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/filters.rb:162:in `instance_eval'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/filters.rb:162:in `compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/filters.rb:141:in `internal_compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:273:in `compile_filter'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:20:in `compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `block (2 levels) in compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `each'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `block in compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:228:in `compile_tag'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `block (2 levels) in compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `each'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `block in compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:228:in `compile_tag'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `block (2 levels) in compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `each'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `block in compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:95:in `compile_root'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/engine.rb:66:in `initialize'
+	/var/lib/gems/1.9.1/gems/site24x7_apminsight-1.1/lib/agent/server/instrument/am_apm.rb:9:in `new'
+	/var/lib/gems/1.9.1/gems/site24x7_apminsight-1.1/lib/agent/server/instrument/am_apm.rb:9:in `new'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/haml.rb:19:in `prepare'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/template.rb:79:in `initialize'
+	/var/lib/gems/1.9.1/gems/site24x7_apminsight-1.1/lib/agent/server/instrument/am_apm.rb:9:in `new'
+	/var/lib/gems/1.9.1/gems/site24x7_apminsight-1.1/lib/agent/server/instrument/am_apm.rb:9:in `new'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:853:in `block in compile_template'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt.rb:127:in `fetch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:832:in `compile_template'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:813:in `render'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:823:in `block in render'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:823:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:823:in `render'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:675:in `haml'
+	/var/www/cr-search/app.rb:68:in `block in <top (required)>'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `block in compile!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `[]'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (3 levels) in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:985:in `route_eval'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (2 levels) in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1006:in `block in process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:964:in `block in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `each'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1076:in `block in dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1073:in `dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `block in call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:886:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/logger.rb:15:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:210:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:180:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:2014:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `block in call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1788:in `synchronize'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:217:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:576:in `process_client'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:670:in `worker_loop'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:140:in `start'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+	/usr/local/bin/unicorn:23:in `load'
+	/usr/local/bin/unicorn:23:in `<main>'
+108.12.143.53 - - [12/Nov/2014 17:43:14] "GET / HTTP/1.0" 500 30 0.6649
+ExecJS::RuntimeError - SyntaxError: [stdin]:25:95: missing ", starting:
+	/var/lib/gems/1.9.1/gems/execjs-2.2.1/lib/execjs/external_runtime.rb:62:in `extract_result'
+	/var/lib/gems/1.9.1/gems/execjs-2.2.1/lib/execjs/external_runtime.rb:29:in `exec'
+	/var/lib/gems/1.9.1/gems/execjs-2.2.1/lib/execjs/external_runtime.rb:18:in `eval'
+	/var/lib/gems/1.9.1/gems/execjs-2.2.1/lib/execjs/external_runtime.rb:36:in `call'
+	/var/lib/gems/1.9.1/gems/coffee-script-2.3.0/lib/coffee_script.rb:76:in `compile'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/coffee.rb:46:in `evaluate'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/template.rb:103:in `render'
+	(eval):5:in `render_with_options'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/filters.rb:184:in `block in compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/filters.rb:162:in `instance_eval'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/filters.rb:162:in `compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/filters.rb:141:in `internal_compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:273:in `compile_filter'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:20:in `compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `block (2 levels) in compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `each'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `block in compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:228:in `compile_tag'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `block (2 levels) in compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `each'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `block in compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:228:in `compile_tag'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `block (2 levels) in compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `each'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `block in compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:95:in `compile_root'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/compiler.rb:22:in `compile'
+	/var/lib/gems/1.9.1/gems/haml-4.0.5/lib/haml/engine.rb:66:in `initialize'
+	/var/lib/gems/1.9.1/gems/site24x7_apminsight-1.1/lib/agent/server/instrument/am_apm.rb:9:in `new'
+	/var/lib/gems/1.9.1/gems/site24x7_apminsight-1.1/lib/agent/server/instrument/am_apm.rb:9:in `new'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/haml.rb:19:in `prepare'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/template.rb:79:in `initialize'
+	/var/lib/gems/1.9.1/gems/site24x7_apminsight-1.1/lib/agent/server/instrument/am_apm.rb:9:in `new'
+	/var/lib/gems/1.9.1/gems/site24x7_apminsight-1.1/lib/agent/server/instrument/am_apm.rb:9:in `new'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:853:in `block in compile_template'
+	/var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt.rb:127:in `fetch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:832:in `compile_template'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:813:in `render'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:823:in `block in render'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:823:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:823:in `render'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:675:in `haml'
+	/var/www/cr-search/app.rb:68:in `block in <top (required)>'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `block in compile!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `[]'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (3 levels) in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:985:in `route_eval'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (2 levels) in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1006:in `block in process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `process_route'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:964:in `block in route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `each'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `route!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1076:in `block in dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1073:in `dispatch!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `block in call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `call!'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:886:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/logger.rb:15:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:210:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:180:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:2014:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `block in call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1788:in `synchronize'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+	/var/lib/gems/1.9.1/gems/sinatra-1.4.5/lib/sinatra/base.rb:217:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
+	/var/lib/gems/1.9.1/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:576:in `process_client'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:670:in `worker_loop'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:140:in `start'
+	/var/lib/gems/1.9.1/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+	/usr/local/bin/unicorn:23:in `load'
+	/usr/local/bin/unicorn:23:in `<main>'
+108.12.143.53 - - [12/Nov/2014 17:43:22] "GET / HTTP/1.0" 500 30 0.6032
+108.12.143.53 - - [12/Nov/2014 17:43:22] "GET /favicon.ico HTTP/1.0" 404 461 0.0036
+108.12.143.53 - - [12/Nov/2014 17:44:04] "GET / HTTP/1.0" 200 25243 0.6535
+108.12.143.53 - - [12/Nov/2014 17:44:05] "GET /funders_us.json HTTP/1.0" 200 18211 0.0554
+108.12.143.53 - - [12/Nov/2014 17:44:13] "GET / HTTP/1.0" 200 25243 0.6254
+108.12.143.53 - - [12/Nov/2014 17:44:14] "GET /funders_us.json HTTP/1.0" 200 18211 0.0549
+108.12.143.53 - - [12/Nov/2014 17:44:40] "GET / HTTP/1.0" 200 25237 0.6657
+108.12.143.53 - - [12/Nov/2014 17:44:40] "GET /funders_us.json HTTP/1.0" 200 18211 0.0472
+108.12.147.29 - - [12/Nov/2014 17:45:15] "GET / HTTP/1.0" 200 25237 0.6349
+108.12.147.29 - - [12/Nov/2014 17:45:16] "GET /funders_us.json HTTP/1.0" 200 18211 0.0462
+108.12.147.29 - - [12/Nov/2014 17:45:28] "GET / HTTP/1.0" 200 25237 0.6451
+108.12.147.29 - - [12/Nov/2014 17:45:29] "GET /funders_us.json HTTP/1.0" 200 18211 0.0261
